@@ -1,0 +1,30 @@
+[
+  {
+    "budget": 0.1,
+    "games": 8,
+    "starts": 4,
+    "alpha_wins": 5,
+    "draws": 3,
+    "alpha_losses": 0,
+    "unfinished": 0,
+    "score_bounds": [
+      0.8125,
+      0.8125
+    ],
+    "completed_score": 0.8125
+  },
+  {
+    "budget": 0.5,
+    "games": 8,
+    "starts": 4,
+    "alpha_wins": 6,
+    "draws": 2,
+    "alpha_losses": 0,
+    "unfinished": 0,
+    "score_bounds": [
+      0.875,
+      0.875
+    ],
+    "completed_score": 0.875
+  }
+]

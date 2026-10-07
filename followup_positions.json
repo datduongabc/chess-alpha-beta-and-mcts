@@ -1,0 +1,258 @@
+[
+  {
+    "name": "Corner net / force_mate / original",
+    "family": "Corner net",
+    "mirror": false,
+    "category": "tactic",
+    "fen": "7r/8/8/8/Q7/8/5K2/7k w - - 0 1",
+    "objective": "force_mate",
+    "mate_plies": 3,
+    "expected_moves": [
+      "a4a1",
+      "a4c6",
+      "a4e4"
+    ],
+    "provenance": "Constructed local fixture; exhaustive bounded mate proof. Mirrors are paired, not independent positions."
+  },
+  {
+    "name": "Corner net / force_mate / mirrored",
+    "family": "Corner net",
+    "mirror": true,
+    "category": "tactic",
+    "fen": "7K/5k2/8/q7/8/8/8/7R b - - 0 1",
+    "objective": "force_mate",
+    "mate_plies": 3,
+    "expected_moves": [
+      "a5a8",
+      "a5c3",
+      "a5e5"
+    ],
+    "provenance": "Constructed local fixture; exhaustive bounded mate proof. Mirrors are paired, not independent positions."
+  },
+  {
+    "name": "Corner net / avoid_mate / original",
+    "family": "Corner net",
+    "mirror": false,
+    "category": "tactic",
+    "fen": "7r/8/8/8/Q7/8/5K2/7k b - - 0 1",
+    "objective": "avoid_mate",
+    "mate_plies": 3,
+    "expected_moves": [
+      "h1h2",
+      "h8f8",
+      "h8h2"
+    ],
+    "provenance": "Constructed local fixture; exhaustive bounded mate proof. Mirrors are paired, not independent positions."
+  },
+  {
+    "name": "Corner net / avoid_mate / mirrored",
+    "family": "Corner net",
+    "mirror": true,
+    "category": "tactic",
+    "fen": "7K/5k2/8/q7/8/8/8/7R w - - 0 1",
+    "objective": "avoid_mate",
+    "mate_plies": 3,
+    "expected_moves": [
+      "h1f1",
+      "h1h7",
+      "h8h7"
+    ],
+    "provenance": "Constructed local fixture; exhaustive bounded mate proof. Mirrors are paired, not independent positions."
+  },
+  {
+    "name": "Unique queen maneuver / force_mate / original",
+    "family": "Unique queen maneuver",
+    "mirror": false,
+    "category": "tactic",
+    "fen": "3k4/8/3K4/8/8/4Q3/8/6r1 w - - 0 1",
+    "objective": "force_mate",
+    "mate_plies": 3,
+    "expected_moves": [
+      "e3e7"
+    ],
+    "provenance": "Constructed local fixture; exhaustive bounded mate proof. Mirrors are paired, not independent positions."
+  },
+  {
+    "name": "Unique queen maneuver / force_mate / mirrored",
+    "family": "Unique queen maneuver",
+    "mirror": true,
+    "category": "tactic",
+    "fen": "6R1/8/4q3/8/8/3k4/8/3K4 b - - 0 1",
+    "objective": "force_mate",
+    "mate_plies": 3,
+    "expected_moves": [
+      "e6e2"
+    ],
+    "provenance": "Constructed local fixture; exhaustive bounded mate proof. Mirrors are paired, not independent positions."
+  },
+  {
+    "name": "Unique queen maneuver / avoid_mate / original",
+    "family": "Unique queen maneuver",
+    "mirror": false,
+    "category": "tactic",
+    "fen": "3k4/8/3K4/8/8/4Q3/8/6r1 b - - 0 1",
+    "objective": "avoid_mate",
+    "mate_plies": 3,
+    "expected_moves": [
+      "d8c8",
+      "g1c1",
+      "g1d1",
+      "g1e1",
+      "g1g6",
+      "g1g7"
+    ],
+    "provenance": "Constructed local fixture; exhaustive bounded mate proof. Mirrors are paired, not independent positions."
+  },
+  {
+    "name": "Unique queen maneuver / avoid_mate / mirrored",
+    "family": "Unique queen maneuver",
+    "mirror": true,
+    "category": "tactic",
+    "fen": "6R1/8/4q3/8/8/3k4/8/3K4 w - - 0 1",
+    "objective": "avoid_mate",
+    "mate_plies": 3,
+    "expected_moves": [
+      "d1c1",
+      "g8c8",
+      "g8d8",
+      "g8e8",
+      "g8g2",
+      "g8g3"
+    ],
+    "provenance": "Constructed local fixture; exhaustive bounded mate proof. Mirrors are paired, not independent positions."
+  },
+  {
+    "name": "Narrow rook defense / force_mate / original",
+    "family": "Narrow rook defense",
+    "mirror": false,
+    "category": "tactic",
+    "fen": "8/3r4/8/8/2Q5/6K1/8/6k1 w - - 0 1",
+    "objective": "force_mate",
+    "mate_plies": 3,
+    "expected_moves": [
+      "c4c1"
+    ],
+    "provenance": "Constructed local fixture; exhaustive bounded mate proof. Mirrors are paired, not independent positions."
+  },
+  {
+    "name": "Narrow rook defense / force_mate / mirrored",
+    "family": "Narrow rook defense",
+    "mirror": true,
+    "category": "tactic",
+    "fen": "6K1/8/6k1/2q5/8/8/3R4/8 b - - 0 1",
+    "objective": "force_mate",
+    "mate_plies": 3,
+    "expected_moves": [
+      "c5c8"
+    ],
+    "provenance": "Constructed local fixture; exhaustive bounded mate proof. Mirrors are paired, not independent positions."
+  },
+  {
+    "name": "Narrow rook defense / avoid_mate / original",
+    "family": "Narrow rook defense",
+    "mirror": false,
+    "category": "tactic",
+    "fen": "8/3r4/8/8/2Q5/6K1/8/6k1 b - - 0 1",
+    "objective": "avoid_mate",
+    "mate_plies": 3,
+    "expected_moves": [
+      "d7d1",
+      "d7g7"
+    ],
+    "provenance": "Constructed local fixture; exhaustive bounded mate proof. Mirrors are paired, not independent positions."
+  },
+  {
+    "name": "Narrow rook defense / avoid_mate / mirrored",
+    "family": "Narrow rook defense",
+    "mirror": true,
+    "category": "tactic",
+    "fen": "6K1/8/6k1/2q5/8/8/3R4/8 w - - 0 1",
+    "objective": "avoid_mate",
+    "mate_plies": 3,
+    "expected_moves": [
+      "d2d8",
+      "d2g2"
+    ],
+    "provenance": "Constructed local fixture; exhaustive bounded mate proof. Mirrors are paired, not independent positions."
+  },
+  {
+    "name": "White queen mate",
+    "category": "tactic",
+    "fen": "7k/5Q2/6K1/8/8/8/8/8 w - - 0 1",
+    "mate_in_one": true,
+    "objective": "force_mate",
+    "mate_plies": 1
+  },
+  {
+    "name": "Black queen mate",
+    "category": "tactic",
+    "fen": "8/8/8/8/8/6k1/5q2/7K b - - 0 1",
+    "mate_in_one": true,
+    "objective": "force_mate",
+    "mate_plies": 1
+  },
+  {
+    "name": "White back-rank mate",
+    "category": "tactic",
+    "fen": "6k1/5ppp/8/8/8/8/5PPP/4R1K1 w - - 0 1",
+    "mate_in_one": true,
+    "objective": "force_mate",
+    "mate_plies": 1
+  },
+  {
+    "name": "Black back-rank mate",
+    "category": "tactic",
+    "fen": "4r1k1/5ppp/8/8/8/8/5PPP/6K1 b - - 0 1",
+    "mate_in_one": true,
+    "objective": "force_mate",
+    "mate_plies": 1
+  },
+  {
+    "name": "Queen exchange trap / original",
+    "category": "material",
+    "fen": "3r2k1/8/8/3p4/8/8/8/3Q2K1 w - - 0 1",
+    "objective": "material_after_reply"
+  },
+  {
+    "name": "Queen exchange trap / mirrored",
+    "category": "material",
+    "fen": "3q2k1/8/8/8/3P4/8/8/3R2K1 b - - 0 1",
+    "objective": "material_after_reply"
+  },
+  {
+    "name": "Rook exchange trap / original",
+    "category": "material",
+    "fen": "3r2k1/8/8/3p4/8/8/8/3R2K1 w - - 0 1",
+    "objective": "material_after_reply"
+  },
+  {
+    "name": "Rook exchange trap / mirrored",
+    "category": "material",
+    "fen": "3r2k1/8/8/8/3P4/8/8/3R2K1 b - - 0 1",
+    "objective": "material_after_reply"
+  },
+  {
+    "name": "Undefended queen capture / original",
+    "category": "material",
+    "fen": "6k1/8/8/8/4q3/2N5/4P3/6K1 w - - 0 1",
+    "objective": "material_after_reply"
+  },
+  {
+    "name": "Undefended queen capture / mirrored",
+    "category": "material",
+    "fen": "6k1/4p3/2n5/4Q3/8/8/8/6K1 b - - 0 1",
+    "objective": "material_after_reply"
+  },
+  {
+    "name": "Pawn promotion / original",
+    "category": "material",
+    "fen": "7k/P7/8/8/8/8/8/7K w - - 0 1",
+    "objective": "material_after_reply"
+  },
+  {
+    "name": "Pawn promotion / mirrored",
+    "category": "material",
+    "fen": "7k/8/8/8/8/8/p7/7K b - - 0 1",
+    "objective": "material_after_reply"
+  }
+]

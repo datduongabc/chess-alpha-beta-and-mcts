@@ -1,0 +1,46 @@
+[
+  {
+    "budget": 0.1,
+    "engine": "alphabeta",
+    "position_searches": 12,
+    "mate_solve_rate": 1,
+    "median_seconds": 0.10003047350073757,
+    "p95_seconds": 0.1002241049973236,
+    "paired_games": 4,
+    "game_score": 0.75,
+    "adjudicated_draws": 0
+  },
+  {
+    "budget": 0.1,
+    "engine": "mcts",
+    "position_searches": 60,
+    "mate_solve_rate": 0.6,
+    "median_seconds": 0.100027319000219,
+    "p95_seconds": 0.10019732599903364,
+    "paired_games": 4,
+    "game_score": 0.25,
+    "adjudicated_draws": 0
+  },
+  {
+    "budget": 0.25,
+    "engine": "alphabeta",
+    "position_searches": 12,
+    "mate_solve_rate": 1,
+    "median_seconds": 0.25002536499960115,
+    "p95_seconds": 0.25017730799663696,
+    "paired_games": 4,
+    "game_score": 1,
+    "adjudicated_draws": 0
+  },
+  {
+    "budget": 0.25,
+    "engine": "mcts",
+    "position_searches": 60,
+    "mate_solve_rate": 1,
+    "median_seconds": 0.2500375959989469,
+    "p95_seconds": 0.2501538820033602,
+    "paired_games": 4,
+    "game_score": 0,
+    "adjudicated_draws": 0
+  }
+]

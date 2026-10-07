@@ -1,0 +1,40 @@
+\begin{center}
+\begin{tabular}{rrrrrr}
+\toprule
+Budget & Engine & Mate solve & Median (s) & p95 (s) & Game score\\
+\midrule
+0.10 & Alpha-beta & 100\% & 0.10004 & 0.10014 & 87.5\% \\
+0.10 & MCTS & 100\% & 0.10007 & 0.10018 & 12.5\% \\
+0.25 & Alpha-beta & 100\% & 0.25002 & 0.25009 & 100.0\% \\
+0.25 & MCTS & 100\% & 0.25007 & 0.25019 & 0.0\% \\
+\bottomrule
+\end{tabular}
+\end{center}
+For each budget, alpha-beta has 12 position searches and MCTS has 60
+(12 positions times five seeds); all four elementary mates were solved.
+Game score is $(wins+0.5\,draws)/games$, with four games per budget.
+At 0.1 seconds alpha-beta won three games and one game reached the declared
+ply cap; at 0.25 seconds it won all four. The sample contains seven actual
+checkmates and one adjudicated draw, and is too small for a general ranking.
+
+\subsection{Inspecting two disagreements and an agreement}
+At 0.25 seconds with MCTS seed 7:
+\begin{itemize}
+\item \textbf{Italian opening:} alpha-beta chose \texttt{b1c3} (Nc3), completed
+ depth 2, and reported the line \texttt{b1c3 f6e4} at $-132$ root centipawns.
+ MCTS chose \texttt{a2a4} after 34 simulations; its chosen action had only two
+ visits and mean utility about $0.935$. A large sampled value from two random
+ continuations is not evidence that the pawn move is objectively better.
+\item \textbf{Queen's Gambit:} alpha-beta chose \texttt{c1g5} (Bg5), completed
+ depth 3, and examined \texttt{c1g5 d5c4 g5f6}, reporting $247$ centipawns.
+ MCTS chose \texttt{c3d5} (Nxd5) after 34 simulations with two visits to that
+ move. The forced-line search and shallow stochastic evidence support very
+ different decisions; inspect the recorded continuations before attributing
+ either suggestion to stronger chess understanding.
+\item \textbf{King and pawn:} both chose \texttt{e3d3} (Kd3). Alpha-beta completed
+ depth 5 and reported $132$ centipawns. MCTS completed 76 simulations and visited
+ that move 23 times, with mean utility about $0.312$. Fewer legal actions let
+ it revisit promising moves more often than in the opening examples.
+\end{itemize}
+All figures above are recorded outputs, not external-engine judgments.
+The JSONL includes all root statistics and lines so these examples can be audited.

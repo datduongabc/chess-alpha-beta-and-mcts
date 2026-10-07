@@ -1,0 +1,41 @@
+{
+  "purpose": "Compare bounded tactical correctness, configuration cost and color-swapped game outcomes.",
+  "engine_frozen_sha256": "2463fa8dd27386db562ff08a0716b5eeeccbbf1fac6042dfe5f6ad8f0829af8c",
+  "cpu_reported_by_wsl": "12th Gen Intel(R) Core(TM) i7-12700H",
+  "root_searches": 360,
+  "mcts_seeds": [
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "tactics": {
+    "placements": 3,
+    "cases": 12,
+    "objective": "force mate in at most three plies, or avoid opposing forced mate in next three plies",
+    "mirrors_are_independent": false
+  },
+  "runs": [
+    "tactics-enhanced",
+    "tactics-baseline",
+    "games-broad",
+    "games-5s"
+  ],
+  "timing": "One engine search at a time. Reference certification and result annotations are outside timed search.",
+  "games": {
+    "broad_budget": 0.5,
+    "broad_starts": 8,
+    "five_second_starts": 2,
+    "color_swap": true,
+    "ply_cap": 60
+  },
+  "pilot_exclusion": "pilot-overlap-tactics-enhanced was interrupted because startup overlapped test execution. It is not an analysis input or submission dataset.",
+  "limits": [
+    "Constructed low-material cases are not a representative puzzle sample.",
+    "Defense acceptance certifies only the bounded horizon.",
+    "Configuration changes bundle multiple features.",
+    "The game-budget subsets have different start sets.",
+    "Only selected-start variability is resampled; no Elo or population-strength inference."
+  ]
+}

@@ -1,0 +1,104 @@
+[Event "Chess Search Duel benchmark"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "?"]
+[White "alphabeta"]
+[Black "mcts"]
+[Result "1-0"]
+[TimeControl "0.1s per move"]
+[Seed "7"]
+[Termination "Checkmate"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Nc3 Bb4 5. Nb5 h6 6. a4 Nd4 7. Nbxd4 b5 8. Nxb5 Ba3 9. bxa3 Kf8 10. Nxe5 c5 11. Bxf7 Qe8 12. Bxe8 Ke7 13. Bf7 Ng4 14. Qxg4 c4 15. Bxc4 Kf6 16. d4 d6 17. Qg6+ Ke7 18. Qxd6+ Ke8 19. Nc7# 1-0
+
+[Event "Chess Search Duel benchmark"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "?"]
+[White "mcts"]
+[Black "alphabeta"]
+[Result "0-1"]
+[TimeControl "0.1s per move"]
+[Seed "7"]
+[Termination "Checkmate"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. b4 Nxe4 5. Be6 fxe6 6. a4 Bxb4 7. Nxe5 Nxe5 8. c4 Nxc4 9. Ra2 a5 10. Rg1 c5 11. Na3 Ne5 12. Nb5 d5 13. g4 g5 14. Rg3 Nxg3 15. Ba3 Nd3# 0-1
+
+[Event "Chess Search Duel benchmark"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "?"]
+[White "alphabeta"]
+[Black "mcts"]
+[Result "1-0"]
+[TimeControl "0.1s per move"]
+[Seed "1031"]
+[Termination "Checkmate"]
+
+1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. cxd5 c5 5. Qa4+ Ke7 6. dxc5 Qa5 7. Qxa5 Ng4 8. Bg5+ f6 9. d6+ Kd7 10. Qc7+ Ke8 11. Qxc8+ Kf7 12. Qxb7+ Kg6 13. Qxa8 Nxf2 14. Kxf2 fxg5 15. Qxb8 Kh5 16. Qe8+ Kg4 17. Qxe6+ Kh4 18. Qh3# 1-0
+
+[Event "Chess Search Duel benchmark"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "?"]
+[White "mcts"]
+[Black "alphabeta"]
+[Result "1/2-1/2"]
+[TimeControl "0.1s per move"]
+[Seed "1031"]
+[Termination "Ply cap (adjudicated draw)"]
+
+1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Qd2 dxc4 5. g4 Nxg4 6. b4 Bxb4 7. Nb1 Bxd2+ 8. Kxd2 Qxd4+ 9. Kc2 Qxa1 10. h4 Qxa2+ 11. Kd1 Qxb1 12. e4 Nxf2+ 13. Ke2 Nxh1 14. Kf3 Qxc1 15. Be2 Qxg1 16. e5 Qg3+ 17. Ke4 Qxh4+ 18. Bg4 Qxg4+ 19. Ke3 Nc6 20. Kd2 Nxe5 21. Kc1 Nf2 22. Kb2 Ne4 23. Ka3 a5 24. Ka4 c5 25. Ka3 b5 26. Kb2 f5 27. Ka3 g5 28. Kb2 h5 29. Kc1 Bd7 30. Kb1 O-O 31. Kb2 a4 32. Kc1 b4 33. Kc2 f4 1/2-1/2
+
+[Event "Chess Search Duel benchmark"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "?"]
+[White "alphabeta"]
+[Black "mcts"]
+[Result "1-0"]
+[TimeControl "0.25s per move"]
+[Seed "7"]
+[Termination "Checkmate"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Nc3 Bb4 5. Nb5 Bc5 6. a4 d6 7. b4 Qe7 8. bxc5 a5 9. cxd6 Nd4 10. dxe7 Ra6 11. Nbxd4 Kd7 12. Bxa6 Re8 13. Bb5+ c6 14. Nxe5+ Kc7 15. Bc4 Nh5 16. Qxh5 Rf8 17. exf8=Q g6 18. Qxf7+ Kd6 19. Ba3+ c5 20. Nb5# 1-0
+
+[Event "Chess Search Duel benchmark"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "?"]
+[White "mcts"]
+[Black "alphabeta"]
+[Result "0-1"]
+[TimeControl "0.25s per move"]
+[Seed "7"]
+[Termination "Checkmate"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. b4 Bxb4 5. Ba3 Nxe4 6. Ba6 Bxa3 7. Bxb7 Bxb7 8. Rg1 Bc5 9. a3 Bxf2+ 10. Ke2 Bxg1 11. Nd4 Bxd4 12. Nc3 Ba6+ 13. Kf3 Nxc3 14. Qg1 Bxg1 15. Rd1 Nxd1 16. h4 Qxh4 17. d4 Nxd4# 0-1
+
+[Event "Chess Search Duel benchmark"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "?"]
+[White "alphabeta"]
+[Black "mcts"]
+[Result "1-0"]
+[TimeControl "0.25s per move"]
+[Seed "1031"]
+[Termination "Checkmate"]
+
+1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Kd7 5. cxd5 b5 6. Bxf6 Bb7 7. dxe6+ Kc8 8. Bxd8 Nc6 9. e7 a5 10. e8=Q Nb4 11. Be7# 1-0
+
+[Event "Chess Search Duel benchmark"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "?"]
+[White "mcts"]
+[Black "alphabeta"]
+[Result "0-1"]
+[TimeControl "0.25s per move"]
+[Seed "1031"]
+[Termination "Checkmate"]
+
+1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Nf3 dxc4 5. b4 Bxb4 6. h3 Bxc3+ 7. Bd2 Bxa1 8. e4 Bb2 9. Rg1 Nxe4 10. a3 Nxd2 11. Qxd2 Bxd4 12. g3 Bxf2+ 13. Kxf2 Qf6 14. Qe1 Qb2+ 15. Ke3 Qxa3+ 16. Ke4 f5+ 17. Kf4 Qd6+ 18. Ne5 Qd4+ 19. Kg5 Qxg1 20. Qe3 Qxe3+ 21. Kh5 Qh6# 0-1
+

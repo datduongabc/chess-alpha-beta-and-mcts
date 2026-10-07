@@ -1,0 +1,22 @@
+The enhanced run uses the same 12 positions, two budgets, five MCTS seeds,
+two paired opening starts and 60-ply cap as the baseline configuration. It
+contains 144 position searches and eight games, recorded separately in
+\texttt{enhanced\_results/} with the current engine source hash.
+\begin{center}
+\begin{tabular}{rrrrrr}\toprule
+Budget & Engine & Mate solve & Median (s) & p95 (s) & Game score\\\midrule
+0.10 & Alpha-beta & 100\% & 0.10003 & 0.10022 & 75.0\% \\
+0.10 & MCTS & 60\% & 0.10003 & 0.10020 & 25.0\% \\
+0.25 & Alpha-beta & 100\% & 0.25003 & 0.25018 & 100.0\% \\
+0.25 & MCTS & 100\% & 0.25004 & 0.25015 & 0.0\% \\
+\bottomrule\end{tabular}
+\end{center}
+All eight games ended in checkmate. Alpha-beta won three of four games at
+0.1 seconds and four of four at 0.25 seconds. Guided MCTS solved only 60\%
+of the elementary mate trials at 0.1 seconds, versus 100\% at 0.25 seconds.
+This short-budget regression relative to the historical baseline shows that
+additional policy cost and changed sampling can hurt results. The term
+``enhanced'' labels the added heuristics, not a proven strength improvement.
+The GUI therefore defaults to Alpha-beta with a two-second budget. The
+poisoned-pawn correctness check demonstrates a tactical benefit of quiescence;
+these separate runs do not establish a general strength gain for either engine.

@@ -1,0 +1,30 @@
+[
+  {
+    "budget": 0.5,
+    "engine": "alphabeta",
+    "position_searches": 0,
+    "mate_solve_rate": null,
+    "median_seconds": null,
+    "p95_seconds": null,
+    "paired_games": 16,
+    "game_score": 0.8125,
+    "adjudicated_draws": 3,
+    "variant": "enhanced",
+    "certified_trials": 0,
+    "certified_success_rate": null
+  },
+  {
+    "budget": 0.5,
+    "engine": "mcts",
+    "position_searches": 0,
+    "mate_solve_rate": null,
+    "median_seconds": null,
+    "p95_seconds": null,
+    "paired_games": 16,
+    "game_score": 0.1875,
+    "adjudicated_draws": 3,
+    "variant": "enhanced",
+    "certified_trials": 0,
+    "certified_success_rate": null
+  }
+]

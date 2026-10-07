@@ -1,0 +1,56 @@
+[Event "Chess Search Duel benchmark"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "?"]
+[White "alphabeta"]
+[Black "mcts"]
+[Result "1-0"]
+[TimeControl "5.0s per move"]
+[Seed "7"]
+[SearchVariant "enhanced"]
+[Termination "Checkmate"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Nc3 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. Bd3 e4 9. Nxe4 Bg4 10. O-O Bxf3 11. Qxf3 Nd7 12. Re1 Be7 13. Nd6+ Kf8 14. Qxf7# 1-0
+
+[Event "Chess Search Duel benchmark"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "?"]
+[White "mcts"]
+[Black "alphabeta"]
+[Result "0-1"]
+[TimeControl "5.0s per move"]
+[Seed "7"]
+[SearchVariant "enhanced"]
+[Termination "Checkmate"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 d5 5. exd5 Nxd5 6. Bg5 f6 7. Bxf6 gxf6 8. g3 Bb4+ 9. c3 Be7 10. Qb3 Na5 11. Qd1 Bf5 12. Nh4 Nxc4 13. dxc4 Be4 14. O-O Nb6 15. Nd2 Bc6 16. Ng6 hxg6 17. c5 Qd5 18. c4 Qg2# 0-1
+
+[Event "Chess Search Duel benchmark"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "?"]
+[White "alphabeta"]
+[Black "mcts"]
+[Result "1-0"]
+[TimeControl "5.0s per move"]
+[Seed "1031"]
+[SearchVariant "enhanced"]
+[Termination "Checkmate"]
+
+1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. cxd5 Bb4 5. Qa4+ b5 6. Qxb5+ c6 7. Qxb4 a5 8. Qa3 cxd5 9. Bf4 Ne4 10. Nxe4 g5 11. Bxg5 f6 12. Bxf6 Qxf6 13. Nxf6+ Kf7 14. Qf3 a4 15. Nxd5+ Kg6 16. Qf6+ Kh5 17. Nf4+ Kg4 18. f3# 1-0
+
+[Event "Chess Search Duel benchmark"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "?"]
+[White "mcts"]
+[Black "alphabeta"]
+[Result "0-1"]
+[TimeControl "5.0s per move"]
+[Seed "1031"]
+[SearchVariant "enhanced"]
+[Termination "Checkmate"]
+
+1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. e4 Nxe4 5. cxd5 exd5 6. Qc2 Nxc3 7. Qxh7 Rxh7 8. bxc3 Bf5 9. Nf3 Nc6 10. Bg5 f6 11. Bxf6 Qxf6 12. Ba6 bxa6 13. Ng5 Qxg5 14. f4 Qxg2 15. a4 Qxh1+ 16. Kd2 Rxh2+ 17. Ke3 Qe4# 0-1
+

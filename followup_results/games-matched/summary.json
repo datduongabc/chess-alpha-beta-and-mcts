@@ -1,0 +1,62 @@
+[
+  {
+    "budget": 0.1,
+    "engine": "alphabeta",
+    "position_searches": 0,
+    "mate_solve_rate": null,
+    "median_seconds": null,
+    "p95_seconds": null,
+    "paired_games": 8,
+    "game_score": 0.8125,
+    "finished_games": 8,
+    "unfinished_games": 0,
+    "variant": "enhanced",
+    "certified_trials": 0,
+    "certified_success_rate": null
+  },
+  {
+    "budget": 0.1,
+    "engine": "mcts",
+    "position_searches": 0,
+    "mate_solve_rate": null,
+    "median_seconds": null,
+    "p95_seconds": null,
+    "paired_games": 8,
+    "game_score": 0.1875,
+    "finished_games": 8,
+    "unfinished_games": 0,
+    "variant": "enhanced",
+    "certified_trials": 0,
+    "certified_success_rate": null
+  },
+  {
+    "budget": 0.5,
+    "engine": "alphabeta",
+    "position_searches": 0,
+    "mate_solve_rate": null,
+    "median_seconds": null,
+    "p95_seconds": null,
+    "paired_games": 8,
+    "game_score": 0.875,
+    "finished_games": 8,
+    "unfinished_games": 0,
+    "variant": "enhanced",
+    "certified_trials": 0,
+    "certified_success_rate": null
+  },
+  {
+    "budget": 0.5,
+    "engine": "mcts",
+    "position_searches": 0,
+    "mate_solve_rate": null,
+    "median_seconds": null,
+    "p95_seconds": null,
+    "paired_games": 8,
+    "game_score": 0.125,
+    "finished_games": 8,
+    "unfinished_games": 0,
+    "variant": "enhanced",
+    "certified_trials": 0,
+    "certified_success_rate": null
+  }
+]

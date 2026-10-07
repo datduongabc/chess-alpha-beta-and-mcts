@@ -1,0 +1,17 @@
+variant,position,budget,white,black,seed,result,termination,plies,pair,alpha_score
+enhanced,Italian opening,0.1,alphabeta,mcts,7,1-0,Checkmate,103,0,1
+enhanced,Italian opening,0.1,mcts,alphabeta,7,0-1,Checkmate,54,0,1
+enhanced,Queen's gambit,0.1,alphabeta,mcts,1031,1-0,Checkmate,41,1,1
+enhanced,Queen's gambit,0.1,mcts,alphabeta,1031,0-1,Checkmate,54,1,1
+enhanced,Rook ending,0.1,alphabeta,mcts,2055,1-0,Checkmate,25,2,1
+enhanced,Rook ending,0.1,mcts,alphabeta,2055,1/2-1/2,Threefold Repetition,78,2,0.5
+enhanced,Knight versus pawns,0.1,alphabeta,mcts,3079,1/2-1/2,Threefold Repetition,67,3,0.5
+enhanced,Knight versus pawns,0.1,mcts,alphabeta,3079,1/2-1/2,Insufficient Material,15,3,0.5
+enhanced,Italian opening,0.5,alphabeta,mcts,7,1-0,Checkmate,33,0,1
+enhanced,Italian opening,0.5,mcts,alphabeta,7,0-1,Checkmate,60,0,1
+enhanced,Queen's gambit,0.5,alphabeta,mcts,1031,1-0,Checkmate,53,1,1
+enhanced,Queen's gambit,0.5,mcts,alphabeta,1031,0-1,Checkmate,68,1,1
+enhanced,Rook ending,0.5,alphabeta,mcts,2055,1-0,Checkmate,19,2,1
+enhanced,Rook ending,0.5,mcts,alphabeta,2055,1/2-1/2,Insufficient Material,28,2,0.5
+enhanced,Knight versus pawns,0.5,alphabeta,mcts,3079,1/2-1/2,Threefold Repetition,78,3,0.5
+enhanced,Knight versus pawns,0.5,mcts,alphabeta,3079,0-1,Checkmate,30,3,1

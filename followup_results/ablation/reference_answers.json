@@ -1,0 +1,468 @@
+[
+  {
+    "position": "Corner net / force_mate / original",
+    "fen": "7r/8/8/8/Q7/8/5K2/7k w - - 0 1",
+    "objective": "force_mate",
+    "mate_plies": 3,
+    "accepted_moves": [
+      "a4a1",
+      "a4c6",
+      "a4e4"
+    ],
+    "legal_moves": 27,
+    "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+  },
+  {
+    "position": "Corner net / force_mate / mirrored",
+    "fen": "7K/5k2/8/q7/8/8/8/7R b - - 0 1",
+    "objective": "force_mate",
+    "mate_plies": 3,
+    "accepted_moves": [
+      "a5a8",
+      "a5c3",
+      "a5e5"
+    ],
+    "legal_moves": 27,
+    "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+  },
+  {
+    "position": "Corner net / avoid_mate / original",
+    "fen": "7r/8/8/8/Q7/8/5K2/7k b - - 0 1",
+    "objective": "avoid_mate",
+    "mate_plies": 3,
+    "accepted_moves": [
+      "h1h2",
+      "h8f8",
+      "h8h2"
+    ],
+    "legal_moves": 14,
+    "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+  },
+  {
+    "position": "Corner net / avoid_mate / mirrored",
+    "fen": "7K/5k2/8/q7/8/8/8/7R w - - 0 1",
+    "objective": "avoid_mate",
+    "mate_plies": 3,
+    "accepted_moves": [
+      "h1f1",
+      "h1h7",
+      "h8h7"
+    ],
+    "legal_moves": 14,
+    "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+  },
+  {
+    "position": "Unique queen maneuver / force_mate / original",
+    "fen": "3k4/8/3K4/8/8/4Q3/8/6r1 w - - 0 1",
+    "objective": "force_mate",
+    "mate_plies": 3,
+    "accepted_moves": [
+      "e3e7"
+    ],
+    "legal_moves": 30,
+    "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+  },
+  {
+    "position": "Unique queen maneuver / force_mate / mirrored",
+    "fen": "6R1/8/4q3/8/8/3k4/8/3K4 b - - 0 1",
+    "objective": "force_mate",
+    "mate_plies": 3,
+    "accepted_moves": [
+      "e6e2"
+    ],
+    "legal_moves": 30,
+    "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+  },
+  {
+    "position": "Unique queen maneuver / avoid_mate / original",
+    "fen": "3k4/8/3K4/8/8/4Q3/8/6r1 b - - 0 1",
+    "objective": "avoid_mate",
+    "mate_plies": 3,
+    "accepted_moves": [
+      "d8c8",
+      "g1c1",
+      "g1d1",
+      "g1e1",
+      "g1g6",
+      "g1g7"
+    ],
+    "legal_moves": 15,
+    "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+  },
+  {
+    "position": "Unique queen maneuver / avoid_mate / mirrored",
+    "fen": "6R1/8/4q3/8/8/3k4/8/3K4 w - - 0 1",
+    "objective": "avoid_mate",
+    "mate_plies": 3,
+    "accepted_moves": [
+      "d1c1",
+      "g8c8",
+      "g8d8",
+      "g8e8",
+      "g8g2",
+      "g8g3"
+    ],
+    "legal_moves": 15,
+    "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+  },
+  {
+    "position": "Narrow rook defense / force_mate / original",
+    "fen": "8/3r4/8/8/2Q5/6K1/8/6k1 w - - 0 1",
+    "objective": "force_mate",
+    "mate_plies": 3,
+    "accepted_moves": [
+      "c4c1"
+    ],
+    "legal_moves": 30,
+    "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+  },
+  {
+    "position": "Narrow rook defense / force_mate / mirrored",
+    "fen": "6K1/8/6k1/2q5/8/8/3R4/8 b - - 0 1",
+    "objective": "force_mate",
+    "mate_plies": 3,
+    "accepted_moves": [
+      "c5c8"
+    ],
+    "legal_moves": 30,
+    "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+  },
+  {
+    "position": "Narrow rook defense / avoid_mate / original",
+    "fen": "8/3r4/8/8/2Q5/6K1/8/6k1 b - - 0 1",
+    "objective": "avoid_mate",
+    "mate_plies": 3,
+    "accepted_moves": [
+      "d7d1",
+      "d7g7"
+    ],
+    "legal_moves": 15,
+    "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+  },
+  {
+    "position": "Narrow rook defense / avoid_mate / mirrored",
+    "fen": "6K1/8/6k1/2q5/8/8/3R4/8 w - - 0 1",
+    "objective": "avoid_mate",
+    "mate_plies": 3,
+    "accepted_moves": [
+      "d2d8",
+      "d2g2"
+    ],
+    "legal_moves": 15,
+    "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+  },
+  {
+    "position": "White queen mate",
+    "fen": "7k/5Q2/6K1/8/8/8/8/8 w - - 0 1",
+    "objective": "force_mate",
+    "mate_plies": 1,
+    "accepted_moves": [
+      "f7e8",
+      "f7f8",
+      "f7g7",
+      "f7h7"
+    ],
+    "legal_moves": 26,
+    "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+  },
+  {
+    "position": "Black queen mate",
+    "fen": "8/8/8/8/8/6k1/5q2/7K b - - 0 1",
+    "objective": "force_mate",
+    "mate_plies": 1,
+    "accepted_moves": [
+      "f2e1",
+      "f2f1",
+      "f2g2",
+      "f2h2"
+    ],
+    "legal_moves": 26,
+    "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+  },
+  {
+    "position": "White back-rank mate",
+    "fen": "6k1/5ppp/8/8/8/8/5PPP/4R1K1 w - - 0 1",
+    "objective": "force_mate",
+    "mate_plies": 1,
+    "accepted_moves": [
+      "e1e8"
+    ],
+    "legal_moves": 20,
+    "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+  },
+  {
+    "position": "Black back-rank mate",
+    "fen": "4r1k1/5ppp/8/8/8/8/5PPP/6K1 b - - 0 1",
+    "objective": "force_mate",
+    "mate_plies": 1,
+    "accepted_moves": [
+      "e8e1"
+    ],
+    "legal_moves": 20,
+    "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+  },
+  {
+    "position": "Queen exchange trap / original",
+    "fen": "3r2k1/8/8/3p4/8/8/8/3Q2K1 w - - 0 1",
+    "objective": "material_after_reply",
+    "best_gain": 0,
+    "accepted_moves": [
+      "d1a1",
+      "d1a4",
+      "d1b1",
+      "d1b3",
+      "d1c1",
+      "d1c2",
+      "d1d2",
+      "d1d3",
+      "d1d4",
+      "d1e1",
+      "d1e2",
+      "d1f1",
+      "d1f3",
+      "d1g4",
+      "d1h5",
+      "g1f1",
+      "g1f2",
+      "g1g2",
+      "g1h1",
+      "g1h2"
+    ],
+    "move_gains": {
+      "d1a1": 0,
+      "d1a4": 0,
+      "d1b1": 0,
+      "d1b3": 0,
+      "d1c1": 0,
+      "d1c2": 0,
+      "d1d2": 0,
+      "d1d3": 0,
+      "d1d4": 0,
+      "d1d5": -800,
+      "d1e1": 0,
+      "d1e2": 0,
+      "d1f1": 0,
+      "d1f3": 0,
+      "d1g4": 0,
+      "d1h5": 0,
+      "g1f1": 0,
+      "g1f2": 0,
+      "g1g2": 0,
+      "g1h1": 0,
+      "g1h2": 0
+    },
+    "scope": "Best worst-case material gain after one reply; not an optimal-play verdict."
+  },
+  {
+    "position": "Queen exchange trap / mirrored",
+    "fen": "3q2k1/8/8/8/3P4/8/8/3R2K1 b - - 0 1",
+    "objective": "material_after_reply",
+    "best_gain": 0,
+    "accepted_moves": [
+      "d8a5",
+      "d8a8",
+      "d8b6",
+      "d8b8",
+      "d8c7",
+      "d8c8",
+      "d8d5",
+      "d8d6",
+      "d8d7",
+      "d8e7",
+      "d8e8",
+      "d8f6",
+      "d8f8",
+      "d8g5",
+      "d8h4",
+      "g8f7",
+      "g8f8",
+      "g8g7",
+      "g8h7",
+      "g8h8"
+    ],
+    "move_gains": {
+      "d8a5": 0,
+      "d8a8": 0,
+      "d8b6": 0,
+      "d8b8": 0,
+      "d8c7": 0,
+      "d8c8": 0,
+      "d8d4": -800,
+      "d8d5": 0,
+      "d8d6": 0,
+      "d8d7": 0,
+      "d8e7": 0,
+      "d8e8": 0,
+      "d8f6": 0,
+      "d8f8": 0,
+      "d8g5": 0,
+      "d8h4": 0,
+      "g8f7": 0,
+      "g8f8": 0,
+      "g8g7": 0,
+      "g8h7": 0,
+      "g8h8": 0
+    },
+    "scope": "Best worst-case material gain after one reply; not an optimal-play verdict."
+  },
+  {
+    "position": "Rook exchange trap / original",
+    "fen": "3r2k1/8/8/3p4/8/8/8/3R2K1 w - - 0 1",
+    "objective": "material_after_reply",
+    "best_gain": 0,
+    "accepted_moves": [
+      "d1a1",
+      "d1b1",
+      "d1c1",
+      "d1d2",
+      "d1d3",
+      "d1d4",
+      "d1e1",
+      "d1f1",
+      "g1f1",
+      "g1f2",
+      "g1g2",
+      "g1h1",
+      "g1h2"
+    ],
+    "move_gains": {
+      "d1a1": 0,
+      "d1b1": 0,
+      "d1c1": 0,
+      "d1d2": 0,
+      "d1d3": 0,
+      "d1d4": 0,
+      "d1d5": -400,
+      "d1e1": 0,
+      "d1f1": 0,
+      "g1f1": 0,
+      "g1f2": 0,
+      "g1g2": 0,
+      "g1h1": 0,
+      "g1h2": 0
+    },
+    "scope": "Best worst-case material gain after one reply; not an optimal-play verdict."
+  },
+  {
+    "position": "Rook exchange trap / mirrored",
+    "fen": "3r2k1/8/8/8/3P4/8/8/3R2K1 b - - 0 1",
+    "objective": "material_after_reply",
+    "best_gain": 0,
+    "accepted_moves": [
+      "d8a8",
+      "d8b8",
+      "d8c8",
+      "d8d5",
+      "d8d6",
+      "d8d7",
+      "d8e8",
+      "d8f8",
+      "g8f7",
+      "g8f8",
+      "g8g7",
+      "g8h7",
+      "g8h8"
+    ],
+    "move_gains": {
+      "d8a8": 0,
+      "d8b8": 0,
+      "d8c8": 0,
+      "d8d4": -400,
+      "d8d5": 0,
+      "d8d6": 0,
+      "d8d7": 0,
+      "d8e8": 0,
+      "d8f8": 0,
+      "g8f7": 0,
+      "g8f8": 0,
+      "g8g7": 0,
+      "g8h7": 0,
+      "g8h8": 0
+    },
+    "scope": "Best worst-case material gain after one reply; not an optimal-play verdict."
+  },
+  {
+    "position": "Undefended queen capture / original",
+    "fen": "6k1/8/8/8/4q3/2N5/4P3/6K1 w - - 0 1",
+    "objective": "material_after_reply",
+    "best_gain": 900,
+    "accepted_moves": [
+      "c3e4"
+    ],
+    "move_gains": {
+      "c3a2": -100,
+      "c3a4": -320,
+      "c3b1": -320,
+      "c3b5": -100,
+      "c3d1": -100,
+      "c3d5": -320,
+      "c3e4": 900,
+      "e2e3": -100,
+      "g1f1": -100,
+      "g1f2": -100,
+      "g1h2": -100
+    },
+    "scope": "Best worst-case material gain after one reply; not an optimal-play verdict."
+  },
+  {
+    "position": "Undefended queen capture / mirrored",
+    "fen": "6k1/4p3/2n5/4Q3/8/8/8/6K1 b - - 0 1",
+    "objective": "material_after_reply",
+    "best_gain": 900,
+    "accepted_moves": [
+      "c6e5"
+    ],
+    "move_gains": {
+      "c6a5": -320,
+      "c6a7": -100,
+      "c6b4": -100,
+      "c6b8": -320,
+      "c6d4": -320,
+      "c6d8": -100,
+      "c6e5": 900,
+      "e7e6": -100,
+      "g8f7": -100,
+      "g8f8": -100,
+      "g8h7": -100
+    },
+    "scope": "Best worst-case material gain after one reply; not an optimal-play verdict."
+  },
+  {
+    "position": "Pawn promotion / original",
+    "fen": "7k/P7/8/8/8/8/8/7K w - - 0 1",
+    "objective": "material_after_reply",
+    "best_gain": 800,
+    "accepted_moves": [
+      "a7a8q"
+    ],
+    "move_gains": {
+      "a7a8b": 0,
+      "a7a8n": 0,
+      "a7a8q": 800,
+      "a7a8r": 400,
+      "h1g1": 0,
+      "h1g2": 0,
+      "h1h2": 0
+    },
+    "scope": "Best worst-case material gain after one reply; not an optimal-play verdict."
+  },
+  {
+    "position": "Pawn promotion / mirrored",
+    "fen": "7k/8/8/8/8/8/p7/7K b - - 0 1",
+    "objective": "material_after_reply",
+    "best_gain": 800,
+    "accepted_moves": [
+      "a2a1q"
+    ],
+    "move_gains": {
+      "a2a1b": 0,
+      "a2a1n": 0,
+      "a2a1q": 800,
+      "a2a1r": 400,
+      "h8g7": 0,
+      "h8g8": 0,
+      "h8h7": 0
+    },
+    "scope": "Best worst-case material gain after one reply; not an optimal-play verdict."
+  }
+]

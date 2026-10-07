@@ -1,0 +1,5 @@
+variant,position,budget,white,black,seed,result,termination,plies,pair,alpha_score
+enhanced,Italian opening,5.0,alphabeta,mcts,7,1-0,Checkmate,21,0,1
+enhanced,Italian opening,5.0,mcts,alphabeta,7,0-1,Checkmate,30,0,1
+enhanced,Queen's gambit,5.0,alphabeta,mcts,1031,1-0,Checkmate,29,1,1
+enhanced,Queen's gambit,5.0,mcts,alphabeta,1031,0-1,Checkmate,28,1,1

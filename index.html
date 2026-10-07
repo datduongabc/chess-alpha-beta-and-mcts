@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chess Search Duel · AI Homework 2</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='52' font-size='54'%3E%E2%99%9E%3C/text%3E%3C/svg%3E">
+<style>
+:root{color-scheme:dark;--bg:#101923;--panel:#182430;--line:#30404d;--text:#edf3f2;--muted:#a0b1bd;--teal:#72e0c1;--gold:#f8c575}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,sans-serif}main{max-width:1280px;margin:auto;padding:28px}header{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}.brand{font-size:12px;letter-spacing:2px;color:var(--teal);text-transform:uppercase}h1{font-size:34px;line-height:1.2;margin:6px 0}h2{font-size:19px;margin:0 0 8px}p{margin:6px 0;color:var(--muted)}.pill{border:1px solid var(--line);border-radius:30px;padding:7px 13px;font-size:12px;color:var(--muted)}.toolbar,.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}.toolbar{display:flex;flex-wrap:wrap;gap:14px;align-items:end;margin-bottom:20px}.field{display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--muted)}select,input,button{font:inherit}select,input{color:var(--text);background:#111d27;border:1px solid #445361;border-radius:7px;padding:9px;max-width:100%}button{border:1px solid #405361;border-radius:7px;padding:9px 13px;background:#253744;color:var(--text);cursor:pointer}button:hover{background:#354d5d}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--gold);outline-offset:2px}button:disabled{opacity:.45;cursor:default}.primary{background:var(--teal);color:#10231e;border-color:var(--teal);font-weight:650}.primary:hover{background:#9eedd6}.layout{display:grid;grid-template-columns:minmax(380px,1.15fr) minmax(340px,1fr);gap:22px;align-items:start}.board-wrap{position:relative;width:100%;aspect-ratio:1;border-radius:9px;overflow:hidden;box-shadow:0 12px 40px #0003}.board{display:grid;grid-template-columns:repeat(8,1fr);height:100%}.square{border:0;border-radius:0;padding:0;position:relative;aspect-ratio:1;display:flex;align-items:center;justify-content:center;background:#e5e7dc;color:#172735;font-family:"DejaVu Sans","Segoe UI Symbol",sans-serif;font-size:clamp(28px,4.7vw,57px);line-height:1;isolation:isolate}.square.dark{background:#76938f}.square:hover{background:#cbd6c5}.square.dark:hover{background:#8eaaa1}.square.white-piece{color:#fff;text-shadow:0 2px 2px #162a35,1px 0 #162a35,-1px 0 #162a35}.square.last::before,.square.selected::before,.square.checked::before{content:"";position:absolute;inset:0;background:#d9b95770;z-index:-1}.square.selected::before{background:#ffe27b90}.square.checked::before{background:#e765657f}.square.target::after{content:"";position:absolute;width:22%;height:22%;border-radius:50%;background:#133b3c60}.square.target.occupied::after{width:88%;height:88%;border:5px solid #1b505f99;background:transparent}.coord{position:absolute;font:11px system-ui;color:#253a38;text-shadow:none;pointer-events:none}.rank{left:4px;top:3px}.file{bottom:3px;right:4px}.arrows{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}.board-footer{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:12px 0}.status{font-weight:600}.board-actions{display:flex;gap:8px;flex-wrap:wrap}.note{font-size:12px;color:var(--muted);margin-top:10px}.stack{display:grid;gap:15px}.duel-head{display:flex;justify-content:space-between;gap:12px;align-items:center}.two{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}.engine{border-top:3px solid var(--teal);background:#101d27;border-radius:7px;padding:13px;min-width:0}.engine.mcts{border-color:var(--gold)}.engine h3{margin:0;font-size:14px}.choice{font-size:29px;font-weight:700;margin:4px 0}.stat{font-size:12px;color:var(--muted);margin:4px 0}.line{font:12px/1.6 ui-monospace,monospace;color:var(--text);overflow-wrap:anywhere}.engine button{width:100%;margin-top:10px;padding:7px}.legend{display:flex;gap:16px;font-size:12px;margin:10px 0;color:var(--muted)}.legend i{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--teal);margin-right:6px}.legend .amber{background:var(--gold)}table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;border-bottom:1px solid var(--line);padding:7px 4px}th{color:var(--muted);font-weight:500}.bar{display:block;width:100%;height:4px;border-radius:5px;background:#23353f}.bar span{display:block;background:var(--gold);height:4px;border-radius:5px}.history{max-height:120px;overflow:auto;font:13px/1.9 ui-monospace,monospace;color:var(--muted);padding:8px 0}.position-row{display:flex;gap:8px}.position-row input{width:100%;font:12px ui-monospace,monospace}.message{min-height:24px;margin:12px 0;font-size:13px;color:var(--gold)}details summary{cursor:pointer;color:var(--muted)}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}dialog{background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:12px}dialog::backdrop{background:#0009}.promotion-options{display:flex;gap:8px}.promotion-options button{font-size:26px}.footer{font-size:12px;color:var(--muted);margin-top:24px}.busy{color:var(--gold)}@media(max-width:850px){main{padding:16px}.layout{grid-template-columns:1fr}.square{font-size:clamp(28px,8vw,64px)}.pill{display:none}h1{font-size:28px}.toolbar{gap:10px}.field{flex:1;min-width:110px}}@media(prefers-reduced-motion:no-preference){button{transition:background .12s}}
+</style>
+</head>
+<body>
+<main>
+<header><div><div class="brand">Introduction to AI · Homework 02</div><h1>Chess Search Duel</h1><p>Play a match. Compare how two AI algorithms think.</p></div><span class="pill">Alpha-beta × Monte Carlo Tree Search</span></header>
+<section class="toolbar" aria-label="Game settings">
+<label class="field">Game mode<select id="mode"><option value="human">Play against AI</option><option value="duel">Watch AI vs AI</option><option value="manual">Two players / explore</option></select></label>
+<label class="field">Your color<select id="human"><option value="white">White</option><option value="black">Black</option></select></label>
+<label class="field">Opponent<select id="opponent"><option value="alphabeta">Alpha-beta</option><option value="mcts">MCTS</option></select></label>
+<label class="field">Thinking time<select id="seconds"><option value="0.1">0.1 s · Experiment</option><option value="0.5">0.5 s · Quick</option><option value="1">1 s · Balanced</option><option value="2" selected>2 s · Thorough</option><option value="5">5 s · Deep</option></select></label>
+<button id="new" class="primary">New game</button>
+<details style="width:100%"><summary>Advanced AI settings</summary><div class="board-actions" style="margin-top:12px">
+<label class="field">Search variant<select id="variant"><option value="enhanced">Enhanced</option><option value="baseline">Baseline · original</option></select></label>
+<label class="field">White AI<select id="white"><option value="alphabeta">Alpha-beta</option><option value="mcts">MCTS</option></select></label>
+<label class="field">Black AI<select id="black"><option value="mcts">MCTS</option><option value="alphabeta">Alpha-beta</option></select></label>
+<label class="field">MCTS random seed<input id="seed" type="number" min="0" max="2147483647" value="7" style="width:100px"></label></div>
+<p class="note">Enhanced: tactical extensions and richer evaluation; MCTS uses guided simulations and checks immediate mates. Baseline keeps the original search settings.</p></details>
+</section>
+<div class="layout">
+<section aria-label="Chess game">
+<div class="board-wrap"><div id="board" class="board" role="group" aria-label="Chess board"></div><svg id="arrows" class="arrows" viewBox="0 0 800 800" aria-hidden="true"></svg></div>
+<div class="board-footer"><div id="status" class="status" role="status" aria-live="polite">Loading board…</div><button id="flip" aria-label="Flip board orientation">Flip board</button></div>
+<div class="board-actions"><button id="step">Next AI move</button><button id="run">Start AI match</button><button id="pause">Pause</button><button id="undo">Undo</button><button id="pgn">Save PGN</button></div>
+
+<div id="message" class="message" role="status" aria-live="polite"></div>
+
+</section>
+<aside class="stack"><section class="panel"><h2>Current match</h2><p id="match-summary"></p><p id="turn-summary" class="note"></p></section>
+<div class="panel"><h2>Move history</h2><div id="history" class="history">No moves yet.</div><details><summary>Load a position (FEN)</summary><p class="note">Loading FEN starts a new repetition history.</p><div class="position-row"><input id="fen" aria-label="FEN position" placeholder="Paste a complete FEN"><button id="load">Load</button></div><label class="field" style="margin-top:10px">Quick example<select id="example"><option value="">Choose a position…</option><option value="7k/5Q2/6K1/8/8/8/8/8 w - - 0 1">White: mate in one</option><option value="8/8/8/8/8/6k1/5q2/7K b - - 0 1">Black: mate in one</option><option value="8/8/8/4k3/8/4K3/4P3/8 w - - 0 1">King and pawn endgame</option></select></label></details></div>
+<details id="analysis" class="panel"><summary>Compare AI algorithms</summary><div style="margin-top:16px"><div class="duel-head"><div><h2>Analyze current position</h2><p class="note">Independent snapshots. Equal time budgets.</p></div><button id="compare" class="primary">Analyze position</button></div>
+<div class="legend"><span><i></i>Alpha-beta</span><span><i class="amber"></i>MCTS</span></div>
+<div class="two"><div class="engine"><h3>Alpha-beta</h3><div id="ab-choice" class="choice">—</div><div id="ab-stats" class="stat">Searches and prunes a game tree.</div><div id="ab-line" class="line"></div><button id="apply-ab" disabled>Play this move</button></div><div class="engine mcts"><h3>MCTS · UCT</h3><div id="mc-choice" class="choice">—</div><div id="mc-stats" class="stat">Explores moves through sampled games.</div><div id="mc-line" class="line"></div><button id="apply-mc" disabled>Play this move</button></div></div>
+<p id="comparison-note" class="note">Compare to see two suggestions without changing the board.</p>
+<table aria-label="MCTS root move statistics"><thead><tr><th>Sampled move</th><th>Visits</th><th>Root utility</th></tr></thead><tbody id="root-moves"></tbody></table>
+</div>
+<details style="margin-top:16px"><summary>What the AI numbers mean</summary><p class="note"><strong>Alpha-beta</strong> reports its last completed depth and best line. The score is centipawns from the player-to-move perspective; mate uses a large terminal score.</p><p class="note"><strong>MCTS</strong> reports completed simulations and root move statistics. Utility ranges from −1 to +1 for the player at the root. It is a sampled heuristic value, not a win probability.</p><p class="note">These scores use different units. Agreement is interesting; disagreement is a position to investigate, not proof that one algorithm is wrong.</p></details>
+<div style="margin-top:16px"><button id="export" disabled>Save comparison JSON</button></div></details>
+</aside>
+</div>
+<footer class="footer">Own alpha-beta and UCT implementations · python-chess rules · Local only, no external chess engine or neural model</footer>
+</main>
+<dialog id="promotion"><h2>Choose promotion</h2><div class="promotion-options"><button data-piece="q" aria-label="Promote to queen">♕</button><button data-piece="r" aria-label="Promote to rook">♖</button><button data-piece="b" aria-label="Promote to bishop">♗</button><button data-piece="n" aria-label="Promote to knight">♘</button></div><button id="promotion-cancel" style="margin-top:12px">Cancel</button></dialog>
+<script>
+const $ = id => document.getElementById(id);
+const START = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1';
+const glyphs={K:'♔',Q:'♕',R:'♖',B:'♗',N:'♘',P:'♙',k:'♚',q:'♛',r:'♜',b:'♝',n:'♞',p:'♟'};
+const names={k:'king',q:'queen',r:'rook',b:'bishop',n:'knight',p:'pawn'};
+let position={fen:START,moves:[]}, data=null, selected=null, flipped=false;
+let generation=0, busy=false, duel=false, activeSearch=null, comparison=null, promoting=[];
+function message(text){$('message').textContent=text;}
+async function api(path,payload){
+ const response=await fetch('/api/'+path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+ const body=await response.json(); if(!response.ok)throw Error(body.error||'Request failed.'); return body;
+}
+function stop(){
+ duel=false; generation++; busy=false; selected=null;
+ if(activeSearch){api('cancel',{id:activeSearch}).catch(()=>{});activeSearch=null;}
+ if($('promotion').open)$('promotion').close();
+ controls();
+}
+function clearComparison(){
+ comparison=null;$('ab-choice').textContent='—';$('mc-choice').textContent='—';
+ $('ab-stats').textContent='Searches and prunes a game tree.';$('mc-stats').textContent='Explores moves through sampled games.';
+ $('ab-line').textContent='';$('mc-line').textContent='';$('root-moves').replaceChildren();
+ $('comparison-note').textContent='Compare to see two suggestions without changing the board.';controls();
+}
+function controls(){
+ const terminal=!data||!!data.result, mode=$('mode').value;
+ $('human').parentElement.hidden=mode!=='human';$('opponent').parentElement.hidden=mode!=='human';
+ $('step').hidden=mode==='manual'||(mode==='human'&&data?.turn===$('human').value);$('run').hidden=mode!=='duel';
+ $('pause').hidden=!busy&&!duel;
+ $('match-summary').textContent=mode==='human'?'You: '+$('human').value+' · Opponent: '+$('opponent').selectedOptions[0].text:mode==='duel'?'White: '+$('white').selectedOptions[0].text+' · Black: '+$('black').selectedOptions[0].text:'Two players / position exploration';
+ $('turn-summary').textContent=$('variant').selectedOptions[0].text+' · '+$('seconds').value+' seconds per AI move';
+ for(const id of ['mode','human','opponent','white','black','seconds','seed','variant'])$(id).disabled=busy;
+ for(const id of ['step','compare'])$(id).disabled=busy||terminal;
+ $('run').disabled=busy||terminal||$('mode').value!=='duel';
+ $('run').textContent=duel?'Duel running…':'Start AI match';
+ $('undo').disabled=busy||!position.moves.length||($('mode').value==='human'&&$('human').value==='black'&&position.moves.length===1);
+ $('step').textContent=mode==='human'?'Resume opponent':'Next AI move';
+ $('pgn').disabled=!data;
+ $('export').disabled=!comparison||busy;
+ $('apply-ab').disabled=busy||!comparison?.alphabeta?.move;
+ $('apply-mc').disabled=busy||!comparison?.mcts?.move;
+ $('status').classList.toggle('busy',busy);
+}
+function coordinates(square){
+ const f=square.charCodeAt(0)-97,r=Number(square[1])-1;
+ return [(flipped?7-f:f)*100+50,(flipped?r:7-r)*100+50];
+}
+function drawArrows(){
+ const svg=$('arrows');svg.replaceChildren();if(!comparison)return;
+ const ns='http://www.w3.org/2000/svg';
+ for(const [key,color,offset] of [['alphabeta','#49dcb4',-8],['mcts','#ffc66c',8]]){
+  const move=comparison[key]?.move;if(!move)continue;
+  const defs=document.createElementNS(ns,'defs'),marker=document.createElementNS(ns,'marker');
+  marker.setAttribute('id','arrow-'+key);marker.setAttribute('viewBox','0 0 10 10');marker.setAttribute('refX','8');marker.setAttribute('refY','5');marker.setAttribute('markerWidth','4');marker.setAttribute('markerHeight','4');marker.setAttribute('orient','auto-start-reverse');
+  const tip=document.createElementNS(ns,'path');tip.setAttribute('d','M 0 0 L 10 5 L 0 10 z');tip.setAttribute('fill',color);marker.append(tip);defs.append(marker);svg.append(defs);
+  const [x1,y1]=coordinates(move.slice(0,2)),[x2,y2]=coordinates(move.slice(2,4)),line=document.createElementNS(ns,'line');
+  for(const [k,v] of Object.entries({x1:x1+offset,y1:y1+offset,x2:x2+offset,y2:y2+offset,stroke:color,'stroke-width':10,'stroke-opacity':.85,'marker-end':'url(#arrow-'+key+')'}))line.setAttribute(k,v);
+  svg.append(line);
+ }
+}
+function render(){
+ if(!data)return;
+ const board=$('board');board.replaceChildren();
+ const targets=new Set(data.legal.filter(m=>m.slice(0,2)===selected).map(m=>m.slice(2,4)));
+ for(let row=0;row<8;row++)for(let col=0;col<8;col++){
+  const f=flipped?7-col:col,r=flipped?row:7-row,sq=String.fromCharCode(97+f)+(r+1),piece=data.pieces[sq];
+  const button=document.createElement('button');button.type='button';button.dataset.square=sq;
+  button.className='square'+((f+r)%2===0?' dark':'')+(piece&&piece===piece.toUpperCase()?' white-piece':'')+(piece?' occupied':'');
+  if(data.last&&(sq===data.last.slice(0,2)||sq===data.last.slice(2,4)))button.classList.add('last');
+  if(sq===selected)button.classList.add('selected');if(targets.has(sq))button.classList.add('target');
+  if(data.check&&piece===(data.turn==='white'?'K':'k'))button.classList.add('checked');
+  const description=piece?(piece===piece.toUpperCase()?'White ':'Black ')+names[piece.toLowerCase()]:'empty';
+  button.setAttribute('aria-label',sq+', '+description+(targets.has(sq)?', legal destination':''));
+  button.setAttribute('aria-pressed',String(sq===selected));
+  const icon=document.createElement('span');icon.textContent=glyphs[piece]||'';icon.setAttribute('aria-hidden','true');button.append(icon);
+  if(col===0){const label=document.createElement('span');label.className='coord rank';label.textContent=r+1;button.append(label);}
+  if(row===7){const label=document.createElement('span');label.className='coord file';label.textContent=String.fromCharCode(97+f);button.append(label);}
+  button.onclick=()=>clickSquare(sq);button.onkeydown=event=>{
+   const delta={ArrowRight:1,ArrowLeft:-1,ArrowDown:8,ArrowUp:-8}[event.key];
+   if(delta){event.preventDefault();const buttons=[...board.children],index=buttons.indexOf(button);buttons[Math.max(0,Math.min(63,index+delta))].focus();}
+  };board.append(button);
+ }
+ $('status').textContent=data.result?(data.result==='1/2-1/2'?'Draw':data.result==='1-0'?'White wins':'Black wins')+' · '+data.termination:busy?'AI is thinking…':($('mode').value==='human'?(data.turn===$('human').value?'Your turn':'Computer to move'):data.turn+' to move')+' · '+data.turn+(data.check?' · Check':'');
+ const replay=data.history_text;
+ $('history').textContent=replay||'No moves yet.';$('history').scrollTop=$('history').scrollHeight;
+ $('fen').value=data.fen;drawArrows();controls();
+}
+async function replacePosition(next){
+ stop();const token=generation;
+ try{const state=await api('state',next);if(token!==generation)return;
+  position=next;data=state;clearComparison();render();message('');
+  if($('mode').value==='human'&&!data.result&&data.turn!==$('human').value)await engineMove();
+ }catch(error){if(token===generation){message(error.message);render();}}
+}
+async function playMove(move,token=generation){
+ const next={fen:position.fen,moves:[...position.moves,move]};
+ const state=await api('state',next);if(token!==generation)return false;
+ position=next;data=state;selected=null;clearComparison();render();return true;
+}
+async function clickSquare(square){
+ if(busy||duel||!data||data.result)return;
+ if($('mode').value==='human'&&data.turn!==$('human').value){message('Use AI move to let your opponent move.');return;}
+ const candidates=data.legal.filter(move=>move.slice(0,2)===selected&&move.slice(2,4)===square);
+ if(candidates.length>1){promoting=candidates;$('promotion').showModal();return;}
+ if(candidates.length){await humanMove(candidates[0]);return;}
+ const piece=data.pieces[square];selected=piece&&((piece===piece.toUpperCase())===(data.turn==='white'))?square:null;render();
+ const focus=document.querySelector('[data-square="'+square+'"]');focus?.focus();
+}
+async function humanMove(move){
+ const token=generation;busy=true;controls();
+ try{if(await playMove(move,token)){
+  busy=false;controls();
+  if($('mode').value==='human'&&!data.result&&data.turn!==$('human').value)await engineMove();
+ }}catch(error){if(token===generation)message(error.message);}
+ finally{if(token===generation){busy=false;render();}}
+}
+function settings(){
+ const seed=Number($('seed').value);if(!Number.isInteger(seed)||seed<0||seed>2147483647)throw Error('Seed must be an integer between 0 and 2147483647.');
+ return {seconds:Number($('seconds').value),seed,variant:$('variant').value};
+}
+async function search(algorithm,token){
+ const id=crypto.randomUUID();activeSearch=id;
+ try{const result=await api('search',{...position,...settings(),algorithm,id});
+  if(token!==generation||result.cancelled)return null;return result;
+ }finally{if(activeSearch===id)activeSearch=null;}
+}
+async function engineMove(){
+ if(busy||!data||data.result)return false;
+ const token=generation;busy=true;render();
+ try{const algorithm=$('mode').value==='human'?$('opponent').value:$(data.turn).value;message('Thinking: '+(algorithm==='alphabeta'?'alpha-beta':'MCTS')+'…');
+  const result=await search(algorithm,token);if(!result)return false;
+  if(result.move&&await playMove(result.move,token)){message(result.algorithm+' played '+result.san+' · '+result.elapsed.toFixed(3)+' s');return true;}
+  return false;
+ }catch(error){if(token===generation)message(error.message);duel=false;return false;}
+ finally{if(token===generation){busy=false;render();}}
+}
+function renderComparison(){
+ const a=comparison.alphabeta,m=comparison.mcts;
+ $('ab-choice').textContent=a.san||'No move';$('mc-choice').textContent=m.san||'No move';
+ $('ab-stats').textContent=a.variant+' · Depth '+a.depth+' · '+a.nodes+' nodes · '+a.qnodes+' tactical nodes · '+a.cutoffs+' cutoffs · '+a.elapsed.toFixed(3)+' s';
+ $('ab-line').textContent=(a.score===null?'No depth completed; legal fallback.':'Score '+a.score+' cp (root player)')+(a.pv_san.length?'\nLine: '+a.pv_san.join(' '):'');
+ $('mc-stats').textContent=m.simulations+' simulations · '+m.rollout_plies+' rollout plies · '+m.elapsed.toFixed(3)+' s';
+ $('mc-line').textContent=m.tactical_proof?'Proven mate in one; sampling was unnecessary.':m.variant+' · '+m.rollout_policy+' · Seed '+m.seed+' · rollout cap '+m.rollout_limit+' plies'+(m.tactical_guard?'\nImmediate-mate check: '+(m.guard_complete?'completed · '+m.rejected_immediate_losses+' losing moves detected':'time expired before completion'):'');
+ $('comparison-note').textContent=a.move===m.move?'Both searches recommend the same move.':'Different suggestions. Inspect the line and sampled values, then try each move.';
+ $('root-moves').replaceChildren();
+ for(const root of m.root_moves.slice(0,8)){
+  const tr=document.createElement('tr');for(const value of [root.san,root.visits,root.value.toFixed(3)]){const td=document.createElement('td');td.textContent=value;tr.append(td);}$('root-moves').append(tr);
+ }drawArrows();controls();
+}
+function download(name,content,type){const url=URL.createObjectURL(new Blob([content],{type}));const link=document.createElement('a');link.href=url;link.download=name;link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+$('compare').onclick=async()=>{
+ if(busy||!data||data.result)return;duel=false;const token=generation;busy=true;render();
+ const snapshot=JSON.parse(JSON.stringify(position));
+ try{message('Comparing alpha-beta, then MCTS…');const config=settings(),a=await search('alphabeta',token);if(!a)return;
+  const m=await search('mcts',token);if(!m)return;
+  comparison={position:snapshot,current_fen:data.fen,settings:config,alphabeta:a,mcts:m,measured_at:new Date().toISOString()};
+  renderComparison();message('Comparison complete. The position has not changed.');
+ }catch(error){if(token===generation)message(error.message);}
+ finally{if(token===generation){busy=false;render();}}
+};
+for(const [id,key] of [['apply-ab','alphabeta'],['apply-mc','mcts']])$(id).onclick=()=>{const move=comparison?.[key]?.move;if(move&&!busy)humanMove(move);};
+$('new').onclick=()=>replacePosition({fen:START,moves:[]});
+$('flip').onclick=()=>{flipped=!flipped;render();};
+$('pause').onclick=()=>{stop();render();message('Paused. Pending search results will be ignored.');};
+$('step').onclick=()=>engineMove();
+$('undo').onclick=()=>{if(position.moves.length){const count=$('mode').value==='human'&&data.turn===$('human').value?2:1;replacePosition({fen:position.fen,moves:position.moves.slice(0,-count)});}};
+$('load').onclick=()=>{$('mode').value='manual';replacePosition({fen:$('fen').value.trim(),moves:[]});};
+$('example').onchange=()=>{if($('example').value){$('mode').value='manual';replacePosition({fen:$('example').value,moves:[]});$('example').value='';}};
+$('mode').onchange=async()=>{stop();clearComparison();render();message('');if($('mode').value==='human'&&data&&!data.result&&data.turn!==$('human').value)await engineMove();};
+$('human').onchange=async()=>{stop();flipped=$('human').value==='black';clearComparison();render();if(data&&!data.result&&data.turn!==$('human').value)await engineMove();};
+for(const id of ['opponent','white','black','seconds','seed','variant'])$(id).onchange=()=>{clearComparison();render();};
+$('pgn').onclick=()=>{if(data)download('chess-search-duel.pgn',data.pgn,'application/x-chess-pgn');};
+$('export').onclick=()=>{if(comparison)download('comparison.json',JSON.stringify(comparison,null,2),'application/json');};
+$('run').onclick=async()=>{
+ if(busy||duel||$('mode').value!=='duel')return;duel=true;const token=generation;let count=0;
+ while(duel&&token===generation&&data&&!data.result&&count<200){if(!await engineMove())break;count++;await new Promise(resolve=>setTimeout(resolve,120));}
+ if(token===generation){duel=false;controls();if(count===200&&!data.result)message('Paused at 200 moves this run. Resume or export the game.');}
+};
+for(const button of $('promotion').querySelectorAll('[data-piece]'))button.onclick=()=>{const move=promoting.find(m=>m.endsWith(button.dataset.piece));$('promotion').close();if(move)humanMove(move);};
+$('promotion-cancel').onclick=()=>$('promotion').close();
+replacePosition(position);
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+variant,position,budget,white,black,seed,result,termination,plies,pair,alpha_score
+enhanced,Italian opening,0.5,alphabeta,mcts,7,1-0,Checkmate,57,0,1
+enhanced,Italian opening,0.5,mcts,alphabeta,7,0-1,Checkmate,42,0,1
+enhanced,Queen's gambit,0.5,alphabeta,mcts,1031,1-0,Checkmate,35,1,1
+enhanced,Queen's gambit,0.5,mcts,alphabeta,1031,0-1,Checkmate,32,1,1
+enhanced,Sicilian opening,0.5,alphabeta,mcts,2055,1-0,Checkmate,43,2,1
+enhanced,Sicilian opening,0.5,mcts,alphabeta,2055,0-1,Checkmate,46,2,1
+enhanced,Caro-Kann opening,0.5,alphabeta,mcts,3079,1-0,Checkmate,36,3,1
+enhanced,Caro-Kann opening,0.5,mcts,alphabeta,3079,0-1,Checkmate,39,3,1
+enhanced,King and pawn,0.5,alphabeta,mcts,4103,1/2-1/2,Insufficient Material,34,4,0.5
+enhanced,King and pawn,0.5,mcts,alphabeta,4103,1/2-1/2,Insufficient Material,16,4,0.5
+enhanced,Rook ending,0.5,alphabeta,mcts,5127,1-0,Checkmate,21,5,1
+enhanced,Rook ending,0.5,mcts,alphabeta,5127,1/2-1/2,Ply cap (adjudicated draw),60,5,0.5
+enhanced,Bishop and pawn,0.5,alphabeta,mcts,6151,1-0,Checkmate,13,6,1
+enhanced,Bishop and pawn,0.5,mcts,alphabeta,6151,1/2-1/2,Ply cap (adjudicated draw),60,6,0.5
+enhanced,Knight versus pawns,0.5,alphabeta,mcts,7175,1/2-1/2,Ply cap (adjudicated draw),60,7,0.5
+enhanced,Knight versus pawns,0.5,mcts,alphabeta,7175,1/2-1/2,Insufficient Material,25,7,0.5

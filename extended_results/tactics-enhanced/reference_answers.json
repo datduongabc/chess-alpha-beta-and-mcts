@@ -1,0 +1,154 @@
+[
+  {
+    "position": "Corner net / force_mate / original",
+    "fen": "7r/8/8/8/Q7/8/5K2/7k w - - 0 1",
+    "objective": "force_mate",
+    "mate_plies": 3,
+    "accepted_moves": [
+      "a4a1",
+      "a4c6",
+      "a4e4"
+    ],
+    "legal_moves": 27,
+    "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+  },
+  {
+    "position": "Corner net / force_mate / mirrored",
+    "fen": "7K/5k2/8/q7/8/8/8/7R b - - 0 1",
+    "objective": "force_mate",
+    "mate_plies": 3,
+    "accepted_moves": [
+      "a5a8",
+      "a5c3",
+      "a5e5"
+    ],
+    "legal_moves": 27,
+    "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+  },
+  {
+    "position": "Corner net / avoid_mate / original",
+    "fen": "7r/8/8/8/Q7/8/5K2/7k b - - 0 1",
+    "objective": "avoid_mate",
+    "mate_plies": 3,
+    "accepted_moves": [
+      "h1h2",
+      "h8f8",
+      "h8h2"
+    ],
+    "legal_moves": 14,
+    "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+  },
+  {
+    "position": "Corner net / avoid_mate / mirrored",
+    "fen": "7K/5k2/8/q7/8/8/8/7R w - - 0 1",
+    "objective": "avoid_mate",
+    "mate_plies": 3,
+    "accepted_moves": [
+      "h1f1",
+      "h1h7",
+      "h8h7"
+    ],
+    "legal_moves": 14,
+    "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+  },
+  {
+    "position": "Unique queen maneuver / force_mate / original",
+    "fen": "3k4/8/3K4/8/8/4Q3/8/6r1 w - - 0 1",
+    "objective": "force_mate",
+    "mate_plies": 3,
+    "accepted_moves": [
+      "e3e7"
+    ],
+    "legal_moves": 30,
+    "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+  },
+  {
+    "position": "Unique queen maneuver / force_mate / mirrored",
+    "fen": "6R1/8/4q3/8/8/3k4/8/3K4 b - - 0 1",
+    "objective": "force_mate",
+    "mate_plies": 3,
+    "accepted_moves": [
+      "e6e2"
+    ],
+    "legal_moves": 30,
+    "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+  },
+  {
+    "position": "Unique queen maneuver / avoid_mate / original",
+    "fen": "3k4/8/3K4/8/8/4Q3/8/6r1 b - - 0 1",
+    "objective": "avoid_mate",
+    "mate_plies": 3,
+    "accepted_moves": [
+      "d8c8",
+      "g1c1",
+      "g1d1",
+      "g1e1",
+      "g1g6",
+      "g1g7"
+    ],
+    "legal_moves": 15,
+    "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+  },
+  {
+    "position": "Unique queen maneuver / avoid_mate / mirrored",
+    "fen": "6R1/8/4q3/8/8/3k4/8/3K4 w - - 0 1",
+    "objective": "avoid_mate",
+    "mate_plies": 3,
+    "accepted_moves": [
+      "d1c1",
+      "g8c8",
+      "g8d8",
+      "g8e8",
+      "g8g2",
+      "g8g3"
+    ],
+    "legal_moves": 15,
+    "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+  },
+  {
+    "position": "Narrow rook defense / force_mate / original",
+    "fen": "8/3r4/8/8/2Q5/6K1/8/6k1 w - - 0 1",
+    "objective": "force_mate",
+    "mate_plies": 3,
+    "accepted_moves": [
+      "c4c1"
+    ],
+    "legal_moves": 30,
+    "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+  },
+  {
+    "position": "Narrow rook defense / force_mate / mirrored",
+    "fen": "6K1/8/6k1/2q5/8/8/3R4/8 b - - 0 1",
+    "objective": "force_mate",
+    "mate_plies": 3,
+    "accepted_moves": [
+      "c5c8"
+    ],
+    "legal_moves": 30,
+    "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+  },
+  {
+    "position": "Narrow rook defense / avoid_mate / original",
+    "fen": "8/3r4/8/8/2Q5/6K1/8/6k1 b - - 0 1",
+    "objective": "avoid_mate",
+    "mate_plies": 3,
+    "accepted_moves": [
+      "d7d1",
+      "d7g7"
+    ],
+    "legal_moves": 15,
+    "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+  },
+  {
+    "position": "Narrow rook defense / avoid_mate / mirrored",
+    "fen": "6K1/8/6k1/2q5/8/8/3R4/8 w - - 0 1",
+    "objective": "avoid_mate",
+    "mate_plies": 3,
+    "accepted_moves": [
+      "d2d8",
+      "d2g2"
+    ],
+    "legal_moves": 15,
+    "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+  }
+]

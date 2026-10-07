@@ -1,0 +1,14 @@
+[
+  {"name":"White queen mate","category":"tactic","fen":"7k/5Q2/6K1/8/8/8/8/8 w - - 0 1","mate_in_one":true},
+  {"name":"Black queen mate","category":"tactic","fen":"8/8/8/8/8/6k1/5q2/7K b - - 0 1","mate_in_one":true},
+  {"name":"White back-rank mate","category":"tactic","fen":"6k1/5ppp/8/8/8/8/5PPP/4R1K1 w - - 0 1","mate_in_one":true},
+  {"name":"Black back-rank mate","category":"tactic","fen":"4r1k1/5ppp/8/8/8/8/5PPP/6K1 b - - 0 1","mate_in_one":true},
+  {"name":"Italian opening","category":"middlegame","moves":["e2e4","e7e5","g1f3","b8c6","f1c4","g8f6"]},
+  {"name":"Queen's gambit","category":"middlegame","moves":["d2d4","d7d5","c2c4","e7e6","b1c3","g8f6"]},
+  {"name":"Sicilian opening","category":"middlegame","moves":["e2e4","c7c5","g1f3","d7d6","d2d4","c5d4","f3d4","g8f6"]},
+  {"name":"Caro-Kann opening","category":"middlegame","moves":["e2e4","c7c6","d2d4","d7d5","b1c3","d5e4","c3e4"]},
+  {"name":"King and pawn","category":"endgame","fen":"8/8/8/4k3/8/4K3/4P3/8 w - - 0 1"},
+  {"name":"Rook ending","category":"endgame","fen":"8/5pk1/7p/8/8/6P1/5PK1/R6r w - - 0 1"},
+  {"name":"Bishop and pawn","category":"endgame","fen":"8/7k/8/6P1/8/4K3/3B4/8 w - - 0 1"},
+  {"name":"Knight versus pawns","category":"endgame","fen":"8/6k1/5pp1/8/8/3N4/4K3/8 w - - 0 1"}
+]

@@ -1,0 +1,42 @@
+{
+  "purpose": "Homework-scale tactical screening, isolated ablations, broader diagnostics and matched-start games.",
+  "cpu_reported_by_wsl": "12th Gen Intel(R) Core(TM) i7-12700H",
+  "root_searches": 912,
+  "diagnostic_cases": 24,
+  "budgets": [
+    0.1,
+    0.5
+  ],
+  "mcts_seeds": [
+    7,
+    8,
+    9
+  ],
+  "game_starts": 4,
+  "games": 16,
+  "game_ply_cap": 120,
+  "game_cap_policy": "Nonterminal cap is unfinished (*); no invented draw. Report completed score and worst/best censoring bounds.",
+  "draw_policy": "Automatically claim available threefold/fifty-move draws.",
+  "source_sha256": {
+    "engine.py": "d1522b8086c80d63907383bedf9b010fcc96e6c3b939686085af99856b2248f5",
+    "experiments.py": "9b728ba1b3c77d3980368c6b8534b57160dd988b88a21f65468a280c0d4a3b87",
+    "followup_experiments.py": "da2a2eafe163c293424874a1704ab8d270a235e1b89bbdba6d6cdc7ffc8f4b70",
+    "followup_positions.json": "de99214cd2b1e8d579b516ad66fa643a4db3fa8caee256db13d92086e8c656e0",
+    "followup_game_starts.json": "b293d040bd5f3ac98bf14ccbc4e694eda8e94e0e6e9a50a68a5fbf3476641e53"
+  },
+  "timing": "One timed engine search at a time; independent reference certification outside the search budget. Root screening included in the MCTS budget.",
+  "included_runs": [
+    "ablation",
+    "games-matched"
+  ],
+  "excluded_runs": {
+    "pilot-capture-draw": "Initial capture fixture led to insufficient-material draw, so quiet moves tied its zero terminal score. Added a pawn to make the capture diagnostic uniquely informative, then reran the complete ablation. Pilot is retained locally, excluded from report analysis and ZIP."
+  },
+  "limits": [
+    "Constructed cases and mirrored/repeated seeds are correlated.",
+    "No external-engine move rankings or Elo.",
+    "Root guard covers immediate mates only.",
+    "Material diagnostic evaluates only one opposing reply.",
+    "Matched game starts are the same four selected positions at both budgets."
+  ]
+}

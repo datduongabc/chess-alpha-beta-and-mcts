@@ -1,0 +1,217 @@
+position,category,fen,engine,budget,seed,move,solved_mate,objective,certified_success,agrees_with_alpha,elapsed,overrun,variant,qnodes,depth,nodes,cutoffs,simulations,rollout_plies
+Corner net / force_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k w - - 0 1,alphabeta,0.1,,a4a1,,force_mate,True,True,0.10044963099790039,0.00044963099790037986,enhanced,275,2,292,59,,
+Corner net / force_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k w - - 0 1,mcts,0.1,7,a4c6,,force_mate,True,False,0.10007570199741167,7.570199741166461e-05,enhanced,,,,,29,272
+Corner net / force_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k w - - 0 1,mcts,0.1,8,a4a5,,force_mate,False,False,0.10013293199881446,0.00013293199881445061,enhanced,,,,,25,248
+Corner net / force_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k w - - 0 1,mcts,0.1,9,a4c6,,force_mate,True,False,0.10041424900191487,0.0004142490019148626,enhanced,,,,,29,229
+Corner net / force_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k w - - 0 1,mcts,0.1,10,a4a1,,force_mate,True,True,0.10010210600012215,0.00010210600012214299,enhanced,,,,,35,287
+Corner net / force_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k w - - 0 1,mcts,0.1,11,a4c6,,force_mate,True,False,0.10005011199973524,5.011199973523062e-05,enhanced,,,,,30,302
+Corner net / force_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R b - - 0 1,alphabeta,0.1,,a5a8,,force_mate,True,True,0.1000259600004938,2.596000049379099e-05,enhanced,294,2,278,74,,
+Corner net / force_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R b - - 0 1,mcts,0.1,7,a5a8,,force_mate,True,True,0.10002437100047246,2.4371000472450666e-05,enhanced,,,,,11,110
+Corner net / force_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R b - - 0 1,mcts,0.1,8,a5a7,,force_mate,False,False,0.10014720000253874,0.00014720000253873322,enhanced,,,,,21,173
+Corner net / force_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R b - - 0 1,mcts,0.1,9,a5a2,,force_mate,False,False,0.10003469799994491,3.4697999944904856e-05,enhanced,,,,,23,190
+Corner net / force_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R b - - 0 1,mcts,0.1,10,a5a4,,force_mate,False,False,0.10012271999949007,0.0001227199994900674,enhanced,,,,,41,325
+Corner net / force_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R b - - 0 1,mcts,0.1,11,a5a8,,force_mate,True,True,0.10008525299781468,8.52529978146721e-05,enhanced,,,,,35,307
+Corner net / avoid_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k b - - 0 1,alphabeta,0.1,,h8h3,,avoid_mate,False,True,0.10010694300217438,0.00010694300217437003,enhanced,338,2,277,83,,
+Corner net / avoid_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k b - - 0 1,mcts,0.1,7,h8h2,,avoid_mate,True,False,0.10006274300030782,6.274300030781332e-05,enhanced,,,,,61,245
+Corner net / avoid_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k b - - 0 1,mcts,0.1,8,h8f8,,avoid_mate,True,False,0.10008477999872412,8.477999872411046e-05,enhanced,,,,,52,263
+Corner net / avoid_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k b - - 0 1,mcts,0.1,9,h8h6,,avoid_mate,False,False,0.10015669699714635,0.00015669699714634944,enhanced,,,,,55,302
+Corner net / avoid_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k b - - 0 1,mcts,0.1,10,h8f8,,avoid_mate,True,False,0.10016695299782441,0.00016695299782440443,enhanced,,,,,50,253
+Corner net / avoid_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k b - - 0 1,mcts,0.1,11,h8f8,,avoid_mate,True,False,0.10021156900256756,0.00021156900256755207,enhanced,,,,,50,229
+Corner net / avoid_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R w - - 0 1,alphabeta,0.1,,h1h6,,avoid_mate,False,True,0.10004851100165979,4.85110016597845e-05,enhanced,373,2,264,87,,
+Corner net / avoid_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R w - - 0 1,mcts,0.1,7,h1h5,,avoid_mate,False,False,0.10001823399943532,1.823399943531867e-05,enhanced,,,,,39,191
+Corner net / avoid_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R w - - 0 1,mcts,0.1,8,h8h7,,avoid_mate,True,False,0.10004690300047514,4.690300047513474e-05,enhanced,,,,,47,213
+Corner net / avoid_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R w - - 0 1,mcts,0.1,9,h1f1,,avoid_mate,True,False,0.10002264899958391,2.2648999583901874e-05,enhanced,,,,,47,208
+Corner net / avoid_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R w - - 0 1,mcts,0.1,10,h1h7,,avoid_mate,True,False,0.10003203499945812,3.203499945811372e-05,enhanced,,,,,41,260
+Corner net / avoid_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R w - - 0 1,mcts,0.1,11,h8h7,,avoid_mate,True,False,0.1000153249988216,1.5324998821591995e-05,enhanced,,,,,46,268
+Unique queen maneuver / force_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 w - - 0 1,alphabeta,0.1,,e3g1,,force_mate,False,True,0.10013320100188139,0.0001332010018813834,enhanced,366,2,342,82,,
+Unique queen maneuver / force_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 w - - 0 1,mcts,0.1,7,e3c3,,force_mate,False,False,0.10004872100034845,4.8721000348445065e-05,enhanced,,,,,28,285
+Unique queen maneuver / force_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 w - - 0 1,mcts,0.1,8,e3g1,,force_mate,False,True,0.10002344899839954,2.3448998399538956e-05,enhanced,,,,,33,310
+Unique queen maneuver / force_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 w - - 0 1,mcts,0.1,9,e3g1,,force_mate,False,True,0.10008067899980233,8.067899980232496e-05,enhanced,,,,,33,341
+Unique queen maneuver / force_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 w - - 0 1,mcts,0.1,10,e3b3,,force_mate,False,False,0.10005489000104717,5.489000104716424e-05,enhanced,,,,,28,296
+Unique queen maneuver / force_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 w - - 0 1,mcts,0.1,11,e3g1,,force_mate,False,True,0.10002410800007056,2.4108000070549584e-05,enhanced,,,,,31,309
+Unique queen maneuver / force_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 b - - 0 1,alphabeta,0.1,,e6g8,,force_mate,False,True,0.10012973899938515,0.00012973899938514832,enhanced,389,2,369,75,,
+Unique queen maneuver / force_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 b - - 0 1,mcts,0.1,7,e6a6,,force_mate,False,False,0.10009996900043916,9.996900043915402e-05,enhanced,,,,,20,221
+Unique queen maneuver / force_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 b - - 0 1,mcts,0.1,8,e6e2,,force_mate,True,False,0.10004808299709111,4.808299709110897e-05,enhanced,,,,,27,294
+Unique queen maneuver / force_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 b - - 0 1,mcts,0.1,9,d3e4,,force_mate,False,False,0.10003037099886569,3.0370998865686394e-05,enhanced,,,,,28,291
+Unique queen maneuver / force_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 b - - 0 1,mcts,0.1,10,e6b3,,force_mate,False,False,0.10018111799945473,0.00018111799945472185,enhanced,,,,,33,302
+Unique queen maneuver / force_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 b - - 0 1,mcts,0.1,11,e6a6,,force_mate,False,False,0.10040587600087747,0.0004058760008774642,enhanced,,,,,25,257
+Unique queen maneuver / avoid_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 b - - 0 1,alphabeta,0.1,,g1d1,,avoid_mate,True,True,0.10050323299947195,0.000503232999471942,enhanced,262,2,249,42,,
+Unique queen maneuver / avoid_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 b - - 0 1,mcts,0.1,7,g1a1,,avoid_mate,False,False,0.10013833600169164,0.00013833600169163573,enhanced,,,,,27,261
+Unique queen maneuver / avoid_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 b - - 0 1,mcts,0.1,8,g1g7,,avoid_mate,True,False,0.10002179900038755,2.1799000387540124e-05,enhanced,,,,,33,275
+Unique queen maneuver / avoid_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 b - - 0 1,mcts,0.1,9,g1f1,,avoid_mate,False,False,0.10012086200003978,0.0001208620000397731,enhanced,,,,,31,280
+Unique queen maneuver / avoid_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 b - - 0 1,mcts,0.1,10,g1g6,,avoid_mate,True,False,0.1001338099995337,0.00013380999953369055,enhanced,,,,,31,265
+Unique queen maneuver / avoid_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 b - - 0 1,mcts,0.1,11,g1a1,,avoid_mate,False,False,0.10003418199994485,3.418199994484339e-05,enhanced,,,,,27,236
+Unique queen maneuver / avoid_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 w - - 0 1,alphabeta,0.1,,g8d8,,avoid_mate,True,True,0.10031448199879378,0.00031448199879377525,enhanced,243,2,222,41,,
+Unique queen maneuver / avoid_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 w - - 0 1,mcts,0.1,7,g8a8,,avoid_mate,False,False,0.10017438700015191,0.00017438700015190434,enhanced,,,,,34,270
+Unique queen maneuver / avoid_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 w - - 0 1,mcts,0.1,8,g8h8,,avoid_mate,False,False,0.10015112200198928,0.0001511220019892734,enhanced,,,,,33,271
+Unique queen maneuver / avoid_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 w - - 0 1,mcts,0.1,9,g8g5,,avoid_mate,False,False,0.10006843699738965,6.843699738964815e-05,enhanced,,,,,28,233
+Unique queen maneuver / avoid_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 w - - 0 1,mcts,0.1,10,g8g2,,avoid_mate,True,False,0.10006328899908112,6.328899908111807e-05,enhanced,,,,,29,236
+Unique queen maneuver / avoid_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 w - - 0 1,mcts,0.1,11,g8d8,,avoid_mate,True,True,0.10003317399969092,3.317399969091084e-05,enhanced,,,,,31,257
+Narrow rook defense / force_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 w - - 0 1,alphabeta,0.1,,c4c1,,force_mate,True,True,0.1001445119982236,0.00014451199822360095,enhanced,213,2,222,56,,
+Narrow rook defense / force_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 w - - 0 1,mcts,0.1,7,c4c1,,force_mate,True,True,0.10015009400012787,0.00015009400012785945,enhanced,,,,,25,243
+Narrow rook defense / force_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 w - - 0 1,mcts,0.1,8,c4c1,,force_mate,True,True,0.10003895000045304,3.8950000453036315e-05,enhanced,,,,,20,180
+Narrow rook defense / force_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 w - - 0 1,mcts,0.1,9,c4b3,,force_mate,False,False,0.1000286189992039,2.8618999203894324e-05,enhanced,,,,,21,198
+Narrow rook defense / force_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 w - - 0 1,mcts,0.1,10,c4c1,,force_mate,True,True,0.10076174200003152,0.0007617420000315123,enhanced,,,,,31,268
+Narrow rook defense / force_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 w - - 0 1,mcts,0.1,11,c4a6,,force_mate,False,False,0.10002473600252415,2.4736002524144984e-05,enhanced,,,,,27,277
+Narrow rook defense / force_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 b - - 0 1,alphabeta,0.1,,c5c8,,force_mate,True,True,0.10004693800146924,4.693800146923777e-05,enhanced,313,2,318,66,,
+Narrow rook defense / force_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 b - - 0 1,mcts,0.1,7,c5b4,,force_mate,False,False,0.10009094799897866,9.094799897865768e-05,enhanced,,,,,29,281
+Narrow rook defense / force_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 b - - 0 1,mcts,0.1,8,c5c8,,force_mate,True,True,0.10004240299895173,4.2402998951723836e-05,enhanced,,,,,32,315
+Narrow rook defense / force_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 b - - 0 1,mcts,0.1,9,c5c4,,force_mate,False,False,0.10005038300005253,5.038300005252849e-05,enhanced,,,,,35,312
+Narrow rook defense / force_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 b - - 0 1,mcts,0.1,10,c5c4,,force_mate,False,False,0.10002524500305299,2.5245003052981607e-05,enhanced,,,,,33,303
+Narrow rook defense / force_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 b - - 0 1,mcts,0.1,11,c5c1,,force_mate,False,False,0.10025079700062633,0.00025079700062632937,enhanced,,,,,30,283
+Narrow rook defense / avoid_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 b - - 0 1,alphabeta,0.1,,d7g7,,avoid_mate,True,True,0.10013194199927966,0.00013194199927965555,enhanced,317,2,276,54,,
+Narrow rook defense / avoid_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 b - - 0 1,mcts,0.1,7,d7d2,,avoid_mate,False,False,0.10005633000037051,5.633000037050251e-05,enhanced,,,,,45,221
+Narrow rook defense / avoid_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 b - - 0 1,mcts,0.1,8,d7e7,,avoid_mate,False,False,0.10005958400142845,5.958400142844211e-05,enhanced,,,,,43,199
+Narrow rook defense / avoid_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 b - - 0 1,mcts,0.1,9,d7g7,,avoid_mate,True,True,0.10016606000135653,0.00016606000135652166,enhanced,,,,,41,217
+Narrow rook defense / avoid_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 b - - 0 1,mcts,0.1,10,d7d3,,avoid_mate,False,False,0.1000233129998378,2.3312999837793447e-05,enhanced,,,,,42,231
+Narrow rook defense / avoid_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 b - - 0 1,mcts,0.1,11,d7d8,,avoid_mate,False,False,0.10016693199941074,0.0001669319994107299,enhanced,,,,,50,223
+Narrow rook defense / avoid_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 w - - 0 1,alphabeta,0.1,,d2g2,,avoid_mate,True,True,0.10025711499838508,0.0002571149983850718,enhanced,352,2,274,54,,
+Narrow rook defense / avoid_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 w - - 0 1,mcts,0.1,7,d2d1,,avoid_mate,False,False,0.10009955499845091,9.955499845090698e-05,enhanced,,,,,41,276
+Narrow rook defense / avoid_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 w - - 0 1,mcts,0.1,8,d2d5,,avoid_mate,False,False,0.10002788400015561,2.788400015560355e-05,enhanced,,,,,50,248
+Narrow rook defense / avoid_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 w - - 0 1,mcts,0.1,9,d2d3,,avoid_mate,False,False,0.10017396599869244,0.00017396599869243246,enhanced,,,,,44,250
+Narrow rook defense / avoid_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 w - - 0 1,mcts,0.1,10,d2c2,,avoid_mate,False,False,0.10001849900072557,1.8499000725563652e-05,enhanced,,,,,51,234
+Narrow rook defense / avoid_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 w - - 0 1,mcts,0.1,11,d2d6,,avoid_mate,False,False,0.10003400699861231,3.400699861230705e-05,enhanced,,,,,52,222
+Corner net / force_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k w - - 0 1,alphabeta,1.0,,a4a1,,force_mate,True,True,0.23529867799879867,0,enhanced,821,3,800,148,,
+Corner net / force_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k w - - 0 1,mcts,1.0,7,f2f1,,force_mate,False,False,1.000253979000263,0.0002539790002629161,enhanced,,,,,443,2485
+Corner net / force_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k w - - 0 1,mcts,1.0,8,a4f4,,force_mate,False,False,1.000253315000009,0.0002533150000090245,enhanced,,,,,395,2481
+Corner net / force_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k w - - 0 1,mcts,1.0,9,a4c4,,force_mate,False,False,1.0003021630000148,0.0003021630000148434,enhanced,,,,,475,2592
+Corner net / force_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k w - - 0 1,mcts,1.0,10,a4g4,,force_mate,False,False,1.0004161239994573,0.0004161239994573407,enhanced,,,,,471,2705
+Corner net / force_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k w - - 0 1,mcts,1.0,11,a4g4,,force_mate,False,False,1.0000382529979106,3.825299791060388e-05,enhanced,,,,,470,2738
+Corner net / force_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R b - - 0 1,alphabeta,1.0,,a5a8,,force_mate,True,True,0.20648042200264172,0,enhanced,889,3,822,171,,
+Corner net / force_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R b - - 0 1,mcts,1.0,7,a5a6,,force_mate,False,False,1.0000242800015258,2.4280001525767148e-05,enhanced,,,,,487,2829
+Corner net / force_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R b - - 0 1,mcts,1.0,8,a5d2,,force_mate,False,False,1.0000200260001293,2.0026000129291788e-05,enhanced,,,,,476,2612
+Corner net / force_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R b - - 0 1,mcts,1.0,9,a5a6,,force_mate,False,False,1.0000215949985432,2.1594998543150723e-05,enhanced,,,,,448,2590
+Corner net / force_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R b - - 0 1,mcts,1.0,10,a5d5,,force_mate,False,False,1.0001404249996995,0.0001404249996994622,enhanced,,,,,485,2580
+Corner net / force_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R b - - 0 1,mcts,1.0,11,a5d2,,force_mate,False,False,1.0000416980001319,4.1698000131873414e-05,enhanced,,,,,410,2523
+Corner net / avoid_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k b - - 0 1,alphabeta,1.0,,h1h2,,avoid_mate,True,True,1.0000694139998814,6.941399988136254e-05,enhanced,3648,3,3081,682,,
+Corner net / avoid_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k b - - 0 1,mcts,1.0,7,h8a8,,avoid_mate,False,False,1.000020172999939,2.0172999938949943e-05,enhanced,,,,,336,2614
+Corner net / avoid_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k b - - 0 1,mcts,1.0,8,h8a8,,avoid_mate,False,False,1.0000167860016518,1.678600165178068e-05,enhanced,,,,,366,2844
+Corner net / avoid_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k b - - 0 1,mcts,1.0,9,h8h4,,avoid_mate,False,False,1.0001387009979226,0.0001387009979225695,enhanced,,,,,301,2413
+Corner net / avoid_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k b - - 0 1,mcts,1.0,10,h8h4,,avoid_mate,False,False,1.0000469539991172,4.695399911724962e-05,enhanced,,,,,346,2769
+Corner net / avoid_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k b - - 0 1,mcts,1.0,11,h8h4,,avoid_mate,False,False,1.0001131199969677,0.00011311999696772546,enhanced,,,,,393,3091
+Corner net / avoid_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R w - - 0 1,alphabeta,1.0,,h8h7,,avoid_mate,True,True,1.0000517180014867,5.1718001486733556e-05,enhanced,3536,3,2627,737,,
+Corner net / avoid_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R w - - 0 1,mcts,1.0,7,h1a1,,avoid_mate,False,False,1.000013052002032,1.3052002032054588e-05,enhanced,,,,,371,3126
+Corner net / avoid_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R w - - 0 1,mcts,1.0,8,h1a1,,avoid_mate,False,False,1.0000180349998118,1.803499981178902e-05,enhanced,,,,,394,3093
+Corner net / avoid_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R w - - 0 1,mcts,1.0,9,h1h5,,avoid_mate,False,False,1.0001207669993164,0.00012076699931640178,enhanced,,,,,420,3312
+Corner net / avoid_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R w - - 0 1,mcts,1.0,10,h1h5,,avoid_mate,False,False,1.000029736002034,2.973600203404203e-05,enhanced,,,,,435,3415
+Corner net / avoid_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R w - - 0 1,mcts,1.0,11,h1h5,,avoid_mate,False,False,1.0000741469993955,7.414699939545244e-05,enhanced,,,,,409,3353
+Unique queen maneuver / force_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 w - - 0 1,alphabeta,1.0,,e3e7,,force_mate,True,True,0.28682014800142497,0,enhanced,1226,3,1107,255,,
+Unique queen maneuver / force_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 w - - 0 1,mcts,1.0,7,e3f2,,force_mate,False,False,1.000020717998268,2.0717998268082738e-05,enhanced,,,,,405,3085
+Unique queen maneuver / force_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 w - - 0 1,mcts,1.0,8,e3h3,,force_mate,False,False,1.0000845850008773,8.458500087726861e-05,enhanced,,,,,423,3090
+Unique queen maneuver / force_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 w - - 0 1,mcts,1.0,9,e3g1,,force_mate,False,False,1.0001427049974154,0.00014270499741542153,enhanced,,,,,404,3093
+Unique queen maneuver / force_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 w - - 0 1,mcts,1.0,10,e3b3,,force_mate,False,False,1.0000277510007436,2.7751000743592158e-05,enhanced,,,,,357,2823
+Unique queen maneuver / force_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 w - - 0 1,mcts,1.0,11,e3g1,,force_mate,False,False,1.000137237002491,0.00013723700249101967,enhanced,,,,,351,2736
+Unique queen maneuver / force_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 b - - 0 1,alphabeta,1.0,,e6e2,,force_mate,True,True,0.30408023499694536,0,enhanced,1157,3,1047,232,,
+Unique queen maneuver / force_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 b - - 0 1,mcts,1.0,7,e6g8,,force_mate,False,False,1.0000281100001303,2.8110000130254775e-05,enhanced,,,,,404,3081
+Unique queen maneuver / force_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 b - - 0 1,mcts,1.0,8,e6g8,,force_mate,False,False,1.0002181279996876,0.00021812799968756735,enhanced,,,,,393,2936
+Unique queen maneuver / force_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 b - - 0 1,mcts,1.0,9,e6f6,,force_mate,False,False,1.0001035070017679,0.00010350700176786631,enhanced,,,,,332,2502
+Unique queen maneuver / force_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 b - - 0 1,mcts,1.0,10,e6g8,,force_mate,False,False,1.0000289349991363,2.893499913625419e-05,enhanced,,,,,363,2882
+Unique queen maneuver / force_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 b - - 0 1,mcts,1.0,11,e6f7,,force_mate,False,False,1.0000577739992877,5.777399928774685e-05,enhanced,,,,,391,2973
+Unique queen maneuver / avoid_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 b - - 0 1,alphabeta,1.0,,g1d1,,avoid_mate,True,True,1.0001274770002055,0.00012747700020554475,enhanced,3167,3,2893,784,,
+Unique queen maneuver / avoid_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 b - - 0 1,mcts,1.0,7,g1e1,,avoid_mate,True,False,1.0000507650001964,5.076500019640662e-05,enhanced,,,,,323,3083
+Unique queen maneuver / avoid_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 b - - 0 1,mcts,1.0,8,g1g3,,avoid_mate,False,False,1.0000265650014626,2.6565001462586224e-05,enhanced,,,,,330,3170
+Unique queen maneuver / avoid_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 b - - 0 1,mcts,1.0,9,g1g3,,avoid_mate,False,False,1.0000345179978467,3.451799784670584e-05,enhanced,,,,,313,3111
+Unique queen maneuver / avoid_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 b - - 0 1,mcts,1.0,10,g1e1,,avoid_mate,True,False,1.0000466329984192,4.663299841922708e-05,enhanced,,,,,313,3080
+Unique queen maneuver / avoid_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 b - - 0 1,mcts,1.0,11,g1g3,,avoid_mate,False,False,1.0000606210014666,6.0621001466643065e-05,enhanced,,,,,343,3348
+Unique queen maneuver / avoid_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 w - - 0 1,alphabeta,1.0,,g8d8,,avoid_mate,True,True,1.0000333040006808,3.330400068080053e-05,enhanced,3598,4,3410,856,,
+Unique queen maneuver / avoid_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 w - - 0 1,mcts,1.0,7,g8g6,,avoid_mate,False,False,1.0000377010001102,3.770100011024624e-05,enhanced,,,,,359,3477
+Unique queen maneuver / avoid_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 w - - 0 1,mcts,1.0,8,g8g6,,avoid_mate,False,False,1.0000534130012966,5.341300129657611e-05,enhanced,,,,,344,3306
+Unique queen maneuver / avoid_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 w - - 0 1,mcts,1.0,9,g8e8,,avoid_mate,True,False,1.0000306100009766,3.0610000976594165e-05,enhanced,,,,,334,3241
+Unique queen maneuver / avoid_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 w - - 0 1,mcts,1.0,10,g8g6,,avoid_mate,False,False,1.0001737890015647,0.0001737890015647281,enhanced,,,,,346,3336
+Unique queen maneuver / avoid_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 w - - 0 1,mcts,1.0,11,g8a8,,avoid_mate,False,False,1.0000408939995395,4.089399953954853e-05,enhanced,,,,,360,3417
+Narrow rook defense / force_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 w - - 0 1,alphabeta,1.0,,c4c1,,force_mate,True,True,0.20694021500094095,0,enhanced,870,3,827,161,,
+Narrow rook defense / force_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 w - - 0 1,mcts,1.0,7,c4a2,,force_mate,False,False,1.0001282540033571,0.0001282540033571422,enhanced,,,,,529,3104
+Narrow rook defense / force_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 w - - 0 1,mcts,1.0,8,g3f3,,force_mate,False,False,1.0000243719987338,2.4371998733840883e-05,enhanced,,,,,501,3138
+Narrow rook defense / force_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 w - - 0 1,mcts,1.0,9,c4c2,,force_mate,False,False,1.0001407739982824,0.00014077399828238413,enhanced,,,,,503,3152
+Narrow rook defense / force_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 w - - 0 1,mcts,1.0,10,c4e4,,force_mate,False,False,1.0000208929996006,2.0892999600619078e-05,enhanced,,,,,546,3222
+Narrow rook defense / force_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 w - - 0 1,mcts,1.0,11,c4c3,,force_mate,False,False,1.0000256929997704,2.5692999770399183e-05,enhanced,,,,,543,3177
+Narrow rook defense / force_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 b - - 0 1,alphabeta,1.0,,c5c8,,force_mate,True,True,0.18786960400029784,0,enhanced,872,3,827,160,,
+Narrow rook defense / force_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 b - - 0 1,mcts,1.0,7,g6f6,,force_mate,False,False,1.0000378330005333,3.783300053328276e-05,enhanced,,,,,515,3191
+Narrow rook defense / force_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 b - - 0 1,mcts,1.0,8,g6f6,,force_mate,False,False,1.0000448050013802,4.480500138015486e-05,enhanced,,,,,517,3050
+Narrow rook defense / force_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 b - - 0 1,mcts,1.0,9,c5a7,,force_mate,False,False,1.000034142001823,3.414200182305649e-05,enhanced,,,,,521,3214
+Narrow rook defense / force_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 b - - 0 1,mcts,1.0,10,c5c6,,force_mate,False,False,1.000247625997872,0.00024762599787209183,enhanced,,,,,562,3201
+Narrow rook defense / force_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 b - - 0 1,mcts,1.0,11,c5c7,,force_mate,False,False,1.0001160479987448,0.00011604799874476157,enhanced,,,,,559,3248
+Narrow rook defense / avoid_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 b - - 0 1,alphabeta,1.0,,d7g7,,avoid_mate,True,True,1.0000966289990174,9.662899901741184e-05,enhanced,4338,3,3455,1147,,
+Narrow rook defense / avoid_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 b - - 0 1,mcts,1.0,7,d7c7,,avoid_mate,False,False,1.000055477998103,5.5477998103015125e-05,enhanced,,,,,370,3140
+Narrow rook defense / avoid_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 b - - 0 1,mcts,1.0,8,d7c7,,avoid_mate,False,False,1.0000183029987966,1.8302998796571046e-05,enhanced,,,,,357,3154
+Narrow rook defense / avoid_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 b - - 0 1,mcts,1.0,9,d7c7,,avoid_mate,False,False,1.0000828910015116,8.2891001511598e-05,enhanced,,,,,390,3201
+Narrow rook defense / avoid_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 b - - 0 1,mcts,1.0,10,d7c7,,avoid_mate,False,False,1.0000569639996684,5.696399966836907e-05,enhanced,,,,,395,3304
+Narrow rook defense / avoid_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 b - - 0 1,mcts,1.0,11,d7c7,,avoid_mate,False,False,1.0000148549988808,1.485499888076447e-05,enhanced,,,,,410,3630
+Narrow rook defense / avoid_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 w - - 0 1,alphabeta,1.0,,d2g2,,avoid_mate,True,True,1.0000203990020964,2.03990020963829e-05,enhanced,4351,3,3247,1110,,
+Narrow rook defense / avoid_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 w - - 0 1,mcts,1.0,7,d2c2,,avoid_mate,False,False,1.0000130190019263,1.301900192629546e-05,enhanced,,,,,402,3552
+Narrow rook defense / avoid_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 w - - 0 1,mcts,1.0,8,d2c2,,avoid_mate,False,False,1.0000147560022015,1.475600220146589e-05,enhanced,,,,,440,3619
+Narrow rook defense / avoid_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 w - - 0 1,mcts,1.0,9,d2d3,,avoid_mate,False,False,1.0000201440016099,2.0144001609878615e-05,enhanced,,,,,411,3589
+Narrow rook defense / avoid_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 w - - 0 1,mcts,1.0,10,d2c2,,avoid_mate,False,False,1.000027621998015,2.7621998015092686e-05,enhanced,,,,,403,3396
+Narrow rook defense / avoid_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 w - - 0 1,mcts,1.0,11,d2c2,,avoid_mate,False,False,1.0000204269999813,2.042699998128228e-05,enhanced,,,,,409,3482
+Corner net / force_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k w - - 0 1,alphabeta,5.0,,a4a1,,force_mate,True,True,0.18627600000036182,0,enhanced,821,3,800,148,,
+Corner net / force_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k w - - 0 1,mcts,5.0,7,a4a1,,force_mate,True,True,5.0001394799983245,0.00013947999832453206,enhanced,,,,,2316,16360
+Corner net / force_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k w - - 0 1,mcts,5.0,8,a4g4,,force_mate,False,False,5.000075616000686,7.561600068584085e-05,enhanced,,,,,2340,16183
+Corner net / force_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k w - - 0 1,mcts,5.0,9,a4d1,,force_mate,False,False,5.000063882998802,6.388299880200066e-05,enhanced,,,,,2295,15624
+Corner net / force_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k w - - 0 1,mcts,5.0,10,a4g4,,force_mate,False,False,5.000057707999076,5.770799907622859e-05,enhanced,,,,,1778,11407
+Corner net / force_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k w - - 0 1,mcts,5.0,11,f2g3,,force_mate,False,False,5.000054551001085,5.455100108520128e-05,enhanced,,,,,1956,13155
+Corner net / force_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R b - - 0 1,alphabeta,5.0,,a5a8,,force_mate,True,True,0.23015476200089324,0,enhanced,889,3,822,171,,
+Corner net / force_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R b - - 0 1,mcts,5.0,7,a5g5,,force_mate,False,False,5.000026523000997,2.652300099725835e-05,enhanced,,,,,2167,15009
+Corner net / force_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R b - - 0 1,mcts,5.0,8,a5g5,,force_mate,False,False,5.000072710001405,7.271000140463002e-05,enhanced,,,,,2247,15174
+Corner net / force_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R b - - 0 1,mcts,5.0,9,f7g6,,force_mate,False,False,5.000144809000631,0.00014480900063063018,enhanced,,,,,2263,15781
+Corner net / force_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R b - - 0 1,mcts,5.0,10,a5b4,,force_mate,False,False,5.000094298997283,9.429899728274904e-05,enhanced,,,,,2297,15951
+Corner net / force_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R b - - 0 1,mcts,5.0,11,a5c5,,force_mate,False,False,5.000028174999898,2.8174999897601083e-05,enhanced,,,,,2207,15275
+Corner net / avoid_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k b - - 0 1,alphabeta,5.0,,h8f8,,avoid_mate,True,True,5.000130405998789,0.000130405998788774,enhanced,21039,4,15260,5120,,
+Corner net / avoid_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k b - - 0 1,mcts,5.0,7,h8f8,,avoid_mate,True,True,5.000073040999268,7.304099926841445e-05,enhanced,,,,,2449,16330
+Corner net / avoid_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k b - - 0 1,mcts,5.0,8,h8h4,,avoid_mate,False,False,5.000069802998041,6.980299804126844e-05,enhanced,,,,,2550,16355
+Corner net / avoid_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k b - - 0 1,mcts,5.0,9,h8h4,,avoid_mate,False,False,5.000030410999898,3.041099989786744e-05,enhanced,,,,,2526,16157
+Corner net / avoid_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k b - - 0 1,mcts,5.0,10,h8h4,,avoid_mate,False,False,5.000027935999242,2.7935999241890386e-05,enhanced,,,,,2435,15767
+Corner net / avoid_mate / original,tactic,7r/8/8/8/Q7/8/5K2/7k b - - 0 1,mcts,5.0,11,h8h4,,avoid_mate,False,False,5.000044051997975,4.405199797474779e-05,enhanced,,,,,2340,15027
+Corner net / avoid_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R w - - 0 1,alphabeta,5.0,,h1f1,,avoid_mate,True,True,5.000072917999205,7.291799920494668e-05,enhanced,19904,4,14649,4660,,
+Corner net / avoid_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R w - - 0 1,mcts,5.0,7,h1a1,,avoid_mate,False,False,5.000042540999857,4.254099985701032e-05,enhanced,,,,,2476,15946
+Corner net / avoid_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R w - - 0 1,mcts,5.0,8,h1h2,,avoid_mate,False,False,5.000029216000257,2.9216000257292762e-05,enhanced,,,,,2448,15908
+Corner net / avoid_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R w - - 0 1,mcts,5.0,9,h1h3,,avoid_mate,False,False,5.000017023998225,1.702399822534062e-05,enhanced,,,,,2505,15747
+Corner net / avoid_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R w - - 0 1,mcts,5.0,10,h1h3,,avoid_mate,False,False,5.0000234359977185,2.3435997718479484e-05,enhanced,,,,,2377,15263
+Corner net / avoid_mate / mirrored,tactic,7K/5k2/8/q7/8/8/8/7R w - - 0 1,mcts,5.0,11,h1a1,,avoid_mate,False,False,5.000016666999727,1.6666999727021903e-05,enhanced,,,,,2300,14991
+Unique queen maneuver / force_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 w - - 0 1,alphabeta,5.0,,e3e7,,force_mate,True,True,0.2838188159985293,0,enhanced,1226,3,1107,255,,
+Unique queen maneuver / force_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 w - - 0 1,mcts,5.0,7,e3g1,,force_mate,False,False,5.000076563999755,7.656399975530803e-05,enhanced,,,,,1913,15287
+Unique queen maneuver / force_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 w - - 0 1,mcts,5.0,8,e3g1,,force_mate,False,False,5.000022739000997,2.273900099680759e-05,enhanced,,,,,1941,15400
+Unique queen maneuver / force_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 w - - 0 1,mcts,5.0,9,e3g1,,force_mate,False,False,5.000035355002183,3.535500218276866e-05,enhanced,,,,,1928,15490
+Unique queen maneuver / force_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 w - - 0 1,mcts,5.0,10,e3g1,,force_mate,False,False,5.000120208998851,0.00012020899885101244,enhanced,,,,,1860,14738
+Unique queen maneuver / force_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 w - - 0 1,mcts,5.0,11,e3g1,,force_mate,False,False,5.000024300999939,2.430099993944168e-05,enhanced,,,,,1900,15251
+Unique queen maneuver / force_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 b - - 0 1,alphabeta,5.0,,e6e2,,force_mate,True,True,0.3216190679995634,0,enhanced,1157,3,1047,232,,
+Unique queen maneuver / force_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 b - - 0 1,mcts,5.0,7,e6g8,,force_mate,False,False,5.000034585998947,3.4585998946568e-05,enhanced,,,,,1642,12857
+Unique queen maneuver / force_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 b - - 0 1,mcts,5.0,8,e6g8,,force_mate,False,False,5.000035609002225,3.5609002225100994e-05,enhanced,,,,,1716,13476
+Unique queen maneuver / force_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 b - - 0 1,mcts,5.0,9,e6g8,,force_mate,False,False,5.00013453900101,0.0001345390010101255,enhanced,,,,,1769,14251
+Unique queen maneuver / force_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 b - - 0 1,mcts,5.0,10,e6g8,,force_mate,False,False,5.000124401998619,0.00012440199861885048,enhanced,,,,,1722,13672
+Unique queen maneuver / force_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 b - - 0 1,mcts,5.0,11,e6g8,,force_mate,False,False,5.0000507370023115,5.073700231150724e-05,enhanced,,,,,1581,12469
+Unique queen maneuver / avoid_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 b - - 0 1,alphabeta,5.0,,g1d1,,avoid_mate,True,True,5.000189907001186,0.0001899070011859294,enhanced,13507,4,11853,2624,,
+Unique queen maneuver / avoid_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 b - - 0 1,mcts,5.0,7,g1g7,,avoid_mate,True,False,5.000099897002656,9.989700265577994e-05,enhanced,,,,,1457,12843
+Unique queen maneuver / avoid_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 b - - 0 1,mcts,5.0,8,g1h1,,avoid_mate,False,False,5.0000337340025,3.3734002499841154e-05,enhanced,,,,,1510,13241
+Unique queen maneuver / avoid_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 b - - 0 1,mcts,5.0,9,g1g2,,avoid_mate,False,False,5.000074313000368,7.431300036842003e-05,enhanced,,,,,1517,13400
+Unique queen maneuver / avoid_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 b - - 0 1,mcts,5.0,10,g1e1,,avoid_mate,True,False,5.000031214000046,3.1214000046020374e-05,enhanced,,,,,1500,13046
+Unique queen maneuver / avoid_mate / original,tactic,3k4/8/3K4/8/8/4Q3/8/6r1 b - - 0 1,mcts,5.0,11,g1g3,,avoid_mate,False,False,5.000020077000954,2.0077000954188406e-05,enhanced,,,,,1571,13664
+Unique queen maneuver / avoid_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 w - - 0 1,alphabeta,5.0,,g8d8,,avoid_mate,True,True,5.000191792998521,0.00019179299852112308,enhanced,13184,4,11802,2837,,
+Unique queen maneuver / avoid_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 w - - 0 1,mcts,5.0,7,g8g6,,avoid_mate,False,False,5.0000181730029,1.8173002899857238e-05,enhanced,,,,,1298,11412
+Unique queen maneuver / avoid_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 w - - 0 1,mcts,5.0,8,g8g6,,avoid_mate,False,False,5.000273931000265,0.0002739310002652928,enhanced,,,,,1411,12622
+Unique queen maneuver / avoid_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 w - - 0 1,mcts,5.0,9,g8g6,,avoid_mate,False,False,5.000025188001018,2.518800101825036e-05,enhanced,,,,,1513,13364
+Unique queen maneuver / avoid_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 w - - 0 1,mcts,5.0,10,g8g6,,avoid_mate,False,False,5.000025846999051,2.5846999051282182e-05,enhanced,,,,,1583,13891
+Unique queen maneuver / avoid_mate / mirrored,tactic,6R1/8/4q3/8/8/3k4/8/3K4 w - - 0 1,mcts,5.0,11,g8g6,,avoid_mate,False,False,5.000034448999941,3.444899994065054e-05,enhanced,,,,,1630,14002
+Narrow rook defense / force_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 w - - 0 1,alphabeta,5.0,,c4c1,,force_mate,True,True,0.23428946000058204,0,enhanced,870,3,827,161,,
+Narrow rook defense / force_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 w - - 0 1,mcts,5.0,7,c4a2,,force_mate,False,False,5.000104506998468,0.00010450699846842326,enhanced,,,,,1892,12982
+Narrow rook defense / force_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 w - - 0 1,mcts,5.0,8,c4c2,,force_mate,False,False,5.000038700000005,3.870000000461005e-05,enhanced,,,,,1587,10199
+Narrow rook defense / force_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 w - - 0 1,mcts,5.0,9,c4c2,,force_mate,False,False,5.0000387280015275,3.872800152748823e-05,enhanced,,,,,1660,11211
+Narrow rook defense / force_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 w - - 0 1,mcts,5.0,10,c4c2,,force_mate,False,False,5.00003568199827,3.568199826986529e-05,enhanced,,,,,1860,12702
+Narrow rook defense / force_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 w - - 0 1,mcts,5.0,11,c4c2,,force_mate,False,False,5.000249350003287,0.00024935000328696333,enhanced,,,,,1801,12036
+Narrow rook defense / force_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 b - - 0 1,alphabeta,5.0,,c5c8,,force_mate,True,True,0.28595915300320485,0,enhanced,872,3,827,160,,
+Narrow rook defense / force_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 b - - 0 1,mcts,5.0,7,g6f6,,force_mate,False,False,5.0000852220000525,8.522200005245395e-05,enhanced,,,,,1645,10926
+Narrow rook defense / force_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 b - - 0 1,mcts,5.0,8,c5c6,,force_mate,False,False,5.000119796000945,0.00011979600094491616,enhanced,,,,,1831,11974
+Narrow rook defense / force_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 b - - 0 1,mcts,5.0,9,c5e5,,force_mate,False,False,5.000032627998735,3.262799873482436e-05,enhanced,,,,,1785,11947
+Narrow rook defense / force_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 b - - 0 1,mcts,5.0,10,c5c7,,force_mate,False,False,5.000130471999,0.00013047199900029227,enhanced,,,,,1885,12681
+Narrow rook defense / force_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 b - - 0 1,mcts,5.0,11,c5a5,,force_mate,False,False,5.000033110001823,3.3110001822933555e-05,enhanced,,,,,1991,13414
+Narrow rook defense / avoid_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 b - - 0 1,alphabeta,5.0,,d7g7,,avoid_mate,True,True,5.000044611002522,4.461100252228789e-05,enhanced,16316,4,14210,5617,,
+Narrow rook defense / avoid_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 b - - 0 1,mcts,5.0,7,d7d8,,avoid_mate,False,False,5.000109762000648,0.00010976200064760633,enhanced,,,,,1972,13940
+Narrow rook defense / avoid_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 b - - 0 1,mcts,5.0,8,d7c7,,avoid_mate,False,False,5.000031057999877,3.1057999876793474e-05,enhanced,,,,,1926,13993
+Narrow rook defense / avoid_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 b - - 0 1,mcts,5.0,9,d7d2,,avoid_mate,False,False,5.000058296998759,5.829699875903316e-05,enhanced,,,,,1827,13109
+Narrow rook defense / avoid_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 b - - 0 1,mcts,5.0,10,d7c7,,avoid_mate,False,False,5.000092370999482,9.237099948222749e-05,enhanced,,,,,1941,13738
+Narrow rook defense / avoid_mate / original,tactic,8/3r4/8/8/2Q5/6K1/8/6k1 b - - 0 1,mcts,5.0,11,d7d8,,avoid_mate,False,False,5.000074752002547,7.47520025470294e-05,enhanced,,,,,2027,14426
+Narrow rook defense / avoid_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 w - - 0 1,alphabeta,5.0,,d2g2,,avoid_mate,True,True,5.000205192001886,0.0002051920018857345,enhanced,18456,4,14390,5161,,
+Narrow rook defense / avoid_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 w - - 0 1,mcts,5.0,7,d2c2,,avoid_mate,False,False,5.000015486999473,1.5486999473068863e-05,enhanced,,,,,1772,12880
+Narrow rook defense / avoid_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 w - - 0 1,mcts,5.0,8,d2c2,,avoid_mate,False,False,5.000142868000694,0.00014286800069385208,enhanced,,,,,1910,13637
+Narrow rook defense / avoid_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 w - - 0 1,mcts,5.0,9,d2d3,,avoid_mate,False,False,5.000036933000956,3.693300095619634e-05,enhanced,,,,,1792,13037
+Narrow rook defense / avoid_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 w - - 0 1,mcts,5.0,10,d2g2,,avoid_mate,True,True,5.000015958001313,1.5958001313265413e-05,enhanced,,,,,1884,13450
+Narrow rook defense / avoid_mate / mirrored,tactic,6K1/8/6k1/2q5/8/8/3R4/8 w - - 0 1,mcts,5.0,11,d2c2,,avoid_mate,False,False,5.000083541999629,8.354199962923303e-05,enhanced,,,,,1966,13957

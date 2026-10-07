@@ -1,0 +1,100 @@
+{
+  "started_utc": "2026-10-07T08:43:40.482994+00:00",
+  "python": "3.14.4",
+  "platform": "Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "chess_version": "1.11.2",
+  "source_sha256": {
+    "engine.py": "d1522b8086c80d63907383bedf9b010fcc96e6c3b939686085af99856b2248f5",
+    "experiments.py": "9b728ba1b3c77d3980368c6b8534b57160dd988b88a21f65468a280c0d4a3b87",
+    "followup_experiments.py": "da2a2eafe163c293424874a1704ab8d270a235e1b89bbdba6d6cdc7ffc8f4b70",
+    "followup_positions.json": "de99214cd2b1e8d579b516ad66fa643a4db3fa8caee256db13d92086e8c656e0"
+  },
+  "budgets": [
+    0.1,
+    0.5
+  ],
+  "seeds": [
+    7,
+    8,
+    9
+  ],
+  "configs": {
+    "AB basic": [
+      "alphabeta",
+      {
+        "evaluation_enhanced": false,
+        "use_quiescence": false
+      }
+    ],
+    "AB evaluation only": [
+      "alphabeta",
+      {
+        "evaluation_enhanced": true,
+        "use_quiescence": false
+      }
+    ],
+    "AB quiescence only": [
+      "alphabeta",
+      {
+        "evaluation_enhanced": false,
+        "use_quiescence": true
+      }
+    ],
+    "AB both": [
+      "alphabeta",
+      {
+        "evaluation_enhanced": true,
+        "use_quiescence": true
+      }
+    ],
+    "MC random basic 12": [
+      "mcts",
+      {
+        "evaluation_enhanced": false,
+        "guided": false,
+        "rollout_limit": 12,
+        "tactical_guard": false
+      }
+    ],
+    "MC random enhanced 12": [
+      "mcts",
+      {
+        "evaluation_enhanced": true,
+        "guided": false,
+        "rollout_limit": 12,
+        "tactical_guard": false
+      }
+    ],
+    "MC guided 12": [
+      "mcts",
+      {
+        "evaluation_enhanced": true,
+        "guided": true,
+        "rollout_limit": 12,
+        "tactical_guard": false
+      }
+    ],
+    "MC guided 40": [
+      "mcts",
+      {
+        "evaluation_enhanced": true,
+        "guided": true,
+        "rollout_limit": 40,
+        "tactical_guard": false
+      }
+    ],
+    "MC guided 12 guard": [
+      "mcts",
+      {
+        "evaluation_enhanced": true,
+        "guided": true,
+        "rollout_limit": 12,
+        "tactical_guard": true
+      }
+    ]
+  },
+  "positions": 24,
+  "timing_policy": "Serial searches; preprocessing, root guard and state copying included in the same deadline.",
+  "scope": "Constructed diagnostics, correlated mirrors and repeated seeds; no population ranking.",
+  "completed_utc": "2026-10-07T08:47:50.680314+00:00"
+}

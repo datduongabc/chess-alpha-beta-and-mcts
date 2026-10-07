@@ -1,0 +1,1482 @@
+{
+  "engine_sha256": "2463fa8dd27386db562ff08a0716b5eeeccbbf1fac6042dfe5f6ad8f0829af8c",
+  "tactical_groups": [
+    {
+      "variant": "enhanced",
+      "budget": 0.1,
+      "engine": "alphabeta",
+      "objective": "force_mate",
+      "successes": 4,
+      "trials": 6,
+      "rate": 0.6666666666666666,
+      "position_rate_min": 0,
+      "position_rate_max": 1
+    },
+    {
+      "variant": "enhanced",
+      "budget": 0.1,
+      "engine": "alphabeta",
+      "objective": "avoid_mate",
+      "successes": 4,
+      "trials": 6,
+      "rate": 0.6666666666666666,
+      "position_rate_min": 0,
+      "position_rate_max": 1
+    },
+    {
+      "variant": "enhanced",
+      "budget": 0.1,
+      "engine": "mcts",
+      "objective": "force_mate",
+      "successes": 11,
+      "trials": 30,
+      "rate": 0.36666666666666664,
+      "position_rate_min": 0,
+      "position_rate_max": 0.8
+    },
+    {
+      "variant": "enhanced",
+      "budget": 0.1,
+      "engine": "mcts",
+      "objective": "avoid_mate",
+      "successes": 13,
+      "trials": 30,
+      "rate": 0.43333333333333335,
+      "position_rate_min": 0,
+      "position_rate_max": 0.8
+    },
+    {
+      "variant": "enhanced",
+      "budget": 1.0,
+      "engine": "alphabeta",
+      "objective": "force_mate",
+      "successes": 6,
+      "trials": 6,
+      "rate": 1,
+      "position_rate_min": 1,
+      "position_rate_max": 1
+    },
+    {
+      "variant": "enhanced",
+      "budget": 1.0,
+      "engine": "alphabeta",
+      "objective": "avoid_mate",
+      "successes": 6,
+      "trials": 6,
+      "rate": 1,
+      "position_rate_min": 1,
+      "position_rate_max": 1
+    },
+    {
+      "variant": "enhanced",
+      "budget": 1.0,
+      "engine": "mcts",
+      "objective": "force_mate",
+      "successes": 0,
+      "trials": 30,
+      "rate": 0,
+      "position_rate_min": 0,
+      "position_rate_max": 0
+    },
+    {
+      "variant": "enhanced",
+      "budget": 1.0,
+      "engine": "mcts",
+      "objective": "avoid_mate",
+      "successes": 3,
+      "trials": 30,
+      "rate": 0.1,
+      "position_rate_min": 0,
+      "position_rate_max": 0.4
+    },
+    {
+      "variant": "enhanced",
+      "budget": 5.0,
+      "engine": "alphabeta",
+      "objective": "force_mate",
+      "successes": 6,
+      "trials": 6,
+      "rate": 1,
+      "position_rate_min": 1,
+      "position_rate_max": 1
+    },
+    {
+      "variant": "enhanced",
+      "budget": 5.0,
+      "engine": "alphabeta",
+      "objective": "avoid_mate",
+      "successes": 6,
+      "trials": 6,
+      "rate": 1,
+      "position_rate_min": 1,
+      "position_rate_max": 1
+    },
+    {
+      "variant": "enhanced",
+      "budget": 5.0,
+      "engine": "mcts",
+      "objective": "force_mate",
+      "successes": 1,
+      "trials": 30,
+      "rate": 0.03333333333333333,
+      "position_rate_min": 0,
+      "position_rate_max": 0.2
+    },
+    {
+      "variant": "enhanced",
+      "budget": 5.0,
+      "engine": "mcts",
+      "objective": "avoid_mate",
+      "successes": 4,
+      "trials": 30,
+      "rate": 0.13333333333333333,
+      "position_rate_min": 0,
+      "position_rate_max": 0.4
+    },
+    {
+      "variant": "baseline",
+      "budget": 0.1,
+      "engine": "alphabeta",
+      "objective": "force_mate",
+      "successes": 0,
+      "trials": 6,
+      "rate": 0,
+      "position_rate_min": 0,
+      "position_rate_max": 0
+    },
+    {
+      "variant": "baseline",
+      "budget": 0.1,
+      "engine": "alphabeta",
+      "objective": "avoid_mate",
+      "successes": 3,
+      "trials": 6,
+      "rate": 0.5,
+      "position_rate_min": 0,
+      "position_rate_max": 1
+    },
+    {
+      "variant": "baseline",
+      "budget": 0.1,
+      "engine": "mcts",
+      "objective": "force_mate",
+      "successes": 2,
+      "trials": 30,
+      "rate": 0.06666666666666667,
+      "position_rate_min": 0,
+      "position_rate_max": 0.4
+    },
+    {
+      "variant": "baseline",
+      "budget": 0.1,
+      "engine": "mcts",
+      "objective": "avoid_mate",
+      "successes": 14,
+      "trials": 30,
+      "rate": 0.4666666666666667,
+      "position_rate_min": 0,
+      "position_rate_max": 0.8
+    },
+    {
+      "variant": "baseline",
+      "budget": 1.0,
+      "engine": "alphabeta",
+      "objective": "force_mate",
+      "successes": 6,
+      "trials": 6,
+      "rate": 1,
+      "position_rate_min": 1,
+      "position_rate_max": 1
+    },
+    {
+      "variant": "baseline",
+      "budget": 1.0,
+      "engine": "alphabeta",
+      "objective": "avoid_mate",
+      "successes": 5,
+      "trials": 6,
+      "rate": 0.8333333333333334,
+      "position_rate_min": 0,
+      "position_rate_max": 1
+    },
+    {
+      "variant": "baseline",
+      "budget": 1.0,
+      "engine": "mcts",
+      "objective": "force_mate",
+      "successes": 2,
+      "trials": 30,
+      "rate": 0.06666666666666667,
+      "position_rate_min": 0,
+      "position_rate_max": 0.2
+    },
+    {
+      "variant": "baseline",
+      "budget": 1.0,
+      "engine": "mcts",
+      "objective": "avoid_mate",
+      "successes": 10,
+      "trials": 30,
+      "rate": 0.3333333333333333,
+      "position_rate_min": 0,
+      "position_rate_max": 0.6
+    }
+  ],
+  "stability": [
+    {
+      "variant": "enhanced",
+      "budget": 0.1,
+      "engine": "alphabeta",
+      "median_seconds": 0.10013257150058053,
+      "p95_seconds": 0.10050323299947195,
+      "max_overrun_ms": 0.503232999471942,
+      "median_depth": 2.0,
+      "median_nodes": 276.5,
+      "median_qnodes": 315.0,
+      "median_cutoffs": 62.5
+    },
+    {
+      "variant": "enhanced",
+      "budget": 0.1,
+      "engine": "mcts",
+      "median_seconds": 0.10006301599969447,
+      "p95_seconds": 0.10025079700062633,
+      "max_overrun_ms": 0.7617420000315123,
+      "median_simulations": 33.0,
+      "mean_distinct_moves": 3.9166666666666665,
+      "mean_modal_share": 0.4166666666666667,
+      "agreement_with_alpha": 0.2
+    },
+    {
+      "variant": "enhanced",
+      "budget": 1.0,
+      "engine": "alphabeta",
+      "median_seconds": 0.6520503169995209,
+      "p95_seconds": 1.0001274770002055,
+      "max_overrun_ms": 0.12747700020554475,
+      "median_depth": 3.0,
+      "median_nodes": 1867.0,
+      "median_qnodes": 2196.5,
+      "median_cutoffs": 468.5
+    },
+    {
+      "variant": "enhanced",
+      "budget": 1.0,
+      "engine": "mcts",
+      "median_seconds": 1.0000412959998357,
+      "p95_seconds": 1.000253315000009,
+      "max_overrun_ms": 0.4161239994573407,
+      "median_simulations": 403.5,
+      "mean_distinct_moves": 2.9166666666666665,
+      "mean_modal_share": 0.55,
+      "agreement_with_alpha": 0
+    },
+    {
+      "variant": "enhanced",
+      "budget": 5.0,
+      "engine": "alphabeta",
+      "median_seconds": 2.660831839501043,
+      "p95_seconds": 5.000205192001886,
+      "max_overrun_ms": 0.2051920018857345,
+      "median_depth": 3.5,
+      "median_nodes": 6454.5,
+      "median_qnodes": 7205.0,
+      "median_cutoffs": 1439.5
+    },
+    {
+      "variant": "enhanced",
+      "budget": 5.0,
+      "engine": "mcts",
+      "median_seconds": 5.000043296498916,
+      "p95_seconds": 5.000142868000694,
+      "max_overrun_ms": 0.2739310002652928,
+      "median_simulations": 1896.0,
+      "mean_distinct_moves": 2.8333333333333335,
+      "mean_modal_share": 0.6,
+      "agreement_with_alpha": 0.05
+    },
+    {
+      "variant": "baseline",
+      "budget": 0.1,
+      "engine": "alphabeta",
+      "median_seconds": 0.10008205350095523,
+      "p95_seconds": 0.10036603300250135,
+      "max_overrun_ms": 0.36603300250134807,
+      "median_depth": 2.0,
+      "median_nodes": 743.0,
+      "median_qnodes": 0.0,
+      "median_cutoffs": 60.0
+    },
+    {
+      "variant": "baseline",
+      "budget": 0.1,
+      "engine": "mcts",
+      "median_seconds": 0.10012126949914091,
+      "p95_seconds": 0.10036331500305096,
+      "max_overrun_ms": 0.5263719998765681,
+      "median_simulations": 14.0,
+      "mean_distinct_moves": 4.583333333333333,
+      "mean_modal_share": 0.2833333333333333,
+      "agreement_with_alpha": 0.05
+    },
+    {
+      "variant": "baseline",
+      "budget": 1.0,
+      "engine": "alphabeta",
+      "median_seconds": 0.6397215319993848,
+      "p95_seconds": 1.0002691609988688,
+      "max_overrun_ms": 0.269160998868756,
+      "median_depth": 3.0,
+      "median_nodes": 3466.0,
+      "median_qnodes": 0.0,
+      "median_cutoffs": 273.0
+    },
+    {
+      "variant": "baseline",
+      "budget": 1.0,
+      "engine": "mcts",
+      "median_seconds": 1.0001199034995807,
+      "p95_seconds": 1.0003875139991578,
+      "max_overrun_ms": 0.702011999237584,
+      "median_simulations": 136.5,
+      "mean_distinct_moves": 4.416666666666667,
+      "mean_modal_share": 0.31666666666666665,
+      "agreement_with_alpha": 0.06666666666666667
+    }
+  ],
+  "games": [
+    {
+      "run": "games-broad",
+      "budget": 0.5,
+      "starts": 8,
+      "games": 16,
+      "alpha_wins": 10,
+      "draws": 6,
+      "alpha_losses": 0,
+      "terminations": {
+        "Checkmate": 10,
+        "Insufficient Material": 3,
+        "Ply cap (adjudicated draw)": 3
+      },
+      "capped_draws": 3,
+      "alpha_score": 0.8125,
+      "paired_resampling_interval": [
+        0.65625,
+        0.9375
+      ],
+      "median_plies": 37.5,
+      "searches": 619,
+      "max_overrun_ms": 0.8518899994669482,
+      "per_start": [
+        {
+          "position": "Italian opening",
+          "alpha_score": 1.0
+        },
+        {
+          "position": "Queen's gambit",
+          "alpha_score": 1.0
+        },
+        {
+          "position": "Sicilian opening",
+          "alpha_score": 1.0
+        },
+        {
+          "position": "Caro-Kann opening",
+          "alpha_score": 1.0
+        },
+        {
+          "position": "King and pawn",
+          "alpha_score": 0.5
+        },
+        {
+          "position": "Rook ending",
+          "alpha_score": 0.75
+        },
+        {
+          "position": "Bishop and pawn",
+          "alpha_score": 0.75
+        },
+        {
+          "position": "Knight versus pawns",
+          "alpha_score": 0.5
+        }
+      ]
+    },
+    {
+      "run": "games-5s",
+      "budget": 5.0,
+      "starts": 2,
+      "games": 4,
+      "alpha_wins": 4,
+      "draws": 0,
+      "alpha_losses": 0,
+      "terminations": {
+        "Checkmate": 4
+      },
+      "capped_draws": 0,
+      "alpha_score": 1.0,
+      "paired_resampling_interval": null,
+      "median_plies": 28.5,
+      "searches": 108,
+      "max_overrun_ms": 6.458676998590818,
+      "per_start": [
+        {
+          "position": "Italian opening",
+          "alpha_score": 1.0
+        },
+        {
+          "position": "Queen's gambit",
+          "alpha_score": 1.0
+        }
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "reference": {
+        "position": "Corner net / force_mate / original",
+        "fen": "7r/8/8/8/Q7/8/5K2/7k w - - 0 1",
+        "objective": "force_mate",
+        "mate_plies": 3,
+        "accepted_moves": [
+          "a4a1",
+          "a4c6",
+          "a4e4"
+        ],
+        "legal_moves": 27,
+        "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+      },
+      "choices": [
+        {
+          "engine": "alphabeta",
+          "move": "a4a1",
+          "correct": true,
+          "elapsed": 0.18627600000036182,
+          "search": {
+            "move": "a4a1",
+            "budget": 5.0,
+            "elapsed": 0.18627600000036182,
+            "terminal": null,
+            "algorithm": "Alpha-beta",
+            "depth": 3,
+            "score": 99997,
+            "pv": [
+              "a4a1",
+              "h1h2",
+              "a1h8"
+            ],
+            "nodes": 800,
+            "evaluations": 813,
+            "cutoffs": 148,
+            "qnodes": 821,
+            "variant": "enhanced"
+          }
+        },
+        {
+          "engine": "mcts",
+          "move": "a4a1",
+          "correct": true,
+          "elapsed": 5.0001394799983245,
+          "search": {
+            "move": "a4a1",
+            "budget": 5.0,
+            "elapsed": 5.0001394799983245,
+            "terminal": null,
+            "algorithm": "MCTS",
+            "simulations": 2316,
+            "rollout_plies": 16360,
+            "expanded_nodes": 2308,
+            "root_moves": [
+              {
+                "move": "a4a1",
+                "visits": 148,
+                "value": 0.7388903655952284
+              },
+              {
+                "move": "a4b5",
+                "visits": 145,
+                "value": 0.7375604288939369
+              },
+              {
+                "move": "a4d4",
+                "visits": 144,
+                "value": 0.7289416254951555
+              },
+              {
+                "move": "f2g3",
+                "visits": 129,
+                "value": 0.7148997108319092
+              },
+              {
+                "move": "f2f1",
+                "visits": 126,
+                "value": 0.7142946218606129
+              },
+              {
+                "move": "a4c4",
+                "visits": 125,
+                "value": 0.702126956548236
+              },
+              {
+                "move": "a4a5",
+                "visits": 120,
+                "value": 0.6951809177706605
+              },
+              {
+                "move": "a4d7",
+                "visits": 118,
+                "value": 0.6979355341861901
+              },
+              {
+                "move": "a4f4",
+                "visits": 115,
+                "value": 0.6924036989301277
+              },
+              {
+                "move": "a4g4",
+                "visits": 115,
+                "value": 0.6885391838750352
+              },
+              {
+                "move": "a4b3",
+                "visits": 102,
+                "value": 0.69163917723655
+              },
+              {
+                "move": "f2e1",
+                "visits": 98,
+                "value": 0.6664173624360156
+              },
+              {
+                "move": "a4a7",
+                "visits": 95,
+                "value": 0.6537455390950095
+              },
+              {
+                "move": "a4a3",
+                "visits": 95,
+                "value": 0.6432446675342698
+              },
+              {
+                "move": "a4a6",
+                "visits": 93,
+                "value": 0.6460390243531879
+              },
+              {
+                "move": "f2e3",
+                "visits": 92,
+                "value": 0.6469185002509517
+              },
+              {
+                "move": "f2f3",
+                "visits": 81,
+                "value": 0.6225197407563836
+              },
+              {
+                "move": "a4b4",
+                "visits": 79,
+                "value": 0.6134748535453987
+              },
+              {
+                "move": "f2e2",
+                "visits": 73,
+                "value": 0.6041077345379763
+              },
+              {
+                "move": "a4e4",
+                "visits": 50,
+                "value": 0.4937812222275035
+              },
+              {
+                "move": "a4c2",
+                "visits": 46,
+                "value": 0.4750677786641912
+              },
+              {
+                "move": "a4a2",
+                "visits": 44,
+                "value": 0.46545686753134385
+              },
+              {
+                "move": "a4c6",
+                "visits": 35,
+                "value": 0.3956033639581137
+              },
+              {
+                "move": "a4e8",
+                "visits": 18,
+                "value": 0.11810128608871771
+              },
+              {
+                "move": "a4d1",
+                "visits": 17,
+                "value": 0.07261845495273792
+              },
+              {
+                "move": "a4a8",
+                "visits": 7,
+                "value": -0.4702422686395879
+              },
+              {
+                "move": "a4h4",
+                "visits": 6,
+                "value": -0.710675905103273
+              }
+            ],
+            "seed": 7,
+            "rollout_limit": 12,
+            "exploration": 1.4142135623730951,
+            "variant": "enhanced",
+            "rollout_policy": "guided (15% random)"
+          }
+        }
+      ]
+    },
+    {
+      "reference": {
+        "position": "Corner net / avoid_mate / original",
+        "fen": "7r/8/8/8/Q7/8/5K2/7k b - - 0 1",
+        "objective": "avoid_mate",
+        "mate_plies": 3,
+        "accepted_moves": [
+          "h1h2",
+          "h8f8",
+          "h8h2"
+        ],
+        "legal_moves": 14,
+        "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+      },
+      "choices": [
+        {
+          "engine": "alphabeta",
+          "move": "h8f8",
+          "correct": true,
+          "elapsed": 5.000130405998789,
+          "search": {
+            "move": "h8f8",
+            "budget": 5.0,
+            "elapsed": 5.000130405998789,
+            "terminal": null,
+            "algorithm": "Alpha-beta",
+            "depth": 4,
+            "score": -411,
+            "pv": [
+              "h8f8",
+              "f2e3",
+              "h1g2",
+              "e3e4"
+            ],
+            "nodes": 15260,
+            "evaluations": 20713,
+            "cutoffs": 5120,
+            "qnodes": 21039,
+            "variant": "enhanced"
+          }
+        },
+        {
+          "engine": "mcts",
+          "move": "h8f8",
+          "correct": true,
+          "elapsed": 5.000073040999268,
+          "search": {
+            "move": "h8f8",
+            "budget": 5.0,
+            "elapsed": 5.000073040999268,
+            "terminal": null,
+            "algorithm": "MCTS",
+            "simulations": 2449,
+            "rollout_plies": 16330,
+            "expanded_nodes": 2379,
+            "root_moves": [
+              {
+                "move": "h8f8",
+                "visits": 264,
+                "value": -0.6426806898535633
+              },
+              {
+                "move": "h8h4",
+                "visits": 252,
+                "value": -0.6480730949704087
+              },
+              {
+                "move": "h8a8",
+                "visits": 191,
+                "value": -0.6853905644309093
+              },
+              {
+                "move": "h8h7",
+                "visits": 183,
+                "value": -0.6928251925924934
+              },
+              {
+                "move": "h1h2",
+                "visits": 175,
+                "value": -0.6996591051013362
+              },
+              {
+                "move": "h8h6",
+                "visits": 172,
+                "value": -0.7021417471323468
+              },
+              {
+                "move": "h8h5",
+                "visits": 165,
+                "value": -0.7083462158907234
+              },
+              {
+                "move": "h8c8",
+                "visits": 164,
+                "value": -0.7090763187604835
+              },
+              {
+                "move": "h8b8",
+                "visits": 163,
+                "value": -0.7107580713549554
+              },
+              {
+                "move": "h8d8",
+                "visits": 159,
+                "value": -0.7149115509159998
+              },
+              {
+                "move": "h8h3",
+                "visits": 155,
+                "value": -0.7183905102018787
+              },
+              {
+                "move": "h8h2",
+                "visits": 145,
+                "value": -0.7289873073307493
+              },
+              {
+                "move": "h8e8",
+                "visits": 143,
+                "value": -0.7310595182028053
+              },
+              {
+                "move": "h8g8",
+                "visits": 118,
+                "value": -0.7640194939550374
+              }
+            ],
+            "seed": 7,
+            "rollout_limit": 12,
+            "exploration": 1.4142135623730951,
+            "variant": "enhanced",
+            "rollout_policy": "guided (15% random)"
+          }
+        }
+      ]
+    },
+    {
+      "reference": {
+        "position": "Unique queen maneuver / force_mate / original",
+        "fen": "3k4/8/3K4/8/8/4Q3/8/6r1 w - - 0 1",
+        "objective": "force_mate",
+        "mate_plies": 3,
+        "accepted_moves": [
+          "e3e7"
+        ],
+        "legal_moves": 30,
+        "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+      },
+      "choices": [
+        {
+          "engine": "alphabeta",
+          "move": "e3e7",
+          "correct": true,
+          "elapsed": 0.2838188159985293,
+          "search": {
+            "move": "e3e7",
+            "budget": 5.0,
+            "elapsed": 0.2838188159985293,
+            "terminal": null,
+            "algorithm": "Alpha-beta",
+            "depth": 3,
+            "score": 99997,
+            "pv": [
+              "e3e7",
+              "d8c8",
+              "e7c7"
+            ],
+            "nodes": 1107,
+            "evaluations": 1223,
+            "cutoffs": 255,
+            "qnodes": 1226,
+            "variant": "enhanced"
+          }
+        },
+        {
+          "engine": "mcts",
+          "move": "e3g1",
+          "correct": false,
+          "elapsed": 5.000076563999755,
+          "search": {
+            "move": "e3g1",
+            "budget": 5.0,
+            "elapsed": 5.000076563999755,
+            "terminal": null,
+            "algorithm": "MCTS",
+            "simulations": 1913,
+            "rollout_plies": 15287,
+            "expanded_nodes": 1909,
+            "root_moves": [
+              {
+                "move": "e3g1",
+                "visits": 234,
+                "value": 0.8919786417620839
+              },
+              {
+                "move": "e3a7",
+                "visits": 107,
+                "value": 0.7643496705578656
+              },
+              {
+                "move": "e3e4",
+                "visits": 88,
+                "value": 0.7157808833690736
+              },
+              {
+                "move": "e3f2",
+                "visits": 87,
+                "value": 0.7269839158524471
+              },
+              {
+                "move": "e3b3",
+                "visits": 86,
+                "value": 0.7119065372307446
+              },
+              {
+                "move": "e3f4",
+                "visits": 83,
+                "value": 0.7188600315625244
+              },
+              {
+                "move": "e3h3",
+                "visits": 82,
+                "value": 0.7170128696761291
+              },
+              {
+                "move": "e3h6",
+                "visits": 82,
+                "value": 0.7130603401835942
+              },
+              {
+                "move": "e3e6",
+                "visits": 79,
+                "value": 0.708985928368533
+              },
+              {
+                "move": "e3c3",
+                "visits": 75,
+                "value": 0.6934663876900001
+              },
+              {
+                "move": "d6e5",
+                "visits": 71,
+                "value": 0.6739851269798033
+              },
+              {
+                "move": "e3e5",
+                "visits": 69,
+                "value": 0.6715437541879188
+              },
+              {
+                "move": "d6e6",
+                "visits": 67,
+                "value": 0.6784307028637663
+              },
+              {
+                "move": "e3d4",
+                "visits": 67,
+                "value": 0.6633184929502133
+              },
+              {
+                "move": "e3f3",
+                "visits": 66,
+                "value": 0.653525994192244
+              },
+              {
+                "move": "e3a3",
+                "visits": 65,
+                "value": 0.6509462033826834
+              },
+              {
+                "move": "d6d5",
+                "visits": 62,
+                "value": 0.650800871983521
+              },
+              {
+                "move": "e3d3",
+                "visits": 56,
+                "value": 0.6196083160298574
+              },
+              {
+                "move": "e3c5",
+                "visits": 56,
+                "value": 0.6157935083363959
+              },
+              {
+                "move": "d6c5",
+                "visits": 49,
+                "value": 0.582974726391458
+              },
+              {
+                "move": "d6c6",
+                "visits": 49,
+                "value": 0.5745317023121391
+              },
+              {
+                "move": "e3e2",
+                "visits": 45,
+                "value": 0.5481233050270586
+              },
+              {
+                "move": "e3d2",
+                "visits": 40,
+                "value": 0.529935369831398
+              },
+              {
+                "move": "e3b6",
+                "visits": 34,
+                "value": 0.45724505780466473
+              },
+              {
+                "move": "e3g3",
+                "visits": 30,
+                "value": 0.41051765369132726
+              },
+              {
+                "move": "e3e7",
+                "visits": 25,
+                "value": 0.33565247974393025
+              },
+              {
+                "move": "e3c1",
+                "visits": 23,
+                "value": 0.29057581522751763
+              },
+              {
+                "move": "e3e1",
+                "visits": 19,
+                "value": 0.18018869681232252
+              },
+              {
+                "move": "e3g5",
+                "visits": 10,
+                "value": -0.2218812794990892
+              },
+              {
+                "move": "e3e8",
+                "visits": 7,
+                "value": -0.49875623556870297
+              }
+            ],
+            "seed": 7,
+            "rollout_limit": 12,
+            "exploration": 1.4142135623730951,
+            "variant": "enhanced",
+            "rollout_policy": "guided (15% random)"
+          }
+        }
+      ]
+    },
+    {
+      "reference": {
+        "position": "Unique queen maneuver / avoid_mate / original",
+        "fen": "3k4/8/3K4/8/8/4Q3/8/6r1 b - - 0 1",
+        "objective": "avoid_mate",
+        "mate_plies": 3,
+        "accepted_moves": [
+          "d8c8",
+          "g1c1",
+          "g1d1",
+          "g1e1",
+          "g1g6",
+          "g1g7"
+        ],
+        "legal_moves": 15,
+        "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+      },
+      "choices": [
+        {
+          "engine": "alphabeta",
+          "move": "g1d1",
+          "correct": true,
+          "elapsed": 5.000189907001186,
+          "search": {
+            "move": "g1d1",
+            "budget": 5.0,
+            "elapsed": 5.000189907001186,
+            "terminal": null,
+            "algorithm": "Alpha-beta",
+            "depth": 4,
+            "score": -405,
+            "pv": [
+              "g1d1",
+              "d6e6",
+              "d8c7",
+              "e6e5"
+            ],
+            "nodes": 11853,
+            "evaluations": 13429,
+            "cutoffs": 2624,
+            "qnodes": 13507,
+            "variant": "enhanced"
+          }
+        },
+        {
+          "engine": "mcts",
+          "move": "g1g7",
+          "correct": true,
+          "elapsed": 5.000099897002656,
+          "search": {
+            "move": "g1g7",
+            "budget": 5.0,
+            "elapsed": 5.000099897002656,
+            "terminal": null,
+            "algorithm": "MCTS",
+            "simulations": 1457,
+            "rollout_plies": 12843,
+            "expanded_nodes": 1458,
+            "root_moves": [
+              {
+                "move": "g1g7",
+                "visits": 149,
+                "value": -0.5041012371653231
+              },
+              {
+                "move": "g1g4",
+                "visits": 136,
+                "value": -0.5212910712060692
+              },
+              {
+                "move": "g1g2",
+                "visits": 126,
+                "value": -0.5327713693986704
+              },
+              {
+                "move": "d8c8",
+                "visits": 101,
+                "value": -0.5767987474253383
+              },
+              {
+                "move": "g1a1",
+                "visits": 99,
+                "value": -0.5788310601956357
+              },
+              {
+                "move": "g1g8",
+                "visits": 98,
+                "value": -0.5791351175922509
+              },
+              {
+                "move": "g1g3",
+                "visits": 97,
+                "value": -0.5800659204959838
+              },
+              {
+                "move": "g1e1",
+                "visits": 96,
+                "value": -0.5836646215257181
+              },
+              {
+                "move": "g1g5",
+                "visits": 91,
+                "value": -0.5931512839614976
+              },
+              {
+                "move": "g1b1",
+                "visits": 89,
+                "value": -0.6006618874638403
+              },
+              {
+                "move": "g1h1",
+                "visits": 88,
+                "value": -0.6018279368671041
+              },
+              {
+                "move": "g1c1",
+                "visits": 85,
+                "value": -0.6099419186937419
+              },
+              {
+                "move": "g1f1",
+                "visits": 84,
+                "value": -0.6083713868158832
+              },
+              {
+                "move": "g1d1",
+                "visits": 63,
+                "value": -0.6750572290109192
+              },
+              {
+                "move": "g1g6",
+                "visits": 55,
+                "value": -0.705813210214381
+              }
+            ],
+            "seed": 7,
+            "rollout_limit": 12,
+            "exploration": 1.4142135623730951,
+            "variant": "enhanced",
+            "rollout_policy": "guided (15% random)"
+          }
+        }
+      ]
+    },
+    {
+      "reference": {
+        "position": "Narrow rook defense / force_mate / original",
+        "fen": "8/3r4/8/8/2Q5/6K1/8/6k1 w - - 0 1",
+        "objective": "force_mate",
+        "mate_plies": 3,
+        "accepted_moves": [
+          "c4c1"
+        ],
+        "legal_moves": 30,
+        "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+      },
+      "choices": [
+        {
+          "engine": "alphabeta",
+          "move": "c4c1",
+          "correct": true,
+          "elapsed": 0.23428946000058204,
+          "search": {
+            "move": "c4c1",
+            "budget": 5.0,
+            "elapsed": 0.23428946000058204,
+            "terminal": null,
+            "algorithm": "Alpha-beta",
+            "depth": 3,
+            "score": 99997,
+            "pv": [
+              "c4c1",
+              "d7d1",
+              "c1d1"
+            ],
+            "nodes": 827,
+            "evaluations": 863,
+            "cutoffs": 161,
+            "qnodes": 870,
+            "variant": "enhanced"
+          }
+        },
+        {
+          "engine": "mcts",
+          "move": "c4a2",
+          "correct": false,
+          "elapsed": 5.000104506998468,
+          "search": {
+            "move": "c4a2",
+            "budget": 5.0,
+            "elapsed": 5.000104506998468,
+            "terminal": null,
+            "algorithm": "MCTS",
+            "simulations": 1892,
+            "rollout_plies": 12982,
+            "expanded_nodes": 1891,
+            "root_moves": [
+              {
+                "move": "c4a2",
+                "visits": 116,
+                "value": 0.8250421874164351
+              },
+              {
+                "move": "c4c2",
+                "visits": 113,
+                "value": 0.8243327253964875
+              },
+              {
+                "move": "c4b4",
+                "visits": 110,
+                "value": 0.8046578402644157
+              },
+              {
+                "move": "c4e2",
+                "visits": 102,
+                "value": 0.7995936009506741
+              },
+              {
+                "move": "g3f3",
+                "visits": 97,
+                "value": 0.7876470329453367
+              },
+              {
+                "move": "c4c6",
+                "visits": 91,
+                "value": 0.7816399538271755
+              },
+              {
+                "move": "c4a4",
+                "visits": 88,
+                "value": 0.775381345141951
+              },
+              {
+                "move": "c4b3",
+                "visits": 87,
+                "value": 0.7701354390997137
+              },
+              {
+                "move": "c4c3",
+                "visits": 87,
+                "value": 0.7549445207683941
+              },
+              {
+                "move": "c4e4",
+                "visits": 77,
+                "value": 0.7447911050190806
+              },
+              {
+                "move": "c4a6",
+                "visits": 75,
+                "value": 0.7323014940044671
+              },
+              {
+                "move": "c4e6",
+                "visits": 69,
+                "value": 0.724382358300767
+              },
+              {
+                "move": "c4b5",
+                "visits": 67,
+                "value": 0.7030599943451215
+              },
+              {
+                "move": "c4c5",
+                "visits": 64,
+                "value": 0.6973916935137663
+              },
+              {
+                "move": "c4f4",
+                "visits": 61,
+                "value": 0.6847158261378131
+              },
+              {
+                "move": "c4g8",
+                "visits": 60,
+                "value": 0.6880549038426007
+              },
+              {
+                "move": "c4c8",
+                "visits": 60,
+                "value": 0.6700806277066303
+              },
+              {
+                "move": "g3h4",
+                "visits": 59,
+                "value": 0.6751109469215902
+              },
+              {
+                "move": "g3h3",
+                "visits": 57,
+                "value": 0.673225288251207
+              },
+              {
+                "move": "c4g4",
+                "visits": 54,
+                "value": 0.6615919262238923
+              },
+              {
+                "move": "g3g4",
+                "visits": 54,
+                "value": 0.6612324462627376
+              },
+              {
+                "move": "c4c1",
+                "visits": 47,
+                "value": 0.6030776192983469
+              },
+              {
+                "move": "g3f4",
+                "visits": 46,
+                "value": 0.6147754361437286
+              },
+              {
+                "move": "c4h4",
+                "visits": 43,
+                "value": 0.5825485783178794
+              },
+              {
+                "move": "c4d5",
+                "visits": 32,
+                "value": 0.5040753152182653
+              },
+              {
+                "move": "c4c7",
+                "visits": 23,
+                "value": 0.3649015033388036
+              },
+              {
+                "move": "c4d3",
+                "visits": 22,
+                "value": 0.35436809273458175
+              },
+              {
+                "move": "c4f7",
+                "visits": 20,
+                "value": 0.32069510327811085
+              },
+              {
+                "move": "c4d4",
+                "visits": 7,
+                "value": -0.3347874168154946
+              },
+              {
+                "move": "c4f1",
+                "visits": 4,
+                "value": -0.8731411039822851
+              }
+            ],
+            "seed": 7,
+            "rollout_limit": 12,
+            "exploration": 1.4142135623730951,
+            "variant": "enhanced",
+            "rollout_policy": "guided (15% random)"
+          }
+        }
+      ]
+    },
+    {
+      "reference": {
+        "position": "Narrow rook defense / avoid_mate / original",
+        "fen": "8/3r4/8/8/2Q5/6K1/8/6k1 b - - 0 1",
+        "objective": "avoid_mate",
+        "mate_plies": 3,
+        "accepted_moves": [
+          "d7d1",
+          "d7g7"
+        ],
+        "legal_moves": 15,
+        "scope": "Forced mate within the bound; defense success does not imply eventual survival."
+      },
+      "choices": [
+        {
+          "engine": "alphabeta",
+          "move": "d7g7",
+          "correct": true,
+          "elapsed": 5.000044611002522,
+          "search": {
+            "move": "d7g7",
+            "budget": 5.0,
+            "elapsed": 5.000044611002522,
+            "terminal": null,
+            "algorithm": "Alpha-beta",
+            "depth": 4,
+            "score": -425,
+            "pv": [
+              "d7g7",
+              "g3f3",
+              "g1h2",
+              "f3e4"
+            ],
+            "nodes": 14210,
+            "evaluations": 15606,
+            "cutoffs": 5617,
+            "qnodes": 16316,
+            "variant": "enhanced"
+          }
+        },
+        {
+          "engine": "mcts",
+          "move": "d7d8",
+          "correct": false,
+          "elapsed": 5.000109762000648,
+          "search": {
+            "move": "d7d8",
+            "budget": 5.0,
+            "elapsed": 5.000109762000648,
+            "terminal": null,
+            "algorithm": "MCTS",
+            "simulations": 1972,
+            "rollout_plies": 13940,
+            "expanded_nodes": 1951,
+            "root_moves": [
+              {
+                "move": "d7d8",
+                "visits": 183,
+                "value": -0.6095967965807495
+              },
+              {
+                "move": "d7c7",
+                "visits": 176,
+                "value": -0.6151601831029035
+              },
+              {
+                "move": "d7d2",
+                "visits": 166,
+                "value": -0.6231811780223054
+              },
+              {
+                "move": "d7d5",
+                "visits": 166,
+                "value": -0.6239712763412004
+              },
+              {
+                "move": "d7a7",
+                "visits": 161,
+                "value": -0.6284584275734733
+              },
+              {
+                "move": "d7d4",
+                "visits": 156,
+                "value": -0.6356019352888497
+              },
+              {
+                "move": "d7d6",
+                "visits": 146,
+                "value": -0.6436845831331158
+              },
+              {
+                "move": "d7e7",
+                "visits": 145,
+                "value": -0.6442077142717874
+              },
+              {
+                "move": "d7d1",
+                "visits": 113,
+                "value": -0.6874852449647236
+              },
+              {
+                "move": "d7f7",
+                "visits": 109,
+                "value": -0.6969901903932362
+              },
+              {
+                "move": "d7g7",
+                "visits": 103,
+                "value": -0.7044597266941907
+              },
+              {
+                "move": "g1h1",
+                "visits": 100,
+                "value": -0.7131377835205491
+              },
+              {
+                "move": "d7b7",
+                "visits": 97,
+                "value": -0.7169395631648379
+              },
+              {
+                "move": "d7d3",
+                "visits": 81,
+                "value": -0.7534269544381496
+              },
+              {
+                "move": "d7h7",
+                "visits": 70,
+                "value": -0.791558204177661
+              }
+            ],
+            "seed": 7,
+            "rollout_limit": 12,
+            "exploration": 1.4142135623730951,
+            "variant": "enhanced",
+            "rollout_policy": "guided (15% random)"
+          }
+        }
+      ]
+    }
+  ]
+}

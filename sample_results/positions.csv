@@ -1,0 +1,145 @@
+position,category,fen,engine,budget,seed,move,solved_mate,agrees_with_alpha,elapsed,overrun,depth,nodes,cutoffs,simulations,rollout_plies
+White queen mate,tactic,7k/5Q2/6K1/8/8/8/8/8 w - - 0 1,alphabeta,0.1,,f7e8,True,True,0.0011986150002485374,0,1,27,0,,
+White queen mate,tactic,7k/5Q2/6K1/8/8/8/8/8 w - - 0 1,mcts,0.1,7,f7e8,True,True,0.1000673939997796,6.739399977959137e-05,,,,48,636
+White queen mate,tactic,7k/5Q2/6K1/8/8/8/8/8 w - - 0 1,mcts,0.1,8,f7e8,True,True,0.10007578799923067,7.578799923066426e-05,,,,66,641
+White queen mate,tactic,7k/5Q2/6K1/8/8/8/8/8 w - - 0 1,mcts,0.1,9,f7e8,True,True,0.10003324699937366,3.324699937365394e-05,,,,102,601
+White queen mate,tactic,7k/5Q2/6K1/8/8/8/8/8 w - - 0 1,mcts,0.1,10,f7e8,True,True,0.10004343599939602,4.343599939601872e-05,,,,66,602
+White queen mate,tactic,7k/5Q2/6K1/8/8/8/8/8 w - - 0 1,mcts,0.1,11,f7e8,True,True,0.1000147670001752,1.4767000175192058e-05,,,,70,619
+Black queen mate,tactic,8/8/8/8/8/6k1/5q2/7K b - - 0 1,alphabeta,0.1,,f2e1,True,True,0.0009601830006431555,0,1,27,0,,
+Black queen mate,tactic,8/8/8/8/8/6k1/5q2/7K b - - 0 1,mcts,0.1,7,f2e1,True,True,0.10005444499984151,5.444499984150197e-05,,,,56,637
+Black queen mate,tactic,8/8/8/8/8/6k1/5q2/7K b - - 0 1,mcts,0.1,8,f2e1,True,True,0.10011157999906573,0.00011157999906571958,,,,65,638
+Black queen mate,tactic,8/8/8/8/8/6k1/5q2/7K b - - 0 1,mcts,0.1,9,f2e1,True,True,0.10017727599915816,0.00017727599915814962,,,,81,644
+Black queen mate,tactic,8/8/8/8/8/6k1/5q2/7K b - - 0 1,mcts,0.1,10,f2e1,True,True,0.10013272499963932,0.0001327249996393165,,,,63,595
+Black queen mate,tactic,8/8/8/8/8/6k1/5q2/7K b - - 0 1,mcts,0.1,11,f2e1,True,True,0.10013975800029584,0.00013975800029583652,,,,73,653
+White back-rank mate,tactic,6k1/5ppp/8/8/8/8/5PPP/4R1K1 w - - 0 1,alphabeta,0.1,,e1e8,True,True,0.0017138010007329285,0,1,21,0,,
+White back-rank mate,tactic,6k1/5ppp/8/8/8/8/5PPP/4R1K1 w - - 0 1,mcts,0.1,7,e1e8,True,True,0.1000115150000056,1.1515000005596354e-05,,,,27,1039
+White back-rank mate,tactic,6k1/5ppp/8/8/8/8/5PPP/4R1K1 w - - 0 1,mcts,0.1,8,e1e8,True,True,0.10008579399982409,8.579399982408531e-05,,,,27,1016
+White back-rank mate,tactic,6k1/5ppp/8/8/8/8/5PPP/4R1K1 w - - 0 1,mcts,0.1,9,e1e8,True,True,0.10004608599956555,4.608599956554271e-05,,,,29,1079
+White back-rank mate,tactic,6k1/5ppp/8/8/8/8/5PPP/4R1K1 w - - 0 1,mcts,0.1,10,e1e8,True,True,0.10001928600104293,1.9286001042922996e-05,,,,27,1018
+White back-rank mate,tactic,6k1/5ppp/8/8/8/8/5PPP/4R1K1 w - - 0 1,mcts,0.1,11,e1e8,True,True,0.1000583999993978,5.839999939780127e-05,,,,27,997
+Black back-rank mate,tactic,4r1k1/5ppp/8/8/8/8/5PPP/6K1 b - - 0 1,alphabeta,0.1,,e8e1,True,True,0.0017816519994084956,0,1,21,0,,
+Black back-rank mate,tactic,4r1k1/5ppp/8/8/8/8/5PPP/6K1 b - - 0 1,mcts,0.1,7,e8e1,True,True,0.10001125800044974,1.125800044973757e-05,,,,26,984
+Black back-rank mate,tactic,4r1k1/5ppp/8/8/8/8/5PPP/6K1 b - - 0 1,mcts,0.1,8,e8e1,True,True,0.10005315799935488,5.315799935487475e-05,,,,27,1010
+Black back-rank mate,tactic,4r1k1/5ppp/8/8/8/8/5PPP/6K1 b - - 0 1,mcts,0.1,9,e8e1,True,True,0.10012050299883413,0.00012050299883412108,,,,28,1004
+Black back-rank mate,tactic,4r1k1/5ppp/8/8/8/8/5PPP/6K1 b - - 0 1,mcts,0.1,10,e8e1,True,True,0.10001551799905428,1.551799905427642e-05,,,,29,1043
+Black back-rank mate,tactic,4r1k1/5ppp/8/8/8/8/5PPP/6K1 b - - 0 1,mcts,0.1,11,e8e1,True,True,0.10014538100040227,0.00014538100040226154,,,,29,1071
+Italian opening,middlegame,r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4,alphabeta,0.1,,b1c3,,True,0.10014205799961928,0.00014205799961927723,2,620,61,,
+Italian opening,middlegame,r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4,mcts,0.1,7,b2b4,,False,0.10002119899945683,2.119899945682291e-05,,,,14,560
+Italian opening,middlegame,r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4,mcts,0.1,8,f3e5,,False,0.10010520899959374,0.00010520899959373664,,,,14,561
+Italian opening,middlegame,r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4,mcts,0.1,9,c4a6,,False,0.1000209289995837,2.0928999583696983e-05,,,,14,584
+Italian opening,middlegame,r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4,mcts,0.1,10,e1e2,,False,0.10023247100070876,0.00023247100070875049,,,,14,591
+Italian opening,middlegame,r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4,mcts,0.1,11,c4b5,,False,0.10015632400063623,0.00015632400063622653,,,,14,569
+Queen's gambit,middlegame,rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4,alphabeta,0.1,,c4d5,,True,0.10005037900009484,5.0379000094830095e-05,2,627,79,,
+Queen's gambit,middlegame,rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4,mcts,0.1,7,c3d5,,False,0.10005245299907983,5.2452999079827256e-05,,,,14,573
+Queen's gambit,middlegame,rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4,mcts,0.1,8,c4d5,,True,0.10013556800004153,0.00013556800004152492,,,,14,560
+Queen's gambit,middlegame,rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4,mcts,0.1,9,c1g5,,False,0.10015719600050943,0.00015719600050942417,,,,14,565
+Queen's gambit,middlegame,rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4,mcts,0.1,10,d1b3,,False,0.10008219399969676,8.219399969675023e-05,,,,14,582
+Queen's gambit,middlegame,rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4,mcts,0.1,11,b2b3,,False,0.10010606899959384,0.00010606899959383909,,,,14,567
+Sicilian opening,middlegame,rnbqkb1r/pp2pppp/3p1n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5,alphabeta,0.1,,f1b5,,True,0.10009856299984676,9.856299984675743e-05,2,649,54,,
+Sicilian opening,middlegame,rnbqkb1r/pp2pppp/3p1n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5,mcts,0.1,7,d1h5,,False,0.10001781699975254,1.781699975253459e-05,,,,14,561
+Sicilian opening,middlegame,rnbqkb1r/pp2pppp/3p1n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5,mcts,0.1,8,f1d3,,False,0.10012883700073871,0.0001288370007387074,,,,14,564
+Sicilian opening,middlegame,rnbqkb1r/pp2pppp/3p1n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5,mcts,0.1,9,c2c4,,False,0.10016109800017148,0.00016109800017147236,,,,14,561
+Sicilian opening,middlegame,rnbqkb1r/pp2pppp/3p1n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5,mcts,0.1,10,c1d2,,False,0.10013160000016796,0.00013160000016795848,,,,14,560
+Sicilian opening,middlegame,rnbqkb1r/pp2pppp/3p1n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5,mcts,0.1,11,e4e5,,False,0.10011195699917153,0.00011195699917151969,,,,13,556
+Caro-Kann opening,middlegame,rnbqkbnr/pp2pppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR b KQkq - 0 4,alphabeta,0.1,,b8d7,,True,0.10012104700035707,0.00012104700035706073,2,619,66,,
+Caro-Kann opening,middlegame,rnbqkbnr/pp2pppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR b KQkq - 0 4,mcts,0.1,7,b7b6,,False,0.10002343599990127,2.3435999901261217e-05,,,,14,560
+Caro-Kann opening,middlegame,rnbqkbnr/pp2pppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR b KQkq - 0 4,mcts,0.1,8,c8g4,,False,0.10006159899967315,6.159899967314586e-05,,,,14,562
+Caro-Kann opening,middlegame,rnbqkbnr/pp2pppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR b KQkq - 0 4,mcts,0.1,9,d8d4,,False,0.10019398800068302,0.00019398800068301525,,,,14,565
+Caro-Kann opening,middlegame,rnbqkbnr/pp2pppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR b KQkq - 0 4,mcts,0.1,10,d8d4,,False,0.1000173980010004,1.7398001000396013e-05,,,,13,548
+Caro-Kann opening,middlegame,rnbqkbnr/pp2pppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR b KQkq - 0 4,mcts,0.1,11,b7b5,,False,0.10015491299964197,0.0001549129996419596,,,,13,549
+King and pawn,endgame,8/8/8/4k3/8/4K3/4P3/8 w - - 0 1,alphabeta,0.1,,e3d3,,True,0.10006405400054064,6.405400054063093e-05,4,1342,160,,
+King and pawn,endgame,8/8/8/4k3/8/4K3/4P3/8 w - - 0 1,mcts,0.1,7,e3d3,,True,0.10006732799956808,6.732799956807312e-05,,,,31,1061
+King and pawn,endgame,8/8/8/4k3/8/4K3/4P3/8 w - - 0 1,mcts,0.1,8,e3f3,,False,0.10001722400011204,1.7224000112031623e-05,,,,33,1117
+King and pawn,endgame,8/8/8/4k3/8/4K3/4P3/8 w - - 0 1,mcts,0.1,9,e3f2,,False,0.10007455000049958,7.455000049957916e-05,,,,33,1076
+King and pawn,endgame,8/8/8/4k3/8/4K3/4P3/8 w - - 0 1,mcts,0.1,10,e3d3,,True,0.10003568200045265,3.568200045264702e-05,,,,31,1087
+King and pawn,endgame,8/8/8/4k3/8/4K3/4P3/8 w - - 0 1,mcts,0.1,11,e3f2,,False,0.1000214279993088,2.142799930879291e-05,,,,33,1025
+Rook ending,endgame,8/5pk1/7p/8/8/6P1/5PK1/R6r w - - 0 1,alphabeta,0.1,,a1h1,,True,0.10006668399910268,6.668399910267353e-05,4,981,294,,
+Rook ending,endgame,8/5pk1/7p/8/8/6P1/5PK1/R6r w - - 0 1,mcts,0.1,7,g3g4,,False,0.10003394299928914,3.394299928913269e-05,,,,22,895
+Rook ending,endgame,8/5pk1/7p/8/8/6P1/5PK1/R6r w - - 0 1,mcts,0.1,8,a1h1,,True,0.10012993800046388,0.00012993800046387505,,,,24,948
+Rook ending,endgame,8/5pk1/7p/8/8/6P1/5PK1/R6r w - - 0 1,mcts,0.1,9,a1a6,,False,0.10002999500102305,2.999500102304764e-05,,,,22,914
+Rook ending,endgame,8/5pk1/7p/8/8/6P1/5PK1/R6r w - - 0 1,mcts,0.1,10,g2h1,,False,0.1000607370006037,6.073700060368892e-05,,,,23,935
+Rook ending,endgame,8/5pk1/7p/8/8/6P1/5PK1/R6r w - - 0 1,mcts,0.1,11,g2h1,,False,0.10012801900120394,0.00012801900120393284,,,,23,929
+Bishop and pawn,endgame,8/7k/8/6P1/8/4K3/3B4/8 w - - 0 1,alphabeta,0.1,,e3e4,,True,0.10003161499844282,3.161499844281379e-05,4,1375,323,,
+Bishop and pawn,endgame,8/7k/8/6P1/8/4K3/3B4/8 w - - 0 1,mcts,0.1,7,e3e4,,True,0.10008494599969708,8.494599969707806e-05,,,,28,862
+Bishop and pawn,endgame,8/7k/8/6P1/8/4K3/3B4/8 w - - 0 1,mcts,0.1,8,d2e1,,False,0.1000647820001177,6.478200011769686e-05,,,,32,841
+Bishop and pawn,endgame,8/7k/8/6P1/8/4K3/3B4/8 w - - 0 1,mcts,0.1,9,e3f4,,False,0.10005709899996873,5.709899996872436e-05,,,,26,875
+Bishop and pawn,endgame,8/7k/8/6P1/8/4K3/3B4/8 w - - 0 1,mcts,0.1,10,e3f4,,False,0.10009470599834458,9.470599834457416e-05,,,,27,848
+Bishop and pawn,endgame,8/7k/8/6P1/8/4K3/3B4/8 w - - 0 1,mcts,0.1,11,d2e1,,False,0.10017674500159046,0.00017674500159045592,,,,30,836
+Knight versus pawns,endgame,8/6k1/5pp1/8/8/3N4/4K3/8 w - - 0 1,alphabeta,0.1,,e2e3,,True,0.10001793899937184,1.793899937183041e-05,4,1244,274,,
+Knight versus pawns,endgame,8/6k1/5pp1/8/8/3N4/4K3/8 w - - 0 1,mcts,0.1,7,e2f1,,False,0.10008677699988766,8.677699988765553e-05,,,,26,1046
+Knight versus pawns,endgame,8/6k1/5pp1/8/8/3N4/4K3/8 w - - 0 1,mcts,0.1,8,d3c5,,False,0.10006876299848955,6.876299848954104e-05,,,,28,1069
+Knight versus pawns,endgame,8/6k1/5pp1/8/8/3N4/4K3/8 w - - 0 1,mcts,0.1,9,e2d1,,False,0.1001082189995941,0.0001082189995940952,,,,24,942
+Knight versus pawns,endgame,8/6k1/5pp1/8/8/3N4/4K3/8 w - - 0 1,mcts,0.1,10,d3b2,,False,0.1001295170008234,0.00012951700082339257,,,,26,909
+Knight versus pawns,endgame,8/6k1/5pp1/8/8/3N4/4K3/8 w - - 0 1,mcts,0.1,11,e2d2,,False,0.10004244099945936,4.244099945935331e-05,,,,25,943
+White queen mate,tactic,7k/5Q2/6K1/8/8/8/8/8 w - - 0 1,alphabeta,0.25,,f7e8,True,True,0.0012396479996823473,0,1,27,0,,
+White queen mate,tactic,7k/5Q2/6K1/8/8/8/8/8 w - - 0 1,mcts,0.25,7,f7e8,True,True,0.25002164599936805,2.1645999368047342e-05,,,,152,1523
+White queen mate,tactic,7k/5Q2/6K1/8/8/8/8/8 w - - 0 1,mcts,0.25,8,f7e8,True,True,0.2500328650003212,3.286500032118056e-05,,,,186,1512
+White queen mate,tactic,7k/5Q2/6K1/8/8/8/8/8 w - - 0 1,mcts,0.25,9,f7e8,True,True,0.2500592449996475,5.924499964748975e-05,,,,255,1463
+White queen mate,tactic,7k/5Q2/6K1/8/8/8/8/8 w - - 0 1,mcts,0.25,10,f7e8,True,True,0.250031528999898,3.152899989800062e-05,,,,172,1376
+White queen mate,tactic,7k/5Q2/6K1/8/8/8/8/8 w - - 0 1,mcts,0.25,11,f7e8,True,True,0.25012220700045873,0.00012220700045872945,,,,192,1354
+Black queen mate,tactic,8/8/8/8/8/6k1/5q2/7K b - - 0 1,alphabeta,0.25,,f2e1,True,True,0.0009503380006208317,0,1,27,0,,
+Black queen mate,tactic,8/8/8/8/8/6k1/5q2/7K b - - 0 1,mcts,0.25,7,f2e1,True,True,0.25011267499940004,0.000112674999400042,,,,149,1511
+Black queen mate,tactic,8/8/8/8/8/6k1/5q2/7K b - - 0 1,mcts,0.25,8,f2e1,True,True,0.2501640539994696,0.00016405399946961552,,,,204,1479
+Black queen mate,tactic,8/8/8/8/8/6k1/5q2/7K b - - 0 1,mcts,0.25,9,f2e1,True,True,0.25005254200004856,5.254200004856102e-05,,,,220,1478
+Black queen mate,tactic,8/8/8/8/8/6k1/5q2/7K b - - 0 1,mcts,0.25,10,f2e1,True,True,0.2500512259994139,5.122599941387307e-05,,,,200,1519
+Black queen mate,tactic,8/8/8/8/8/6k1/5q2/7K b - - 0 1,mcts,0.25,11,f2e1,True,True,0.2500268349995167,2.6834999516722746e-05,,,,174,1503
+White back-rank mate,tactic,6k1/5ppp/8/8/8/8/5PPP/4R1K1 w - - 0 1,alphabeta,0.25,,e1e8,True,True,0.0016203129998757504,0,1,21,0,,
+White back-rank mate,tactic,6k1/5ppp/8/8/8/8/5PPP/4R1K1 w - - 0 1,mcts,0.25,7,e1e8,True,True,0.25004839900066145,4.8399000661447644e-05,,,,69,2479
+White back-rank mate,tactic,6k1/5ppp/8/8/8/8/5PPP/4R1K1 w - - 0 1,mcts,0.25,8,e1e8,True,True,0.25013662799938174,0.0001366279993817443,,,,71,2536
+White back-rank mate,tactic,6k1/5ppp/8/8/8/8/5PPP/4R1K1 w - - 0 1,mcts,0.25,9,e1e8,True,True,0.25002060499900836,2.0604999008355662e-05,,,,73,2563
+White back-rank mate,tactic,6k1/5ppp/8/8/8/8/5PPP/4R1K1 w - - 0 1,mcts,0.25,10,e1e8,True,True,0.2500893039996299,8.930399962991942e-05,,,,70,2540
+White back-rank mate,tactic,6k1/5ppp/8/8/8/8/5PPP/4R1K1 w - - 0 1,mcts,0.25,11,e1e8,True,True,0.2500718939991202,7.189399912022054e-05,,,,71,2476
+Black back-rank mate,tactic,4r1k1/5ppp/8/8/8/8/5PPP/6K1 b - - 0 1,alphabeta,0.25,,e8e1,True,True,0.0019053530013479758,0,1,21,0,,
+Black back-rank mate,tactic,4r1k1/5ppp/8/8/8/8/5PPP/6K1 b - - 0 1,mcts,0.25,7,e8e1,True,True,0.2500625159991614,6.251599916140549e-05,,,,65,2388
+Black back-rank mate,tactic,4r1k1/5ppp/8/8/8/8/5PPP/6K1 b - - 0 1,mcts,0.25,8,e8e1,True,True,0.25009079899973585,9.07989997358527e-05,,,,67,2352
+Black back-rank mate,tactic,4r1k1/5ppp/8/8/8/8/5PPP/6K1 b - - 0 1,mcts,0.25,9,e8e1,True,True,0.2500963080001384,9.63080001383787e-05,,,,66,2357
+Black back-rank mate,tactic,4r1k1/5ppp/8/8/8/8/5PPP/6K1 b - - 0 1,mcts,0.25,10,e8e1,True,True,0.25007085600009304,7.085600009304471e-05,,,,72,2505
+Black back-rank mate,tactic,4r1k1/5ppp/8/8/8/8/5PPP/6K1 b - - 0 1,mcts,0.25,11,e8e1,True,True,0.25003476699930616,3.476699930615723e-05,,,,74,2611
+Italian opening,middlegame,r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4,alphabeta,0.25,,b1c3,,True,0.25002659100027813,2.6591000278131105e-05,2,1524,87,,
+Italian opening,middlegame,r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4,mcts,0.25,7,a2a4,,False,0.2500715919995855,7.159199958550744e-05,,,,34,1395
+Italian opening,middlegame,r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4,mcts,0.25,8,c4d3,,False,0.25007186999937403,7.186999937403016e-05,,,,35,1410
+Italian opening,middlegame,r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4,mcts,0.25,9,c4d3,,False,0.25008821400115266,8.821400115266442e-05,,,,36,1437
+Italian opening,middlegame,r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4,mcts,0.25,10,a2a4,,False,0.25017072499940696,0.00017072499940695707,,,,36,1441
+Italian opening,middlegame,r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4,mcts,0.25,11,f3g5,,False,0.25006249899888644,6.249899888643995e-05,,,,35,1423
+Queen's gambit,middlegame,rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4,alphabeta,0.25,,c1g5,,True,0.2500586549995205,5.865499952051323e-05,3,1523,147,,
+Queen's gambit,middlegame,rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4,mcts,0.25,7,c3d5,,False,0.25020144500012975,0.00020144500012975186,,,,34,1394
+Queen's gambit,middlegame,rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4,mcts,0.25,8,b2b4,,False,0.25012420999883034,0.000124209998830338,,,,34,1394
+Queen's gambit,middlegame,rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4,mcts,0.25,9,c1h6,,False,0.25011614200047916,0.00011614200047915801,,,,34,1384
+Queen's gambit,middlegame,rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4,mcts,0.25,10,c3a4,,False,0.2501698110008874,0.00016981100088742096,,,,35,1418
+Queen's gambit,middlegame,rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4,mcts,0.25,11,c3a4,,False,0.2501319319999311,0.00013193199993111193,,,,34,1399
+Sicilian opening,middlegame,rnbqkb1r/pp2pppp/3p1n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5,alphabeta,0.25,,f1b5,,True,0.2500479809987155,4.798099871550221e-05,2,1598,77,,
+Sicilian opening,middlegame,rnbqkb1r/pp2pppp/3p1n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5,mcts,0.25,7,d1e2,,False,0.2500576349993935,5.7634999393485487e-05,,,,34,1366
+Sicilian opening,middlegame,rnbqkb1r/pp2pppp/3p1n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5,mcts,0.25,8,f1d3,,False,0.2500846930015541,8.469300155411474e-05,,,,33,1307
+Sicilian opening,middlegame,rnbqkb1r/pp2pppp/3p1n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5,mcts,0.25,9,d4e2,,False,0.25018598399947223,0.00018598399947222788,,,,32,1289
+Sicilian opening,middlegame,rnbqkb1r/pp2pppp/3p1n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5,mcts,0.25,10,g2g4,,False,0.25012671900003625,0.00012671900003624614,,,,34,1367
+Sicilian opening,middlegame,rnbqkb1r/pp2pppp/3p1n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5,mcts,0.25,11,d1f3,,False,0.25026717800028564,0.00026717800028563943,,,,34,1370
+Caro-Kann opening,middlegame,rnbqkbnr/pp2pppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR b KQkq - 0 4,alphabeta,0.25,,b8d7,,True,0.2500920800011954,9.208000119542703e-05,2,1441,122,,
+Caro-Kann opening,middlegame,rnbqkbnr/pp2pppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR b KQkq - 0 4,mcts,0.25,7,c6c5,,False,0.25004039899977215,4.0398999772151e-05,,,,34,1380
+Caro-Kann opening,middlegame,rnbqkbnr/pp2pppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR b KQkq - 0 4,mcts,0.25,8,c8g4,,False,0.2501226240001415,0.00012262400014151353,,,,33,1352
+Caro-Kann opening,middlegame,rnbqkbnr/pp2pppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR b KQkq - 0 4,mcts,0.25,9,d8d7,,False,0.25013401600153884,0.0001340160015388392,,,,35,1400
+Caro-Kann opening,middlegame,rnbqkbnr/pp2pppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR b KQkq - 0 4,mcts,0.25,10,h7h5,,False,0.250119738999274,0.00011973899927397724,,,,35,1397
+Caro-Kann opening,middlegame,rnbqkbnr/pp2pppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR b KQkq - 0 4,mcts,0.25,11,b7b5,,False,0.2501684799990471,0.00016847999904712196,,,,34,1396
+King and pawn,endgame,8/8/8/4k3/8/4K3/4P3/8 w - - 0 1,alphabeta,0.25,,e3d3,,True,0.25006439500066335,6.439500066335313e-05,5,3358,430,,
+King and pawn,endgame,8/8/8/4k3/8/4K3/4P3/8 w - - 0 1,mcts,0.25,7,e3d3,,True,0.25004040799831273,4.040799831273034e-05,,,,76,2602
+King and pawn,endgame,8/8/8/4k3/8/4K3/4P3/8 w - - 0 1,mcts,0.25,8,e3f3,,False,0.25011434400039434,0.00011434400039433967,,,,78,2677
+King and pawn,endgame,8/8/8/4k3/8/4K3/4P3/8 w - - 0 1,mcts,0.25,9,e3f2,,False,0.2500271110002359,2.711100023589097e-05,,,,84,2640
+King and pawn,endgame,8/8/8/4k3/8/4K3/4P3/8 w - - 0 1,mcts,0.25,10,e3f2,,False,0.25003951599865104,3.951599865104072e-05,,,,77,2719
+King and pawn,endgame,8/8/8/4k3/8/4K3/4P3/8 w - - 0 1,mcts,0.25,11,e3d3,,True,0.2501083019997168,0.00010830199971678667,,,,78,2588
+Rook ending,endgame,8/5pk1/7p/8/8/6P1/5PK1/R6r w - - 0 1,alphabeta,0.25,,a1h1,,True,0.2500215419986489,2.1541998648899607e-05,4,2834,427,,
+Rook ending,endgame,8/5pk1/7p/8/8/6P1/5PK1/R6r w - - 0 1,mcts,0.25,7,g3g4,,False,0.2500919039994187,9.190399941871874e-05,,,,56,2242
+Rook ending,endgame,8/5pk1/7p/8/8/6P1/5PK1/R6r w - - 0 1,mcts,0.25,8,a1g1,,False,0.25005201199928706,5.201199928706046e-05,,,,57,2273
+Rook ending,endgame,8/5pk1/7p/8/8/6P1/5PK1/R6r w - - 0 1,mcts,0.25,9,a1a4,,False,0.25007852599992475,7.852599992475007e-05,,,,56,2253
+Rook ending,endgame,8/5pk1/7p/8/8/6P1/5PK1/R6r w - - 0 1,mcts,0.25,10,a1c1,,False,0.25009687500096334,9.687500096333679e-05,,,,55,2201
+Rook ending,endgame,8/5pk1/7p/8/8/6P1/5PK1/R6r w - - 0 1,mcts,0.25,11,g2h1,,False,0.25012192000031064,0.00012192000031063799,,,,57,2273
+Bishop and pawn,endgame,8/7k/8/6P1/8/4K3/3B4/8 w - - 0 1,alphabeta,0.25,,e3e4,,True,0.2500907260000531,9.07260000531096e-05,5,3285,697,,
+Bishop and pawn,endgame,8/7k/8/6P1/8/4K3/3B4/8 w - - 0 1,mcts,0.25,7,e3e4,,True,0.25026367000100436,0.0002636700010043569,,,,71,2086
+Bishop and pawn,endgame,8/7k/8/6P1/8/4K3/3B4/8 w - - 0 1,mcts,0.25,8,g5g6,,False,0.25006429300083255,6.42930008325493e-05,,,,70,2079
+Bishop and pawn,endgame,8/7k/8/6P1/8/4K3/3B4/8 w - - 0 1,mcts,0.25,9,e3f4,,False,0.2500218639997911,2.1863999791094102e-05,,,,68,2050
+Bishop and pawn,endgame,8/7k/8/6P1/8/4K3/3B4/8 w - - 0 1,mcts,0.25,10,e3f4,,False,0.2500441240008513,4.412400085129775e-05,,,,79,2099
+Bishop and pawn,endgame,8/7k/8/6P1/8/4K3/3B4/8 w - - 0 1,mcts,0.25,11,e3f2,,False,0.2500475950000691,4.759500006912276e-05,,,,74,1983
+Knight versus pawns,endgame,8/6k1/5pp1/8/8/3N4/4K3/8 w - - 0 1,alphabeta,0.25,,e2e3,,True,0.25001335100023425,1.3351000234251842e-05,4,2815,437,,
+Knight versus pawns,endgame,8/6k1/5pp1/8/8/3N4/4K3/8 w - - 0 1,mcts,0.25,7,e2f1,,False,0.2500600880011916,6.008800119161606e-05,,,,56,2205
+Knight versus pawns,endgame,8/6k1/5pp1/8/8/3N4/4K3/8 w - - 0 1,mcts,0.25,8,e2f1,,False,0.2500308859998768,3.0885999876772985e-05,,,,60,2244
+Knight versus pawns,endgame,8/6k1/5pp1/8/8/3N4/4K3/8 w - - 0 1,mcts,0.25,9,e2d1,,False,0.25001425899972674,1.4258999726735055e-05,,,,62,2433
+Knight versus pawns,endgame,8/6k1/5pp1/8/8/3N4/4K3/8 w - - 0 1,mcts,0.25,10,d3f4,,False,0.25007442100104527,7.442100104526617e-05,,,,68,2489
+Knight versus pawns,endgame,8/6k1/5pp1/8/8/3N4/4K3/8 w - - 0 1,mcts,0.25,11,d3e1,,False,0.25004031699972984,4.0316999729839154e-05,,,,66,2498

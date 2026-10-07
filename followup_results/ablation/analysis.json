@@ -1,0 +1,645 @@
+{
+  "metadata": {
+    "started_utc": "2026-10-07T08:43:40.482994+00:00",
+    "python": "3.14.4",
+    "platform": "Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "chess_version": "1.11.2",
+    "source_sha256": {
+      "engine.py": "d1522b8086c80d63907383bedf9b010fcc96e6c3b939686085af99856b2248f5",
+      "experiments.py": "9b728ba1b3c77d3980368c6b8534b57160dd988b88a21f65468a280c0d4a3b87",
+      "followup_experiments.py": "da2a2eafe163c293424874a1704ab8d270a235e1b89bbdba6d6cdc7ffc8f4b70",
+      "followup_positions.json": "de99214cd2b1e8d579b516ad66fa643a4db3fa8caee256db13d92086e8c656e0"
+    },
+    "budgets": [
+      0.1,
+      0.5
+    ],
+    "seeds": [
+      7,
+      8,
+      9
+    ],
+    "configs": {
+      "AB basic": [
+        "alphabeta",
+        {
+          "evaluation_enhanced": false,
+          "use_quiescence": false
+        }
+      ],
+      "AB evaluation only": [
+        "alphabeta",
+        {
+          "evaluation_enhanced": true,
+          "use_quiescence": false
+        }
+      ],
+      "AB quiescence only": [
+        "alphabeta",
+        {
+          "evaluation_enhanced": false,
+          "use_quiescence": true
+        }
+      ],
+      "AB both": [
+        "alphabeta",
+        {
+          "evaluation_enhanced": true,
+          "use_quiescence": true
+        }
+      ],
+      "MC random basic 12": [
+        "mcts",
+        {
+          "evaluation_enhanced": false,
+          "guided": false,
+          "rollout_limit": 12,
+          "tactical_guard": false
+        }
+      ],
+      "MC random enhanced 12": [
+        "mcts",
+        {
+          "evaluation_enhanced": true,
+          "guided": false,
+          "rollout_limit": 12,
+          "tactical_guard": false
+        }
+      ],
+      "MC guided 12": [
+        "mcts",
+        {
+          "evaluation_enhanced": true,
+          "guided": true,
+          "rollout_limit": 12,
+          "tactical_guard": false
+        }
+      ],
+      "MC guided 40": [
+        "mcts",
+        {
+          "evaluation_enhanced": true,
+          "guided": true,
+          "rollout_limit": 40,
+          "tactical_guard": false
+        }
+      ],
+      "MC guided 12 guard": [
+        "mcts",
+        {
+          "evaluation_enhanced": true,
+          "guided": true,
+          "rollout_limit": 12,
+          "tactical_guard": true
+        }
+      ]
+    },
+    "positions": 24,
+    "timing_policy": "Serial searches; preprocessing, root guard and state copying included in the same deadline.",
+    "scope": "Constructed diagnostics, correlated mirrors and repeated seeds; no population ranking.",
+    "completed_utc": "2026-10-07T08:47:50.680314+00:00"
+  },
+  "searches": 912,
+  "groups": [
+    {
+      "config": "AB basic",
+      "budget": 0.1,
+      "objective": "force_mate",
+      "trials": 10,
+      "successes": 4,
+      "rate": 0.4,
+      "median_elapsed": 0.10002530599922466,
+      "median_work": 594.0
+    },
+    {
+      "config": "AB evaluation only",
+      "budget": 0.1,
+      "objective": "force_mate",
+      "trials": 10,
+      "successes": 4,
+      "rate": 0.4,
+      "median_elapsed": 0.10001544300030218,
+      "median_work": 562.5
+    },
+    {
+      "config": "AB quiescence only",
+      "budget": 0.1,
+      "objective": "force_mate",
+      "trials": 10,
+      "successes": 8,
+      "rate": 0.8,
+      "median_elapsed": 0.1000393129997974,
+      "median_work": 299.0
+    },
+    {
+      "config": "AB both",
+      "budget": 0.1,
+      "objective": "force_mate",
+      "trials": 10,
+      "successes": 8,
+      "rate": 0.8,
+      "median_elapsed": 0.10002247800002806,
+      "median_work": 284.5
+    },
+    {
+      "config": "MC random basic 12",
+      "budget": 0.1,
+      "objective": "force_mate",
+      "trials": 30,
+      "successes": 12,
+      "rate": 0.4,
+      "median_elapsed": 0.10011458950066299,
+      "median_work": 49.0
+    },
+    {
+      "config": "MC random enhanced 12",
+      "budget": 0.1,
+      "objective": "force_mate",
+      "trials": 30,
+      "successes": 12,
+      "rate": 0.4,
+      "median_elapsed": 0.10009830049966695,
+      "median_work": 48.0
+    },
+    {
+      "config": "MC guided 12",
+      "budget": 0.1,
+      "objective": "force_mate",
+      "trials": 30,
+      "successes": 10,
+      "rate": 0.3333333333333333,
+      "median_elapsed": 0.10005835049923917,
+      "median_work": 42.0
+    },
+    {
+      "config": "MC guided 40",
+      "budget": 0.1,
+      "objective": "force_mate",
+      "trials": 30,
+      "successes": 10,
+      "rate": 0.3333333333333333,
+      "median_elapsed": 0.10006707200045639,
+      "median_work": 16.0
+    },
+    {
+      "config": "MC guided 12 guard",
+      "budget": 0.1,
+      "objective": "force_mate",
+      "trials": 30,
+      "successes": 15,
+      "rate": 0.5,
+      "median_elapsed": 0.10002649749912962,
+      "median_work": 24.0
+    },
+    {
+      "config": "AB basic",
+      "budget": 0.1,
+      "objective": "avoid_mate",
+      "trials": 6,
+      "successes": 4,
+      "rate": 0.6666666666666666,
+      "median_elapsed": 0.10009944999910658,
+      "median_work": 697.0
+    },
+    {
+      "config": "AB evaluation only",
+      "budget": 0.1,
+      "objective": "avoid_mate",
+      "trials": 6,
+      "successes": 2,
+      "rate": 0.3333333333333333,
+      "median_elapsed": 0.10009637599978305,
+      "median_work": 651.5
+    },
+    {
+      "config": "AB quiescence only",
+      "budget": 0.1,
+      "objective": "avoid_mate",
+      "trials": 6,
+      "successes": 4,
+      "rate": 0.6666666666666666,
+      "median_elapsed": 0.10006647750014963,
+      "median_work": 366.5
+    },
+    {
+      "config": "AB both",
+      "budget": 0.1,
+      "objective": "avoid_mate",
+      "trials": 6,
+      "successes": 4,
+      "rate": 0.6666666666666666,
+      "median_elapsed": 0.10009616600109439,
+      "median_work": 326.5
+    },
+    {
+      "config": "MC random basic 12",
+      "budget": 0.1,
+      "objective": "avoid_mate",
+      "trials": 18,
+      "successes": 6,
+      "rate": 0.3333333333333333,
+      "median_elapsed": 0.10010178749871557,
+      "median_work": 48.5
+    },
+    {
+      "config": "MC random enhanced 12",
+      "budget": 0.1,
+      "objective": "avoid_mate",
+      "trials": 18,
+      "successes": 3,
+      "rate": 0.16666666666666666,
+      "median_elapsed": 0.10012519950032583,
+      "median_work": 48.0
+    },
+    {
+      "config": "MC guided 12",
+      "budget": 0.1,
+      "objective": "avoid_mate",
+      "trials": 18,
+      "successes": 8,
+      "rate": 0.4444444444444444,
+      "median_elapsed": 0.10004935049983033,
+      "median_work": 48.0
+    },
+    {
+      "config": "MC guided 40",
+      "budget": 0.1,
+      "objective": "avoid_mate",
+      "trials": 18,
+      "successes": 13,
+      "rate": 0.7222222222222222,
+      "median_elapsed": 0.10005607200037048,
+      "median_work": 20.5
+    },
+    {
+      "config": "MC guided 12 guard",
+      "budget": 0.1,
+      "objective": "avoid_mate",
+      "trials": 18,
+      "successes": 10,
+      "rate": 0.5555555555555556,
+      "median_elapsed": 0.10006732400142937,
+      "median_work": 39.5
+    },
+    {
+      "config": "AB basic",
+      "budget": 0.1,
+      "objective": "material_after_reply",
+      "trials": 8,
+      "successes": 8,
+      "rate": 1,
+      "median_elapsed": 0.10005195899793762,
+      "median_work": 773.5
+    },
+    {
+      "config": "AB evaluation only",
+      "budget": 0.1,
+      "objective": "material_after_reply",
+      "trials": 8,
+      "successes": 8,
+      "rate": 1,
+      "median_elapsed": 0.10006578499815078,
+      "median_work": 713.0
+    },
+    {
+      "config": "AB quiescence only",
+      "budget": 0.1,
+      "objective": "material_after_reply",
+      "trials": 8,
+      "successes": 8,
+      "rate": 1,
+      "median_elapsed": 0.10011339349875925,
+      "median_work": 354.5
+    },
+    {
+      "config": "AB both",
+      "budget": 0.1,
+      "objective": "material_after_reply",
+      "trials": 8,
+      "successes": 8,
+      "rate": 1,
+      "median_elapsed": 0.10004122100144741,
+      "median_work": 328.5
+    },
+    {
+      "config": "MC random basic 12",
+      "budget": 0.1,
+      "objective": "material_after_reply",
+      "trials": 24,
+      "successes": 18,
+      "rate": 0.75,
+      "median_elapsed": 0.10011105550074717,
+      "median_work": 48.5
+    },
+    {
+      "config": "MC random enhanced 12",
+      "budget": 0.1,
+      "objective": "material_after_reply",
+      "trials": 24,
+      "successes": 18,
+      "rate": 0.75,
+      "median_elapsed": 0.10009373199864058,
+      "median_work": 47.5
+    },
+    {
+      "config": "MC guided 12",
+      "budget": 0.1,
+      "objective": "material_after_reply",
+      "trials": 24,
+      "successes": 19,
+      "rate": 0.7916666666666666,
+      "median_elapsed": 0.10004680499878305,
+      "median_work": 31.0
+    },
+    {
+      "config": "MC guided 40",
+      "budget": 0.1,
+      "objective": "material_after_reply",
+      "trials": 24,
+      "successes": 16,
+      "rate": 0.6666666666666666,
+      "median_elapsed": 0.1000523990005604,
+      "median_work": 11.0
+    },
+    {
+      "config": "MC guided 12 guard",
+      "budget": 0.1,
+      "objective": "material_after_reply",
+      "trials": 24,
+      "successes": 19,
+      "rate": 0.7916666666666666,
+      "median_elapsed": 0.10007577350006613,
+      "median_work": 29.5
+    },
+    {
+      "config": "AB basic",
+      "budget": 0.5,
+      "objective": "force_mate",
+      "trials": 10,
+      "successes": 10,
+      "rate": 1,
+      "median_elapsed": 0.11032605299988063,
+      "median_work": 954.0
+    },
+    {
+      "config": "AB evaluation only",
+      "budget": 0.5,
+      "objective": "force_mate",
+      "trials": 10,
+      "successes": 10,
+      "rate": 1,
+      "median_elapsed": 0.13410399950043939,
+      "median_work": 1030.5
+    },
+    {
+      "config": "AB quiescence only",
+      "budget": 0.5,
+      "objective": "force_mate",
+      "trials": 10,
+      "successes": 10,
+      "rate": 1,
+      "median_elapsed": 0.17889333499988425,
+      "median_work": 811.0
+    },
+    {
+      "config": "AB both",
+      "budget": 0.5,
+      "objective": "force_mate",
+      "trials": 10,
+      "successes": 10,
+      "rate": 1,
+      "median_elapsed": 0.19214871099939046,
+      "median_work": 811.0
+    },
+    {
+      "config": "MC random basic 12",
+      "budget": 0.5,
+      "objective": "force_mate",
+      "trials": 30,
+      "successes": 14,
+      "rate": 0.4666666666666667,
+      "median_elapsed": 0.5001034195011016,
+      "median_work": 237.5
+    },
+    {
+      "config": "MC random enhanced 12",
+      "budget": 0.5,
+      "objective": "force_mate",
+      "trials": 30,
+      "successes": 12,
+      "rate": 0.4,
+      "median_elapsed": 0.5000966854986473,
+      "median_work": 237.0
+    },
+    {
+      "config": "MC guided 12",
+      "budget": 0.5,
+      "objective": "force_mate",
+      "trials": 30,
+      "successes": 12,
+      "rate": 0.4,
+      "median_elapsed": 0.5000374575010937,
+      "median_work": 227.5
+    },
+    {
+      "config": "MC guided 40",
+      "budget": 0.5,
+      "objective": "force_mate",
+      "trials": 30,
+      "successes": 17,
+      "rate": 0.5666666666666667,
+      "median_elapsed": 0.5000380159981432,
+      "median_work": 91.5
+    },
+    {
+      "config": "MC guided 12 guard",
+      "budget": 0.5,
+      "objective": "force_mate",
+      "trials": 30,
+      "successes": 12,
+      "rate": 0.4,
+      "median_elapsed": 0.5000217960005102,
+      "median_work": 161.5
+    },
+    {
+      "config": "AB basic",
+      "budget": 0.5,
+      "objective": "avoid_mate",
+      "trials": 6,
+      "successes": 5,
+      "rate": 0.8333333333333334,
+      "median_elapsed": 0.5000420545002271,
+      "median_work": 3521.0
+    },
+    {
+      "config": "AB evaluation only",
+      "budget": 0.5,
+      "objective": "avoid_mate",
+      "trials": 6,
+      "successes": 4,
+      "rate": 0.6666666666666666,
+      "median_elapsed": 0.5001483195010223,
+      "median_work": 3388.5
+    },
+    {
+      "config": "AB quiescence only",
+      "budget": 0.5,
+      "objective": "avoid_mate",
+      "trials": 6,
+      "successes": 6,
+      "rate": 1,
+      "median_elapsed": 0.5001095845000236,
+      "median_work": 1831.5
+    },
+    {
+      "config": "AB both",
+      "budget": 0.5,
+      "objective": "avoid_mate",
+      "trials": 6,
+      "successes": 5,
+      "rate": 0.8333333333333334,
+      "median_elapsed": 0.5000644625015411,
+      "median_work": 1530.0
+    },
+    {
+      "config": "MC random basic 12",
+      "budget": 0.5,
+      "objective": "avoid_mate",
+      "trials": 18,
+      "successes": 3,
+      "rate": 0.16666666666666666,
+      "median_elapsed": 0.5001068199999281,
+      "median_work": 235.0
+    },
+    {
+      "config": "MC random enhanced 12",
+      "budget": 0.5,
+      "objective": "avoid_mate",
+      "trials": 18,
+      "successes": 7,
+      "rate": 0.3888888888888889,
+      "median_elapsed": 0.5001055764987541,
+      "median_work": 230.0
+    },
+    {
+      "config": "MC guided 12",
+      "budget": 0.5,
+      "objective": "avoid_mate",
+      "trials": 18,
+      "successes": 3,
+      "rate": 0.16666666666666666,
+      "median_elapsed": 0.5000356380005542,
+      "median_work": 196.0
+    },
+    {
+      "config": "MC guided 40",
+      "budget": 0.5,
+      "objective": "avoid_mate",
+      "trials": 18,
+      "successes": 10,
+      "rate": 0.5555555555555556,
+      "median_elapsed": 0.500042586498239,
+      "median_work": 104.0
+    },
+    {
+      "config": "MC guided 12 guard",
+      "budget": 0.5,
+      "objective": "avoid_mate",
+      "trials": 18,
+      "successes": 5,
+      "rate": 0.2777777777777778,
+      "median_elapsed": 0.5000716334998287,
+      "median_work": 179.0
+    },
+    {
+      "config": "AB basic",
+      "budget": 0.5,
+      "objective": "material_after_reply",
+      "trials": 8,
+      "successes": 8,
+      "rate": 1,
+      "median_elapsed": 0.5000905045017134,
+      "median_work": 4079.0
+    },
+    {
+      "config": "AB evaluation only",
+      "budget": 0.5,
+      "objective": "material_after_reply",
+      "trials": 8,
+      "successes": 8,
+      "rate": 1,
+      "median_elapsed": 0.5001169034985651,
+      "median_work": 3612.0
+    },
+    {
+      "config": "AB quiescence only",
+      "budget": 0.5,
+      "objective": "material_after_reply",
+      "trials": 8,
+      "successes": 6,
+      "rate": 0.75,
+      "median_elapsed": 0.500088617000074,
+      "median_work": 2104.5
+    },
+    {
+      "config": "AB both",
+      "budget": 0.5,
+      "objective": "material_after_reply",
+      "trials": 8,
+      "successes": 6,
+      "rate": 0.75,
+      "median_elapsed": 0.5001328950002062,
+      "median_work": 1943.5
+    },
+    {
+      "config": "MC random basic 12",
+      "budget": 0.5,
+      "objective": "material_after_reply",
+      "trials": 24,
+      "successes": 21,
+      "rate": 0.875,
+      "median_elapsed": 0.5000831145007396,
+      "median_work": 248.5
+    },
+    {
+      "config": "MC random enhanced 12",
+      "budget": 0.5,
+      "objective": "material_after_reply",
+      "trials": 24,
+      "successes": 16,
+      "rate": 0.6666666666666666,
+      "median_elapsed": 0.500102344502011,
+      "median_work": 240.5
+    },
+    {
+      "config": "MC guided 12",
+      "budget": 0.5,
+      "objective": "material_after_reply",
+      "trials": 24,
+      "successes": 17,
+      "rate": 0.7083333333333334,
+      "median_elapsed": 0.5000569464991713,
+      "median_work": 173.5
+    },
+    {
+      "config": "MC guided 40",
+      "budget": 0.5,
+      "objective": "material_after_reply",
+      "trials": 24,
+      "successes": 22,
+      "rate": 0.9166666666666666,
+      "median_elapsed": 0.5000470840004709,
+      "median_work": 55.5
+    },
+    {
+      "config": "MC guided 12 guard",
+      "budget": 0.5,
+      "objective": "material_after_reply",
+      "trials": 24,
+      "successes": 18,
+      "rate": 0.75,
+      "median_elapsed": 0.5000572610006202,
+      "median_work": 158.5
+    }
+  ]
+}

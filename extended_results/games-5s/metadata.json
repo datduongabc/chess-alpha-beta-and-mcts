@@ -1,0 +1,28 @@
+{
+  "started_utc": "2026-10-07T06:50:28.533711+00:00",
+  "python": "3.14.4",
+  "platform": "Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "processor": "",
+  "chess_version": "1.11.2",
+  "command": {
+    "variant": "enhanced",
+    "mode": "games",
+    "budgets": [
+      5.0
+    ],
+    "seeds": 20,
+    "seed": 7,
+    "game_starts": 2,
+    "max_plies": 60,
+    "position_limit": 12,
+    "positions": "None",
+    "out": "extended_results/games-5s"
+  },
+  "fixture_sha256": "6e8ab23ca9e19418c1cdc4bed76c2ea2025cf1bacee440cbd6fba10d400ed3b2",
+  "runner_sha256": "a64778a1459d4822c7a61eb6dbbd33481c00e1097fe48d625b8bec314477fdd9",
+  "engine_sha256": "2463fa8dd27386db562ff08a0716b5eeeccbbf1fac6042dfe5f6ad8f0829af8c",
+  "draw_policy": "Automatically claim threefold and fifty-move draws",
+  "timing_policy": "Fresh search, serial, includes state copying and evaluations; no GUI",
+  "overrun_policy": "Retain move, report elapsed time and excess; no time-forfeit claims",
+  "completed_utc": "2026-10-07T06:58:57.322974+00:00"
+}
