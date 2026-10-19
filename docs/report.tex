@@ -545,7 +545,7 @@ this homework's goal of implementing and comparing two understandable
 search methods.
 
 \section{Verification and Limitations}
-The project has 27 standard-library tests. They check Alpha-beta's mate
+The standard-library tests check Alpha-beta's mate
 choices for both colors and baseline agreement with an unpruned minimax
 search on small trees. They also check the enhanced poisoned-pawn defense,
 evaluation symmetry, MCTS's unique actions and adversarial selection,
@@ -630,25 +630,8 @@ they do not enlarge the independent sample of the main study.
 \input{enhanced_results.tex}
 
 \section{Running and Submitting the Project}
-From the project folder, create and activate a virtual environment. Install
-the dependencies from \texttt{requirements.txt}, then run the local application:
-\begin{lstlisting}
-python -m venv .venv
-# Activate .venv using the command for your operating system.
-python -m pip install -r requirements.txt
-python -m chess_duel.app
-# Open http://127.0.0.1:8765 in a browser.
-python -m unittest discover -s tests -v
-python -m benchmarks.analyze_results
-python -m benchmarks.followup_experiments --analyze-only
-python -m benchmarks.analyze_results --followup-games results/followup/games-matched
-# New experiments (serial; output defaults to ignored runs/):
-python -m benchmarks.experiments --budgets 0.1 --seeds 1
-python -m benchmarks.followup_experiments
-\end{lstlisting}
-Bundled inputs are in \path{fixtures/}; recorded studies are in
-\path{results/sample/}, \path{results/enhanced/}, \path{results/extended/}
-and \path{results/followup/}. Explicit CLI paths are relative to the invoking
-directory. The complete archive inventory is in \path{docs/SUBMISSION.md}.
+See \path{README.md} at the repository root for setup, application and test
+commands, experiment usage, and the project structure. See
+\path{docs/SUBMISSION.md} for submission packaging instructions.
 
 \end{document}
