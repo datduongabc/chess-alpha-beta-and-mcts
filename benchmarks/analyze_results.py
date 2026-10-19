@@ -10,6 +10,20 @@ import statistics
 from pathlib import Path
 
 
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def verify_sources(folder, sources):
+    """Check frozen historical inputs, or recorded repository paths for new runs."""
+    archive = folder / "source"
+    if not archive.is_dir():
+        archive = folder.parent / "source"
+    for name, expected in sources.items():
+        path = archive / name if archive.is_dir() and len(Path(name).parts) == 1 else ROOT / name
+        if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != expected:
+            raise ValueError(f"Run source changed or missing: {name}")
+
+
 def read_csv(path):
     with path.open(newline="") as stream:
         return list(csv.DictReader(stream))
@@ -69,35 +83,32 @@ def analyze_followup_games(folder):
     tex.extend([r"\bottomrule\end{tabular}\end{center}",
         "The range assigns every unfinished game first a loss and then a win for Alpha-beta. It is a censoring bound, not a confidence interval."])
     (folder / "analysis.json").write_text(json.dumps(output, indent=2) + "\n")
-    Path("docs/followup_games.tex").write_text("\n".join(tex) + "\n")
+    (ROOT / "docs/followup_games.tex").write_text("\n".join(tex) + "\n")
     return output
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--results", type=Path, default=Path("extended_results"))
+    parser.add_argument("--results", type=Path, default=ROOT / "results/extended")
     parser.add_argument("--followup-games", type=Path, help="Analyze a completed current-engine game run instead")
     args = parser.parse_args()
     if args.followup_games:
         meta = json.loads((args.followup_games / "metadata.json").read_text())
         if not meta.get("completed_utc"):
             raise ValueError("Incomplete follow-up game run.")
-        for name, key in (("engine.py", "engine_sha256"), ("experiments.py", "runner_sha256")):
-            if hashlib.sha256(Path(__file__).with_name(name).read_bytes()).hexdigest() != meta[key]:
-                raise ValueError(f"Follow-up source changed: {name}")
+        verify_sources(args.followup_games, meta.get("source_sha256", {
+            "engine.py": meta["engine_sha256"], "experiments.py": meta["runner_sha256"]}))
         print(json.dumps(analyze_followup_games(args.followup_games), indent=2))
         return
     root = args.results
     names = ("tactics-enhanced", "tactics-baseline", "games-broad", "games-5s")
     metadata = {name: json.loads((root / name / "metadata.json").read_text()) for name in names}
-    # Historical runs retain their exact source when the playable engine changes.
-    source = root / "source" if (root / "source").is_dir() else Path(__file__).parent
-    current_hash = hashlib.sha256((source / "engine.py").read_bytes()).hexdigest()
-    runner_hash = hashlib.sha256((source / "experiments.py").read_bytes()).hexdigest()
     for name, meta in metadata.items():
-        if (not meta.get("completed_utc") or meta["engine_sha256"] != current_hash
-                or meta["runner_sha256"] != runner_hash):
-            raise ValueError(f"Incomplete run or engine hash mismatch: {name}")
+        if not meta.get("completed_utc"):
+            raise ValueError(f"Incomplete run: {name}")
+        verify_sources(root, meta.get("source_sha256", {
+            "engine.py": meta["engine_sha256"], "experiments.py": meta["runner_sha256"]}))
+    current_hash = metadata[names[0]]["engine_sha256"]
     tactics = {name: read_csv(root / name / "positions.csv") for name in names[:2]}
     details = {name: [json.loads(line) for line in (root / name / "searches.jsonl").read_text().splitlines()]
                for name in names}
@@ -300,7 +311,7 @@ def main():
                        "The three constructed placement families are low-material diagnostic tasks. Mirror cases and repeated seeds are correlated, and five seeds do not resolve rare failures.",
                        "No reference engine evaluates arbitrary middlegame moves, no external puzzle corpus is held out, and no Elo estimate is justified.",
                        "Longer simulations and more visits do not guarantee an optimal chess move. The contribution is transparent, independently checked bounded tactics and reproducible comparison of these implementations."])
-    Path("docs/extended_discussion.tex").write_text("\n".join(discussion) + "\n")
+    (ROOT / "docs/extended_discussion.tex").write_text("\n".join(discussion) + "\n")
     markdown.extend(["", "## Interpretation", "",
         "The certified objective measures fast forced mate or survival within a short bound. Failure is not proof that a move loses the full game.", "",
         "Alpha-beta prefers shorter proven mates. MCTS rewards terminal wins equally and uses a material-sensitive cutoff, so a slower material gain may score well in simulations.", "",
@@ -315,7 +326,7 @@ def main():
             return choice["move"] + (" (passes)" if choice["correct"] else " (fails bounded objective)")
         markdown.append("| " + example["reference"]["position"] + " | " + ", ".join(example["reference"]["accepted_moves"]) + " | " + label(choices["alphabeta"]) + " | " + label(choices["mcts"]) + " |")
     (root / "analysis.md").write_text("\n".join(markdown) + "\n")
-    Path("docs/extended_results.tex").write_text("\n".join(tex) + "\n")
+    (ROOT / "docs/extended_results.tex").write_text("\n".join(tex) + "\n")
     print(json.dumps(summary, indent=2))
 
 

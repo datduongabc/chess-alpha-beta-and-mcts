@@ -1,13 +1,14 @@
-"""Run with: python -m unittest -v. No test dependencies."""
+"""Run with: python -m unittest discover -s tests -v. No test dependencies."""
 import threading
 import unittest
 import json
+from pathlib import Path
 import urllib.request
 import urllib.error
 
 import chess
 
-from engine import alphabeta, mcts, evaluate, negamax, Node, select_child
+from chess_duel.engine import alphabeta, mcts, evaluate, negamax, Node, select_child
 
 
 class SearchTests(unittest.TestCase):
@@ -117,7 +118,7 @@ class EnhancedSearchTests(unittest.TestCase):
             self.assertTrue(board.is_checkmate())
 
     def test_mcts_guard_rejects_proven_immediate_loss(self):
-        from engine import screen_root_moves
+        from chess_duel.engine import screen_root_moves
         board = chess.Board("7r/8/8/8/Q7/8/5K2/7k b - - 0 1")
         # Find the safe moves independently by enumerating all replies.
         safe = []
@@ -163,7 +164,7 @@ class EnhancedSearchTests(unittest.TestCase):
             self.assertEqual(evaluate(board), -evaluate(board.mirror()))
 
     def test_guided_policy_avoids_hanging_queen_and_finds_mate(self):
-        from engine import policy_move
+        from chess_duel.engine import policy_move
         import random
         poison = chess.Board("3r2k1/8/8/3p4/8/8/8/3Q2K1 w - - 0 1")
         before = poison.fen()
@@ -185,7 +186,7 @@ class EnhancedSearchTests(unittest.TestCase):
 
 class AppTests(unittest.TestCase):
     def test_moves_and_pgn_preserve_history(self):
-        from app import build_board, board_data
+        from chess_duel.app import build_board, board_data
         board = build_board({"moves": ["e2e4", "e7e5", "g1f3"]})
         data = board_data(board)
         self.assertEqual(data["turn"], "black")
@@ -193,7 +194,7 @@ class AppTests(unittest.TestCase):
         self.assertIn("1. e4 e5 2. Nf3", data["pgn"])
 
     def test_rejects_illegal_and_invalid_positions(self):
-        from app import build_board
+        from chess_duel.app import build_board
         for payload in ({"moves": ["e2e5"]}, {"fen": "invalid"},
                         {"fen": "8/8/8/8/8/8/8/8 w - - 0 1"},
                         {"moves": "e2e4"}):
@@ -201,7 +202,7 @@ class AppTests(unittest.TestCase):
                 build_board(payload)
 
     def test_standard_special_moves(self):
-        from app import build_board
+        from chess_duel.app import build_board
         castle = build_board({"fen": "r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1",
                               "moves": ["e1g1"]})
         self.assertEqual(castle.piece_at(chess.F1).symbol(), "R")
@@ -213,7 +214,7 @@ class AppTests(unittest.TestCase):
             self.assertEqual(promoted.piece_at(chess.A8).symbol().lower(), promotion)
 
     def test_benchmark_positions_and_paired_games(self):
-        from experiments import load_positions, run_game
+        from benchmarks.experiments import load_positions, run_game
         fixtures = load_positions()
         self.assertEqual(len(fixtures), 12)
         for fixture in fixtures:
@@ -229,7 +230,7 @@ class AppTests(unittest.TestCase):
         self.assertEqual(len(game["searches"]), 4)
 
     def test_material_certificate_checks_recapture_and_promotion(self):
-        from experiments import certify_material
+        from benchmarks.experiments import certify_material
         board = chess.Board("3r2k1/8/8/3p4/8/8/8/3Q2K1 w - - 0 1")
         before = board.fen()
         certificate = certify_material({"name": "poison", "board": board})
@@ -255,14 +256,13 @@ class AppTests(unittest.TestCase):
 class ReferenceTests(unittest.TestCase):
     def test_unfinished_games_are_not_counted_as_draws(self):
         import tempfile
-        from pathlib import Path
         from unittest.mock import patch
-        from analyze_results import analyze_followup_games
+        from benchmarks.analyze_results import analyze_followup_games
         with tempfile.TemporaryDirectory() as temp:
             folder = Path(temp)
             (folder / "games.csv").write_text(
                 "budget,result,alpha_score\n0.1,1-0,1\n0.1,1/2-1/2,0.5\n0.1,*,\n0.1,0-1,0\n")
-            with patch("analyze_results.Path.write_text"):
+            with patch("benchmarks.analyze_results.Path.write_text"):
                 summary = analyze_followup_games(folder)[0]
             self.assertEqual(summary["draws"], 1)
             self.assertEqual(summary["unfinished"], 1)
@@ -270,7 +270,7 @@ class ReferenceTests(unittest.TestCase):
             self.assertEqual(summary["completed_score"], .5)
 
     def test_exhaustive_mate_and_defense_answers(self):
-        from experiments import certify_tactic
+        from benchmarks.experiments import certify_tactic
         attack = {"name": "Unique mate", "objective": "force_mate", "mate_plies": 3,
                   "board": chess.Board("3k4/8/3K4/8/8/4Q3/8/6r1 w - - 0 1")}
         before = attack["board"].fen()
@@ -284,7 +284,7 @@ class ReferenceTests(unittest.TestCase):
         self.assertEqual(certify_tactic(defense)["accepted_moves"], ["d7d1", "d7g7"])
 
     def test_paired_interval_keeps_colors_together(self):
-        from analyze_results import paired_interval
+        from benchmarks.analyze_results import paired_interval
         rows = [{"position": str(i), "alpha_score": score}
                 for i in range(4) for score in ("1", "0")]
         self.assertEqual(paired_interval(rows, repeats=100), [.5, .5])
@@ -293,8 +293,8 @@ class ReferenceTests(unittest.TestCase):
             paired_interval(rows[:-1])
 
     def test_extended_corpus_certifies_every_label(self):
-        from experiments import load_positions, certify_tactic
-        fixtures = load_positions("tactics.json")
+        from benchmarks.experiments import load_positions, certify_tactic
+        fixtures = load_positions(Path(__file__).resolve().parents[1] / "fixtures/tactics.json")
         self.assertEqual(len(fixtures), 12)
         for fixture in fixtures:
             certificate = certify_tactic(fixture)
@@ -306,7 +306,7 @@ class ReferenceTests(unittest.TestCase):
 class HTTPTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        from app import make_server
+        from chess_duel.app import make_server
         cls.server = make_server(0)
         cls.thread = threading.Thread(target=cls.server.serve_forever, daemon=True)
         cls.thread.start()

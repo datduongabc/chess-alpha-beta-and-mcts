@@ -34,9 +34,9 @@ service-account*.json
 .no-mistakes/
 
 # Scratch experiments and excluded pilots, not the completed study datasets
-/results/
-/extended_results/pilot-*/
-/followup_results/pilot-*/
+/runs/
+/results/extended/pilot-*/
+/results/followup/pilot-*/
 
 # Submission archives are assembled locally, not duplicated in source control
 *.zip

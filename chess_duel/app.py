@@ -1,4 +1,4 @@
-"""Local browser GUI. Start: python app.py, then http://127.0.0.1:8765."""
+"""Local browser GUI. Start: python -m chess_duel.app, then http://127.0.0.1:8765."""
 import argparse
 import json
 import math
@@ -10,7 +10,7 @@ from urllib.parse import urlsplit
 import chess
 import chess.pgn
 
-from engine import SEARCHES
+from chess_duel.engine import SEARCHES
 
 
 def build_board(payload):
