@@ -252,6 +252,7 @@ can still miss an important reply.
 The program separates the interface, request handling, and search so that
 each part has a clear job. The browser sends a position and settings to the
 local server; the server checks them and calls the selected search.
+The three application files are kept together in \path{chess_duel/}.
 \begin{center}
 \fbox{\texttt{index.html}} $\longrightarrow$
 \fbox{\texttt{app.py}} $\longrightarrow$
@@ -262,12 +263,12 @@ local server; the server checks them and calls the selected search.
 \caption{Responsibilities of the main project files.}
 \begin{tabularx}{\textwidth}{p{.31\textwidth}X}\toprule
 \textbf{File} & \textbf{Responsibility}\\\midrule
-\texttt{engine.py} & Evaluation, iterative Alpha-beta, quiescence, and UCT MCTS.\\
-\texttt{app.py} & Local HTTP server, input checks, legal state reconstruction, and search cancellation.\\
-\texttt{index.html} & Board, game modes, controls, history, comparison cards, and exports.\\
-\texttt{experiments.py} & Serial searches, tactical answer certification, and paired games.\\
-\texttt{analyze\_results.py} & Tables, seed statistics, paired-start resampling, and plot data from recorded results.\\
-\texttt{test\_homework.py} & Search, rules, reference-answer, statistics, and HTTP checks.\\\bottomrule
+\path{chess_duel/engine.py} & Evaluation, iterative Alpha-beta, quiescence, and UCT MCTS.\\
+\path{chess_duel/app.py} & Local HTTP server, input checks, legal state reconstruction, and search cancellation.\\
+\path{chess_duel/index.html} & Board, game modes, controls, history, comparison cards, and exports.\\
+\path{benchmarks/experiments.py} & Serial searches, tactical answer certification, and paired games.\\
+\path{benchmarks/analyze_results.py} & Tables, seed statistics, paired-start resampling, and plot data from recorded results.\\
+\path{tests/test_homework.py} & Search, rules, reference-answer, statistics, and HTTP checks.\\\bottomrule
 \end{tabularx}
 \end{table}
 
@@ -340,8 +341,9 @@ FEN loading, PGN export, and comparison JSON support further inspection.
 \section{Experimental Method}
 The four extended runs below use the earlier, frozen implementation. Its
 exact \texttt{engine.py} and \texttt{experiments.py} are preserved under
-\texttt{extended\_results/source/}. The follow-up study is reported
-separately and uses the current implementation. Old measurements are not
+\path{results/extended/source/}. The follow-up study is reported
+separately; its original source and inputs are preserved under
+\path{results/followup/source/}. Old measurements are not
 relabelled as results of the upgraded engine.
 
 \subsection{Datasets and thinking budgets}
@@ -543,7 +545,7 @@ this homework's goal of implementing and comparing two understandable
 search methods.
 
 \section{Verification and Limitations}
-The project has 27 standard-library tests. They check Alpha-beta's mate
+The standard-library tests check Alpha-beta's mate
 choices for both colors and baseline agreement with an unpruned minimax
 search on small trees. They also check the enhanced poisoned-pawn defense,
 evaluation symmetry, MCTS's unique actions and adversarial selection,
@@ -628,16 +630,8 @@ they do not enlarge the independent sample of the main study.
 \input{enhanced_results.tex}
 
 \section{Running and Submitting the Project}
-From the project folder, create and activate a virtual environment. Install
-the dependencies from \texttt{requirements.txt}, then run the local application:
-\begin{lstlisting}
-python -m venv .venv
-# Activate .venv using the command for your operating system.
-python -m pip install -r requirements.txt
-python app.py
-# Open http://127.0.0.1:8765 in a browser.
-python -m unittest -v
-python analyze_results.py
-\end{lstlisting}
+See \path{README.md} at the repository root for setup, application and test
+commands, experiment usage, and the project structure. See
+\path{docs/SUBMISSION.md} for submission packaging instructions.
 
 \end{document}

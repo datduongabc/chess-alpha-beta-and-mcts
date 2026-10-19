@@ -38,11 +38,11 @@ Then install the dependencies and start the app:
 
 ```bash
 python -m pip install -r requirements.txt
-python app.py
+python -m chess_duel.app
 ```
 
 Open **http://127.0.0.1:8765**. Stop the server with `Ctrl+C`.
-If the port is occupied, run `python app.py --port 8766` instead.
+If the port is occupied, run `python -m chess_duel.app --port 8766` instead.
 The application listens only on the local machine and works offline after
 its Python dependencies have been installed.
 
@@ -108,57 +108,66 @@ For new runs, a nonterminal game reaching its ply cap is recorded as
 Rebuild the analysis from the included data without rerunning searches:
 
 ```bash
-python analyze_results.py
-python followup_experiments.py --analyze-only
-python analyze_results.py --followup-games followup_results/games-matched
+python -m benchmarks.analyze_results
+python -m benchmarks.followup_experiments --analyze-only
+python -m benchmarks.analyze_results --followup-games results/followup/games-matched
 ```
 
 Run new experiments serially, away from active GUI searches:
 
 ```bash
 # Basic position comparison, using the current engine.
-python experiments.py --budgets 0.1 0.5 1 --seeds 5 --out results/positions
+python -m benchmarks.experiments --budgets 0.1 0.5 1 --seeds 5 --out runs/positions
 
 # Controlled ablations; fixed budgets of 0.1 and 0.5 seconds.
-python followup_experiments.py --out results/ablation
+python -m benchmarks.followup_experiments --out runs/ablation
 
 # Same four starts and swapped colors at both budgets.
-python experiments.py --mode games --positions followup_game_starts.json --budgets 0.1 0.5 --game-starts 4 --max-plies 120 --out results/games
-python analyze_results.py --followup-games results/games
+python -m benchmarks.experiments --mode games --positions fixtures/followup_game_starts.json --budgets 0.1 0.5 --game-starts 4 --max-plies 120 --out runs/games
+python -m benchmarks.analyze_results --followup-games runs/games
 ```
 
-Every output directory must be new. Repeating an RNG seed does not make a
-wall-clock-limited search identical across hardware or CPU loads.
+New runs default to timestamped directories under ignored `runs/`. Bundled
+fixtures and default analysis inputs resolve from the repository, independently
+of the working directory. Explicit `--positions`, `--out`, `--results` and
+`--followup-games` paths remain relative to the invoking directory.
+Every new experiment output directory must be new. Repeating an RNG seed does
+not make a wall-clock-limited search identical across hardware or CPU loads.
 The earlier extended study uses the preserved implementation in
-`extended_results/source/`; its analysis checks those source hashes.
-`sample_results/` and `enhanced_results/` contain separately labelled,
+`results/extended/source/`; the follow-up sources and inputs are preserved in
+`results/followup/source/`. Analyses check the archived source hashes without
+executing those historical files. New runs record repository-relative source paths.
+`results/sample/` and `results/enhanced/` contain separately labelled,
 earlier exploratory runs. Excluded pilots and new scratch runs are gitignored.
 
 ## Tests
 
 ```bash
-python -m unittest -v
+python -m unittest discover -s tests -v
 ```
 
-The 27 tests cover pruning agreement with unpruned minimax, tactical choices,
+The 31 tests cover pruning agreement with unpruned minimax, tactical choices,
 MCTS selection and seed repeatability, history preservation, cancellation,
 legal moves, special chess moves, HTTP validation, diagnostic answers and
-unfinished-game scoring. HTTP tests use a temporary local port.
+unfinished-game scoring, path resolution and archived-source mismatch rejection.
+HTTP tests use a temporary local port.
 Python 3.14 may print a dependency deprecation warning; it does not fail the tests.
 
 ## Project structure
 
 | Path | Purpose |
 |---|---|
-| `engine.py` | Evaluation, Alpha-beta, quiescence, UCT MCTS and tactical guard |
-| `app.py` / `index.html` | Local API and browser interface |
-| `experiments.py` | Serial position comparisons and color-swapped games |
-| `followup_experiments.py` | Controlled ablation runner |
-| `analyze_results.py` | Earlier-study and follow-up game analysis |
-| `positions.json`, `tactics.json`, `followup_*.json` | Disclosed experiment inputs |
-| `test_homework.py` | Correctness and integration tests |
+| `chess_duel/engine.py` | Evaluation, Alpha-beta, quiescence, UCT MCTS and tactical guard |
+| `chess_duel/app.py` / `chess_duel/index.html` | Local API and browser interface |
+| `benchmarks/experiments.py` | Serial position comparisons and color-swapped games |
+| `benchmarks/followup_experiments.py` | Controlled ablation runner |
+| `benchmarks/analyze_results.py` | Earlier-study and follow-up game analysis |
+| `fixtures/` | Four disclosed JSON experiment inputs |
+| `tests/` | Correctness, integration, path and provenance tests |
+| `results/sample/`, `results/enhanced/` | Earlier exploratory measurements |
+| `results/extended/`, `results/followup/` | Completed studies and frozen provenance |
+| `runs/` | Ignored output from new experiments |
 | `docs/` | PDF, editable LaTeX, screenshots, template assets and group information |
-| `extended_results/`, `followup_results/` | Completed studies and provenance |
 
 ## Report and team
 
